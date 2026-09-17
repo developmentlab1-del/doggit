@@ -2,26 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DOGGIT ($DOGGIT) | Official Solana Meme Coin</title>
+  <title>DOGGIT ($DOGGIT) | Official Solana Meme Coin Website</title>
 
-  <meta name="description" content="Official website of DOGGIT ($DOGGIT), a Solana meme coin. Find the official mint address, DOGGIT socials, Pump.fun page and project updates.">
+  <meta
+    name="description"
+    content="Official website of DOGGIT ($DOGGIT), a Solana meme coin. Verify the official mint address, follow DOGGIT socials, view the Pump.fun token page and track project updates."
+  >
 
-  <meta name="keywords" content="DOGGIT, $DOGGIT, Doggit Solana, Solana meme coin, Solana memecoin, dog meme coin, Pump.fun DOGGIT">
+  <meta
+    name="keywords"
+    content="DOGGIT, $DOGGIT, Doggit Solana, DOGGIT Solana, Solana meme coin, Solana memecoin, dog meme coin, Pump.fun DOGGIT"
+  >
 
   <meta name="robots" content="index, follow">
   <meta name="author" content="DOGGIT">
 
+  <!-- Open Graph -->
   <meta property="og:title" content="DOGGIT ($DOGGIT) — The Dog of Solana">
-  <meta property="og:description" content="Official DOGGIT website. Still early. Still building. Join the pack.">
-  <meta property="og:image" content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png">
+  <meta
+    property="og:description"
+    content="Official DOGGIT website. Still early. Still building. Join the DOGGIT pack."
+  >
+  <meta
+    property="og:image"
+    content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+  >
   <meta property="og:type" content="website">
 
+  <!-- X / Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DOGGIT ($DOGGIT)">
-  <meta name="twitter:description" content="The Dog of Solana. Official DOGGIT website.">
-  <meta name="twitter:image" content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png">
+  <meta
+    name="twitter:description"
+    content="The Dog of Solana. Official DOGGIT website."
+  >
+  <meta
+    name="twitter:image"
+    content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+  >
 
   <style>
     :root {
@@ -47,7 +68,11 @@
       margin: 0;
       font-family: Inter, Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at 50% 0%, rgba(245,189,50,.12), transparent 30%),
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(245, 189, 50, 0.12),
+          transparent 30%
+        ),
         #070707;
       color: var(--text);
     }
@@ -90,12 +115,16 @@
       font-size: 14px;
     }
 
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
     .hero {
       max-width: 1180px;
       margin: auto;
       padding: 70px 22px 85px;
       display: grid;
-      grid-template-columns: 1.05fr .95fr;
+      grid-template-columns: 1.05fr 0.95fr;
       gap: 60px;
       align-items: center;
     }
@@ -110,7 +139,7 @@
 
     h1 {
       font-size: clamp(60px, 9vw, 112px);
-      line-height: .9;
+      line-height: 0.9;
       margin: 0;
       letter-spacing: -5px;
     }
@@ -147,11 +176,12 @@
       border-radius: 12px;
       font-weight: 800;
       border: 1px solid var(--border);
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .btn:hover {
       transform: translateY(-2px);
+      border-color: var(--gold);
     }
 
     .primary {
@@ -173,7 +203,7 @@
       width: 100%;
       border-radius: 28px;
       border: 1px solid #292929;
-      box-shadow: 0 30px 100px rgba(0,0,0,.6);
+      box-shadow: 0 30px 100px rgba(0, 0, 0, 0.6);
     }
 
     .status {
@@ -181,8 +211,8 @@
       left: 18px;
       bottom: 18px;
       padding: 11px 14px;
-      background: rgba(5,5,5,.88);
-      border: 1px solid rgba(255,255,255,.15);
+      background: rgba(5, 5, 5, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(10px);
       border-radius: 10px;
       font-size: 13px;
@@ -254,6 +284,11 @@
       border-radius: 10px;
       padding: 15px 20px;
       cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .copy:hover {
+      transform: translateY(-2px);
     }
 
     .grid {
@@ -299,7 +334,7 @@
       border: 1px solid var(--border);
       padding: 24px;
       border-radius: 17px;
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .link-card:hover {
@@ -327,6 +362,23 @@
       line-height: 1.6;
     }
 
+    .verify-box {
+      margin-top: 28px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(245, 189, 50, 0.08),
+          rgba(255, 255, 255, 0.02)
+        );
+      border: 1px solid #3a3320;
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .verify-box strong {
+      color: var(--gold);
+    }
+
     footer {
       max-width: 1180px;
       margin: auto;
@@ -342,7 +394,7 @@
       font-weight: 900;
     }
 
-    @media(max-width: 850px) {
+    @media (max-width: 850px) {
       .hero {
         grid-template-columns: 1fr;
         padding-top: 40px;
@@ -375,6 +427,7 @@
     }
   </style>
 
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -382,9 +435,11 @@
     "name": "DOGGIT",
     "alternateName": "$DOGGIT",
     "description": "Official website of DOGGIT, a Solana meme coin.",
+    "url": "https://developmentlab1-del.github.io/doggit/",
     "sameAs": [
       "https://x.com/doggit_sol",
-      "https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+      "https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump",
+      "https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
     ]
   }
   </script>
@@ -394,181 +449,406 @@
 
   <nav class="nav">
     <a href="#" class="brand">
-      <img src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png" alt="DOGGIT logo">
+      <img
+        src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+        alt="DOGGIT official logo"
+      >
       DOGGIT
     </a>
 
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#contract">Contract</a>
+      <a href="#official">Verify DOGGIT</a>
       <a href="#links">Official Links</a>
     </div>
   </nav>
 
+
   <main class="hero">
+
     <div>
-      <div class="eyebrow">SOLANA MEME COIN 🐶</div>
+      <div class="eyebrow">
+        SOLANA MEME COIN 🐶
+      </div>
 
-      <h1>$DOG<span>GIT</span></h1>
+      <h1>
+        $DOG<span>GIT</span>
+      </h1>
 
-      <div class="tagline">The Dog of Solana.</div>
+      <div class="tagline">
+        The Dog of Solana.
+      </div>
 
       <p class="subtext">
-        DOGGIT is a community-driven Solana meme coin built around
+        DOGGIT is a community-focused Solana meme coin built around
         memes, creativity, good vibes and the DOGGIT pack.
         Still early. Still building.
       </p>
 
       <div class="buttons">
-        <a class="btn primary"
-           href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
-           target="_blank" rel="noopener">
+
+        <a
+          class="btn primary"
+          href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+          target="_blank"
+          rel="noopener"
+        >
           View on Pump.fun
         </a>
 
-        <a class="btn secondary"
-           href="https://x.com/doggit_sol"
-           target="_blank" rel="noopener">
+        <a
+          class="btn secondary"
+          href="https://x.com/doggit_sol"
+          target="_blank"
+          rel="noopener"
+        >
           Follow @doggit_sol
         </a>
+
+        <a
+          class="btn secondary"
+          href="https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+          target="_blank"
+          rel="noopener"
+        >
+          View on Solscan
+        </a>
+
       </div>
     </div>
+
 
     <div class="hero-image">
+
       <img
         src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-        alt="DOGGIT Solana meme coin golden retriever">
+        alt="DOGGIT Solana meme coin golden retriever mascot"
+      >
 
       <div class="status">
-        Jupiter Verification: <span>Pending</span>
+        Jupiter Verification:
+        <span>Pending</span>
       </div>
+
     </div>
+
   </main>
 
+
   <section id="contract">
-    <h2 class="section-title">Official Contract</h2>
+
+    <h2 class="section-title">
+      Official Contract
+    </h2>
 
     <p class="section-subtitle">
       Always verify the contract address before trading DOGGIT.
       This is the official Solana mint address.
     </p>
 
+
     <div class="contract-card">
-      <div class="contract-label">DOGGIT Contract Address</div>
+
+      <div class="contract-label">
+        DOGGIT Contract Address
+      </div>
 
       <div class="contract-row">
-        <div class="contract" id="contractAddress">
+
+        <div
+          class="contract"
+          id="contractAddress"
+        >
           D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
         </div>
 
-        <button class="copy" onclick="copyContract()">Copy CA</button>
+        <button
+          class="copy"
+          onclick="copyContract()"
+        >
+          Copy CA
+        </button>
+
       </div>
+
     </div>
+
   </section>
 
+
   <section id="about">
-    <h2 class="section-title">Meet DOGGIT 🐾</h2>
+
+    <h2 class="section-title">
+      Meet DOGGIT 🐾
+    </h2>
 
     <p class="section-subtitle">
       DOGGIT started with one dog and one holder.
       Now we're building the pack from the ground up.
-      The project focuses on original DOGGIT memes, community content,
-      Solana culture and transparent public development.
+      The project focuses on original DOGGIT memes,
+      community content, Solana culture and transparent
+      public development.
     </p>
 
+
     <div class="grid">
-      <div class="card">
-        <div class="card-icon">🐶</div>
-        <h3>Community First</h3>
-        <p>
-          DOGGIT is being built publicly from day one with its community.
-        </p>
-      </div>
 
       <div class="card">
-        <div class="card-icon">⚡</div>
-        <h3>Built on Solana</h3>
+
+        <div class="card-icon">
+          🐶
+        </div>
+
+        <h3>
+          Community Focused
+        </h3>
+
+        <p>
+          DOGGIT is being built publicly from day one
+          while the DOGGIT pack continues to grow.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">
+          ⚡
+        </div>
+
+        <h3>
+          Built on Solana
+        </h3>
+
         <p>
           Fast, low-cost and powered by the Solana ecosystem.
         </p>
+
       </div>
+
 
       <div class="card">
-        <div class="card-icon">😂</div>
-        <h3>Born to Meme</h3>
+
+        <div class="card-icon">
+          😂
+        </div>
+
+        <h3>
+          Born to Meme
+        </h3>
+
         <p>
-          DOGGIT is about memes, creativity and building a recognizable identity.
+          DOGGIT is built around memes, creativity
+          and a recognizable dog-focused identity.
         </p>
+
       </div>
+
     </div>
+
   </section>
 
-  <section id="links">
-    <h2 class="section-title">Official DOGGIT Links</h2>
+
+  <section id="official">
+
+    <h2 class="section-title">
+      How to Find the Real DOGGIT
+    </h2>
 
     <p class="section-subtitle">
-      Use only the official links below. Beware of copycat tokens and fake accounts.
+      Copycat tokens can use the same DOGGIT name,
+      ticker or logo. Always verify the complete mint address.
     </p>
 
-    <div class="links">
-      <a class="link-card"
-         href="https://x.com/doggit_sol"
-         target="_blank" rel="noopener">
-        <strong>𝕏 / Twitter</strong>
-        <small>@doggit_sol</small>
-      </a>
 
-      <a class="link-card"
-         href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
-         target="_blank" rel="noopener">
-        <strong>Pump.fun</strong>
-        <small>Official DOGGIT token page</small>
-      </a>
+    <div class="verify-box">
 
-      <a class="link-card"
-         href="https://verified.jup.ag/"
-         target="_blank" rel="noopener">
-        <strong>Jupiter</strong>
-        <small>Verification currently pending</small>
-      </a>
+      <strong>
+        Official DOGGIT Mint
+      </strong>
+
+      <div
+        class="contract"
+        style="margin-top: 14px;"
+      >
+        D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
+      </div>
+
     </div>
+
 
     <div class="warning">
-      ⚠️ <strong>Risk notice:</strong>
-      DOGGIT is a meme token. Cryptocurrency and meme coins are highly volatile
-      and can lose substantial value. Nothing on this website is financial advice.
-      Always verify the official contract address and do your own research.
+
+      ⚠️
+      The official ticker is
+      <strong>$DOGGIT</strong>.
+
+      Always verify the full Solana mint address
+      before connecting your wallet or trading.
+
     </div>
+
   </section>
 
+
+  <section id="links">
+
+    <h2 class="section-title">
+      Official DOGGIT Links
+    </h2>
+
+    <p class="section-subtitle">
+      Use only the official links below.
+      Beware of copycat tokens, fake profiles and impersonators.
+    </p>
+
+
+    <div class="links">
+
+      <a
+        class="link-card"
+        href="https://x.com/doggit_sol"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <strong>
+          𝕏 / Twitter
+        </strong>
+
+        <small>
+          @doggit_sol
+        </small>
+
+      </a>
+
+
+      <a
+        class="link-card"
+        href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <strong>
+          Pump.fun
+        </strong>
+
+        <small>
+          Official DOGGIT token page
+        </small>
+
+      </a>
+
+
+      <a
+        class="link-card"
+        href="https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <strong>
+          Solscan
+        </strong>
+
+        <small>
+          Verify DOGGIT on-chain
+        </small>
+
+      </a>
+
+
+      <a
+        class="link-card"
+        href="https://verified.jup.ag/"
+        target="_blank"
+        rel="noopener"
+      >
+
+        <strong>
+          Jupiter
+        </strong>
+
+        <small>
+          Verification currently pending
+        </small>
+
+      </a>
+
+    </div>
+
+
+    <div class="warning">
+
+      ⚠️
+      <strong>Risk notice:</strong>
+
+      DOGGIT is a meme token.
+      Cryptocurrency and meme coins are highly volatile
+      and can lose substantial value.
+
+      Nothing on this website is financial advice.
+
+      Always verify the official contract address
+      and do your own research.
+
+    </div>
+
+  </section>
+
+
   <footer>
-    <div class="pack">GOOD DOGS. BIGGER MEMES. 🐶</div>
+
+    <div class="pack">
+      GOOD DOGS. BIGGER MEMES. 🐶
+    </div>
 
     <div>
       $DOGGIT • Solana • @doggit_sol
     </div>
 
     <div>
+      Official Mint:
+      D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
+    </div>
+
+    <div>
       © 2026 DOGGIT. All rights reserved.
     </div>
+
   </footer>
 
+
   <script>
+
     function copyContract() {
+
       const contract =
         "D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump";
 
       navigator.clipboard.writeText(contract);
 
-      const button = document.querySelector(".copy");
-      const oldText = button.textContent;
+      const button =
+        document.querySelector(".copy");
 
-      button.textContent = "Copied ✓";
+      const oldText =
+        button.textContent;
+
+      button.textContent =
+        "Copied ✓";
 
       setTimeout(() => {
-        button.textContent = oldText;
+
+        button.textContent =
+          oldText;
+
       }, 1800);
+
     }
+
   </script>
 
 </body>
