@@ -3,6 +3,25 @@
 
 <head>
 
+<!-- ======================================================
+     GOOGLE ANALYTICS 4
+====================================================== -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9YL08M5E3"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T9YL08M5E3');
+</script>
+
+
 <meta charset="UTF-8">
 
 <meta
@@ -26,9 +45,7 @@
   href="https://developmentlab1-del.github.io/doggit/"
 >
 
-<title>
-  DOGGIT ($DOGGIT) | Official Solana Meme Coin
-</title>
+<title>DOGGIT ($DOGGIT) | Official Solana Meme Coin</title>
 
 <meta
   name="description"
@@ -68,914 +85,587 @@
 
 <style>
 
-/* =========================================================
+/* ======================================================
    ROOT
-========================================================= */
+====================================================== */
 
-:root {
-
-  --bg:
-    #050505;
-
-  --panel:
-    #101010;
-
-  --border:
-    #2e2e2e;
-
-  --gold:
-    #f5bd32;
-
-  --gold-light:
-    #ffe17b;
-
-  --gold-dark:
-    #c98a0a;
-
-  --text:
-    #ffffff;
-
-  --muted:
-    #aaaaaa;
-
-  --danger:
-    #ff554d;
-
+:root{
+  --bg:#050505;
+  --panel:#101010;
+  --border:#2e2e2e;
+  --gold:#f5bd32;
+  --gold-light:#ffe17b;
+  --gold-dark:#c98a0a;
+  --text:#ffffff;
+  --muted:#aaaaaa;
+  --danger:#ff554d;
 }
 
 
-/* =========================================================
+/* ======================================================
    GLOBAL
-========================================================= */
+====================================================== */
 
-* {
-
-  box-sizing:
-    border-box;
-
+*{
+  box-sizing:border-box;
 }
 
-
-html {
-
-  scroll-behavior:
-    smooth;
-
+html{
+  scroll-behavior:smooth;
 }
 
-
-body {
-
-  margin:
-    0;
-
-  overflow-x:
-    hidden;
+body{
+  margin:0;
+  overflow-x:hidden;
 
   background:
-
     radial-gradient(
       circle at 50% 0,
       rgba(245,189,50,.11),
       transparent 30%
     ),
-
     var(--bg);
 
-  color:
-    var(--text);
+  color:var(--text);
 
   font-family:
-
     Inter,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     Arial,
     sans-serif;
+}
 
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font:inherit;
 }
 
 
-a {
-
-  color:
-    inherit;
-
-  text-decoration:
-    none;
-
-}
-
-
-button {
-
-  font:
-    inherit;
-
-}
-
-
-/* =========================================================
+/* ======================================================
    GOLD BUTTON SYSTEM
-========================================================= */
+====================================================== */
 
 .btn,
 .copy,
 .game-button,
 .jump-button,
 .pause-button,
-.menu-button {
+.menu-button{
+  appearance:none;
+  -webkit-appearance:none;
 
-  appearance:
-    none;
-
-  -webkit-appearance:
-    none;
-
-  border:
-    1px solid
-    var(--gold-dark);
+  border:1px solid var(--gold-dark);
 
   background:
-
     linear-gradient(
       135deg,
       var(--gold),
       var(--gold-light)
     );
 
-  color:
-    #080808;
+  color:#080808;
 
-  font-weight:
-    950;
-
-  cursor:
-    pointer;
+  font-weight:950;
+  cursor:pointer;
 
   box-shadow:
-
     0 8px 24px
     rgba(245,189,50,.10);
 
   transition:
-
     transform .18s ease,
     filter .18s ease;
-
 }
 
-
-@media (hover:hover) and (pointer:fine) {
+@media (hover:hover) and (pointer:fine){
 
   .btn:hover,
   .copy:hover,
   .game-button:hover,
   .jump-button:hover,
   .pause-button:hover,
-  .menu-button:hover {
-
-    transform:
-      translateY(-2px);
-
-    filter:
-      brightness(1.05);
-
+  .menu-button:hover{
+    transform:translateY(-2px);
+    filter:brightness(1.05);
   }
 
 }
 
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+/* ======================================================
+   NAV
+====================================================== */
 
-.nav-wrap {
+.nav-wrap{
+  position:sticky;
+  top:0;
+  z-index:100;
 
-  position:
-    sticky;
-
-  top:
-    0;
-
-  z-index:
-    100;
-
-  background:
-    rgba(5,5,5,.90);
+  background:rgba(5,5,5,.90);
 
   border-bottom:
     1px solid
     rgba(255,255,255,.07);
 
-  backdrop-filter:
-    blur(14px);
-
+  backdrop-filter:blur(14px);
 }
 
+.nav{
+  max-width:1180px;
+  min-height:68px;
 
-.nav {
-
-  max-width:
-    1180px;
-
-  min-height:
-    68px;
-
-  margin:
-    auto;
+  margin:auto;
 
   padding:
-    9px 20px;
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  justify-content:
-    space-between;
-
-  gap:
-    18px;
-
-}
-
-
-.brand {
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  gap:
-    10px;
-
-  font-size:
+    9px
     20px;
 
-  font-weight:
-    950;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 
+  gap:18px;
 }
 
+.brand{
+  display:flex;
+  align-items:center;
 
-.brand img {
+  gap:10px;
 
-  width:
-    42px;
+  font-size:20px;
+  font-weight:950;
+}
 
-  height:
-    42px;
+.brand img{
+  width:42px;
+  height:42px;
 
-  object-fit:
-    cover;
+  object-fit:cover;
 
   border:
-
     2px solid
     var(--gold);
 
-  border-radius:
-    50%;
-
+  border-radius:50%;
 }
 
+.nav-links{
+  display:flex;
+  align-items:center;
 
-.nav-links {
+  gap:22px;
 
-  display:
-    flex;
+  color:#dddddd;
 
-  align-items:
-    center;
-
-  gap:
-    22px;
-
-  color:
-    #dddddd;
-
-  font-size:
-    14px;
-
-  font-weight:
-    850;
-
+  font-size:14px;
+  font-weight:850;
 }
-
 
 .nav-links a:hover,
-.nav-game {
-
-  color:
-    var(--gold);
-
+.nav-game{
+  color:var(--gold);
 }
 
+.menu-button{
+  display:none;
 
-.menu-button {
+  width:42px;
+  height:42px;
 
-  display:
-    none;
-
-  width:
-    42px;
-
-  height:
-    42px;
-
-  border-radius:
-    11px;
-
+  border-radius:11px;
 }
 
+.mobile-menu{
+  display:none;
 
-.mobile-menu {
+  max-width:1180px;
 
-  display:
-    none;
-
-  max-width:
-    1180px;
-
-  margin:
-    auto;
+  margin:auto;
 
   padding:
-
     0
     14px
     12px;
 
-  gap:
-    7px;
-
+  gap:7px;
 }
 
-
-.mobile-menu.open {
-
-  display:
-    grid;
-
+.mobile-menu.open{
+  display:grid;
 }
 
-
-.mobile-menu a {
-
-  padding:
-    12px 13px;
+.mobile-menu a{
+  padding:12px 13px;
 
   border:
-
     1px solid
     rgba(245,189,50,.42);
 
-  border-radius:
-    11px;
+  border-radius:11px;
 
-  background:
-    #101010;
+  background:#101010;
 
-  font-weight:
-    850;
-
+  font-weight:850;
 }
 
 
-/* =========================================================
+/* ======================================================
    HERO
-========================================================= */
+====================================================== */
 
-.hero {
+.hero{
+  max-width:1180px;
 
-  max-width:
-    1180px;
-
-  margin:
-    auto;
+  margin:auto;
 
   padding:
-
     66px
     22px
     84px;
 
-  display:
-    grid;
+  display:grid;
 
   grid-template-columns:
-
     1.05fr
     .95fr;
 
-  gap:
-    52px;
+  gap:52px;
 
-  align-items:
-    center;
-
+  align-items:center;
 }
 
+.eyebrow{
+  margin-bottom:13px;
 
-.eyebrow {
+  color:var(--gold);
 
-  margin-bottom:
-    13px;
+  font-size:12px;
+  font-weight:950;
 
-  color:
-    var(--gold);
-
-  font-size:
-    12px;
-
-  font-weight:
-    950;
-
-  letter-spacing:
-    3px;
-
+  letter-spacing:3px;
 }
 
-
-h1 {
-
-  margin:
-    0;
+h1{
+  margin:0;
 
   font-size:
-
     clamp(
       58px,
       8.5vw,
       106px
     );
 
-  line-height:
-    .9;
+  line-height:.9;
 
-  letter-spacing:
-    -5px;
-
+  letter-spacing:-5px;
 }
 
-
-h1 span {
-
-  color:
-    var(--gold);
-
+h1 span{
+  color:var(--gold);
 }
 
-
-.tagline {
-
+.tagline{
   margin:
-
     20px
     0
     12px;
 
   font-size:
-
     clamp(
       24px,
       3vw,
       36px
     );
 
-  font-weight:
-    950;
+  font-weight:950;
+}
 
+.subtext{
+  max-width:620px;
+
+  color:var(--muted);
+
+  font-size:17px;
+
+  line-height:1.65;
 }
 
 
-.subtext {
-
-  max-width:
-    620px;
-
-  color:
-    var(--muted);
-
-  font-size:
-    17px;
-
-  line-height:
-    1.65;
-
-}
-
-
-/* =========================================================
+/* ======================================================
    HERO BUTTONS
-========================================================= */
+====================================================== */
 
-.buttons {
+.buttons{
+  width:min(590px,100%);
 
-  width:
+  margin-top:26px;
 
-    min(
-      590px,
-      100%
-    );
-
-  margin-top:
-    26px;
-
-  display:
-    grid;
+  display:grid;
 
   grid-template-columns:
-
     repeat(
       2,
       minmax(0,1fr)
     );
 
-  gap:
-    10px;
-
+  gap:10px;
 }
 
-
-.btn {
-
-  min-height:
-    52px;
+.btn{
+  min-height:52px;
 
   padding:
-    13px 14px;
+    13px
+    14px;
 
-  display:
-    flex;
+  display:flex;
 
-  align-items:
-    center;
+  align-items:center;
+  justify-content:center;
 
-  justify-content:
-    center;
+  border-radius:13px;
 
-  border-radius:
-    13px;
+  text-align:center;
 
-  text-align:
-    center;
-
-  font-size:
-    15px;
-
+  font-size:15px;
 }
 
 
-/* =========================================================
+/* ======================================================
    HERO IMAGE
-========================================================= */
+====================================================== */
 
-.hero-image {
-
-  position:
-    relative;
-
+.hero-image{
+  position:relative;
 }
 
+.hero-image img{
+  width:100%;
 
-.hero-image img {
-
-  width:
-    100%;
-
-  display:
-    block;
+  display:block;
 
   border:
-
     1px solid
     #303030;
 
-  border-radius:
-    24px;
+  border-radius:24px;
 
   box-shadow:
-
     0 30px 90px
     rgba(0,0,0,.7);
-
 }
 
+.status{
+  position:absolute;
 
-.status {
-
-  position:
-    absolute;
-
-  left:
-    14px;
-
-  bottom:
-    14px;
+  left:14px;
+  bottom:14px;
 
   padding:
-    10px 12px;
+    10px
+    12px;
 
   border:
-
     1px solid
     rgba(255,255,255,.14);
 
-  border-radius:
-    10px;
+  border-radius:10px;
 
   background:
     rgba(0,0,0,.88);
 
-  font-size:
-    12px;
+  font-size:12px;
+  font-weight:900;
+}
 
-  font-weight:
-    900;
-
+.status span{
+  color:var(--gold);
 }
 
 
-.status span {
-
-  color:
-    var(--gold);
-
-}
-
-
-/* =========================================================
+/* ======================================================
    GENERAL SECTIONS
-========================================================= */
+====================================================== */
 
-section {
+section{
+  max-width:1180px;
 
-  max-width:
-    1180px;
-
-  margin:
-    auto;
+  margin:auto;
 
   padding:
-
     64px
     22px;
-
 }
 
-
-.section-title {
-
+.section-title{
   margin:
-
     0
     0
     12px;
 
   font-size:
-
     clamp(
       32px,
       4.5vw,
       52px
     );
+}
 
+.section-subtitle{
+  max-width:760px;
+
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:16px;
+
+  line-height:1.65;
 }
 
 
-.section-subtitle {
-
-  max-width:
-    760px;
-
-  margin:
-    0;
-
-  color:
-    var(--muted);
-
-  font-size:
-    16px;
-
-  line-height:
-    1.65;
-
-}
-
-
-/* =========================================================
+/* ======================================================
    CONTRACT
-========================================================= */
+====================================================== */
 
-.contract-card {
+.contract-card{
+  margin-top:26px;
 
-  margin-top:
-    26px;
-
-  padding:
-    20px;
+  padding:20px;
 
   border:
     1px solid
     var(--border);
 
-  border-radius:
-    16px;
+  border-radius:16px;
 
   background:
-
     linear-gradient(
       135deg,
       #151515,
       #0b0b0b
     );
-
 }
 
+.contract-label{
+  margin-bottom:10px;
 
-.contract-label {
+  color:var(--gold);
 
-  margin-bottom:
-    10px;
+  font-size:11px;
+  font-weight:950;
 
-  color:
-    var(--gold);
-
-  font-size:
-    11px;
-
-  font-weight:
-    950;
-
-  letter-spacing:
-    2px;
-
+  letter-spacing:2px;
 }
 
-
-.contract-row {
-
-  display:
-    flex;
-
-  gap:
-    10px;
-
+.contract-row{
+  display:flex;
+  gap:10px;
 }
 
+.contract{
+  flex:1;
+  min-width:0;
 
-.contract {
-
-  flex:
-    1;
-
-  min-width:
-    0;
-
-  padding:
-    13px;
+  padding:13px;
 
   border:
     1px solid
     #282828;
 
-  border-radius:
-    9px;
+  border-radius:9px;
 
-  background:
-    #060606;
+  background:#060606;
 
-  font-family:
-    monospace;
+  font-family:monospace;
 
-  line-height:
-    1.5;
+  line-height:1.5;
 
-  word-break:
-    break-all;
-
+  word-break:break-all;
 }
 
-
-.copy {
-
-  min-width:
-    115px;
+.copy{
+  min-width:115px;
 
   padding:
-    12px 18px;
+    12px
+    18px;
 
-  border-radius:
-    10px;
-
+  border-radius:10px;
 }
 
 
-/* =========================================================
+/* ======================================================
    ABOUT
-========================================================= */
+====================================================== */
 
-.grid {
+.grid{
+  margin-top:27px;
 
-  margin-top:
-    27px;
-
-  display:
-    grid;
+  display:grid;
 
   grid-template-columns:
-
     repeat(
       3,
       1fr
     );
 
-  gap:
-    15px;
-
+  gap:15px;
 }
 
-
-.card {
-
-  padding:
-    24px;
+.card{
+  padding:24px;
 
   border:
     1px solid
     var(--border);
 
-  border-radius:
-    16px;
+  border-radius:16px;
 
-  background:
-    #101010;
-
+  background:#101010;
 }
 
+.card-icon{
+  margin-bottom:12px;
 
-.card-icon {
-
-  margin-bottom:
-    12px;
-
-  font-size:
-    28px;
-
+  font-size:28px;
 }
 
-
-.card h3 {
-
+.card h3{
   margin:
-
     0
     0
     8px;
+}
 
+.card p{
+  margin:0;
+
+  color:var(--muted);
+
+  line-height:1.6;
 }
 
 
-.card p {
+/* ======================================================
+   GAME
+====================================================== */
 
-  margin:
-    0;
-
-  color:
-    var(--muted);
-
-  line-height:
-    1.6;
-
+#game{
+  scroll-margin-top:78px;
 }
 
-
-/* =========================================================
-   GAME SECTION
-========================================================= */
-
-#game {
-
-  scroll-margin-top:
-    78px;
-
-}
-
-
-.game-wrap {
-
-  max-width:
-    none;
+.game-wrap{
+  max-width:none;
 
   padding:
-
     58px
     0;
 
@@ -988,165 +678,114 @@ section {
     #1d1d1d;
 
   background:
-
     radial-gradient(
       circle at 50% 15%,
       rgba(245,189,50,.14),
       transparent 34%
     ),
-
     linear-gradient(
       180deg,
       #050505,
       #100b04,
       #050505
     );
-
 }
 
+.game-inner{
+  max-width:900px;
 
-.game-inner {
-
-  max-width:
-    900px;
-
-  margin:
-    auto;
+  margin:auto;
 
   padding:
-
     0
     16px;
-
 }
 
-
-.game-heading {
-
-  max-width:
-    700px;
+.game-heading{
+  max-width:700px;
 
   margin:
-
     0
     auto
     16px;
 
-  text-align:
-    center;
-
+  text-align:center;
 }
 
-
-.game-badge {
-
-  display:
-    inline-block;
+.game-badge{
+  display:inline-block;
 
   padding:
-    7px 12px;
+    7px
+    12px;
 
   border:
-
     1px solid
     rgba(245,189,50,.4);
 
-  border-radius:
-    999px;
+  border-radius:999px;
 
   background:
     rgba(245,189,50,.08);
 
-  color:
-    var(--gold);
+  color:var(--gold);
 
-  font-size:
-    10px;
+  font-size:10px;
+  font-weight:950;
 
-  font-weight:
-    950;
-
-  letter-spacing:
-    2px;
-
+  letter-spacing:2px;
 }
 
-
-.game-heading h2 {
-
+.game-heading h2{
   margin:
-
     10px
     0
     5px;
 
   font-size:
-
     clamp(
       36px,
       5vw,
       54px
     );
+}
 
+.game-heading h2 span{
+  color:var(--gold);
+}
+
+.game-heading p{
+  max-width:650px;
+
+  margin:auto;
+
+  color:var(--muted);
+
+  font-size:13px;
+
+  line-height:1.55;
 }
 
 
-.game-heading h2 span {
+/* ======================================================
+   GAME SHELL
+====================================================== */
 
-  color:
-    var(--gold);
+.game-shell{
+  width:100%;
+  max-width:700px;
 
-}
+  margin:auto;
 
-
-.game-heading p {
-
-  max-width:
-    650px;
-
-  margin:
-    auto;
-
-  color:
-    var(--muted);
-
-  font-size:
-    13px;
-
-  line-height:
-    1.55;
-
-}
-
-
-/* =========================================================
-   COMPACT GAME
-========================================================= */
-
-.game-shell {
-
-  width:
-    100%;
-
-  max-width:
-    700px;
-
-  margin:
-    auto;
-
-  padding:
-    7px;
+  padding:7px;
 
   border:
-
     1px solid
     rgba(245,189,50,.42);
 
-  border-radius:
-    18px;
+  border-radius:18px;
 
   background:
-
     linear-gradient(
       145deg,
       #0d0d0d,
@@ -1154,186 +793,112 @@ section {
     );
 
   box-shadow:
-
     0 28px 80px
     rgba(0,0,0,.72);
-
 }
 
 
-/* =========================================================
-   MOBILE GAME TOUCH FIX
-========================================================= */
-
-/*
-   Only the game area is protected from selection.
-   Contract text and normal website text remain selectable.
-*/
+/* ======================================================
+   MOBILE TOUCH FIX
+====================================================== */
 
 .game-shell,
 .game-shell *,
 .game-frame,
 .game-frame *,
 .game-controls,
-.game-controls * {
+.game-controls *{
+  -webkit-user-select:none;
+  user-select:none;
 
-  -webkit-user-select:
-    none;
+  -webkit-touch-callout:none;
 
-  user-select:
-    none;
-
-  -webkit-touch-callout:
-    none;
-
-  -webkit-tap-highlight-color:
-    transparent;
-
+  -webkit-tap-highlight-color:transparent;
 }
-
 
 .game-frame,
-#doggitGame {
+#doggitGame{
+  touch-action:none;
 
-  touch-action:
-    none;
+  -webkit-user-select:none;
+  user-select:none;
 
-  -webkit-user-select:
-    none;
-
-  user-select:
-    none;
-
-  -webkit-touch-callout:
-    none;
-
+  -webkit-touch-callout:none;
 }
 
+.game-shell img{
+  -webkit-user-drag:none;
 
-.game-shell img {
-
-  -webkit-user-drag:
-    none;
-
-  user-drag:
-    none;
-
-  -webkit-user-select:
-    none;
-
-  user-select:
-    none;
-
+  -webkit-user-select:none;
+  user-select:none;
 }
-
 
 .jump-button,
 .pause-button,
-.game-button {
+.game-button{
+  appearance:none;
+  -webkit-appearance:none;
 
-  appearance:
-    none;
+  touch-action:manipulation;
 
-  -webkit-appearance:
-    none;
+  -webkit-user-select:none;
+  user-select:none;
 
-  touch-action:
-    manipulation;
+  -webkit-touch-callout:none;
 
-  -webkit-user-select:
-    none;
-
-  user-select:
-    none;
-
-  -webkit-touch-callout:
-    none;
-
-  -webkit-tap-highlight-color:
-    transparent;
-
+  -webkit-tap-highlight-color:transparent;
 }
-
 
 .jump-button:focus,
 .pause-button:focus,
-.game-button:focus {
-
-  outline:
-    none;
-
+.game-button:focus{
+  outline:none;
 }
-
 
 .jump-button:focus-visible,
 .pause-button:focus-visible,
-.game-button:focus-visible {
-
+.game-button:focus-visible{
   outline:
-
     2px solid
     #ffffff;
 
-  outline-offset:
-    2px;
-
+  outline-offset:2px;
 }
 
 
-/* =========================================================
+/* ======================================================
    GAME HEADER
-========================================================= */
+====================================================== */
 
-.game-topbar {
-
+.game-topbar{
   padding:
-
     2px
     2px
     7px;
 
-  display:
-    flex;
+  display:flex;
 
-  align-items:
-    center;
+  align-items:center;
+  justify-content:space-between;
 
-  justify-content:
-    space-between;
+  gap:7px;
 
-  gap:
-    7px;
-
-  flex-wrap:
-    wrap;
-
+  flex-wrap:wrap;
 }
 
+.game-logo{
+  color:var(--gold);
 
-.game-logo {
+  font-size:13px;
+  font-weight:950;
 
-  color:
-    var(--gold);
-
-  font-size:
-    13px;
-
-  font-weight:
-    950;
-
-  white-space:
-    nowrap;
-
+  white-space:nowrap;
 }
 
-
-.hud-row {
-
-  display:
-    grid;
+.hud-row{
+  display:grid;
 
   grid-template-columns:
-
     repeat(
       4,
       minmax(
@@ -1342,90 +907,61 @@ section {
       )
     );
 
-  gap:
-    5px;
-
+  gap:5px;
 }
 
-
-.hud {
-
+.hud{
   padding:
-    5px 5px;
+    5px
+    5px;
 
   border:
     1px solid
     #303030;
 
-  border-radius:
-    8px;
+  border-radius:8px;
 
-  background:
-    #0e0e0e;
+  background:#0e0e0e;
 
-  color:
-    #888888;
+  color:#888888;
 
-  text-align:
-    center;
+  text-align:center;
 
-  font-size:
-    7px;
+  font-size:7px;
+  font-weight:900;
 
-  font-weight:
-    900;
+  letter-spacing:.5px;
+}
 
-  letter-spacing:
-    .5px;
+.hud strong{
+  display:block;
 
+  margin-top:2px;
+
+  color:white;
+
+  font-size:11px;
+
+  letter-spacing:0;
+
+  white-space:nowrap;
+}
+
+.hud .gold{
+  color:var(--gold);
 }
 
 
-.hud strong {
-
-  display:
-    block;
-
-  margin-top:
-    2px;
-
-  color:
-    white;
-
-  font-size:
-    11px;
-
-  letter-spacing:
-    0;
-
-  white-space:
-    nowrap;
-
-}
-
-
-.hud .gold {
-
-  color:
-    var(--gold);
-
-}
-
-
-/* =========================================================
+/* ======================================================
    GAME CANVAS
-========================================================= */
+====================================================== */
 
-.game-frame {
+.game-frame{
+  position:relative;
 
-  position:
-    relative;
+  overflow:hidden;
 
-  overflow:
-    hidden;
-
-  width:
-    100%;
+  width:100%;
 
   aspect-ratio:
     16 / 9;
@@ -1434,1066 +970,678 @@ section {
     1px solid
     #333333;
 
-  border-radius:
-    13px;
+  border-radius:13px;
 
-  background:
-    #8ad9ff;
+  background:#8ad9ff;
 
-  cursor:
-    default;
+  cursor:default;
+}
 
+#doggitGame{
+  width:100%;
+  height:100%;
+
+  display:block;
 }
 
 
-#doggitGame {
-
-  width:
-    100%;
-
-  height:
-    100%;
-
-  display:
-    block;
-
-}
-
-
-/* =========================================================
+/* ======================================================
    GAME OVERLAY
-========================================================= */
+====================================================== */
 
-.game-overlay {
+.game-overlay{
+  position:absolute;
 
-  position:
-    absolute;
+  inset:0;
 
-  inset:
-    0;
+  z-index:20;
 
-  z-index:
-    20;
+  padding:8px;
 
-  padding:
-    8px;
+  display:flex;
 
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  justify-content:
-    center;
+  align-items:center;
+  justify-content:center;
 
   background:
-
     linear-gradient(
       180deg,
       rgba(2,6,8,.22),
       rgba(2,6,8,.65)
     );
 
-  backdrop-filter:
-    blur(3px);
-
+  backdrop-filter:blur(3px);
 }
 
-
-.game-panel {
-
+.game-panel{
   width:
-
     min(
       300px,
       88%
     );
 
-  max-height:
-    88%;
+  max-height:88%;
 
-  overflow:
-    auto;
+  overflow:auto;
 
   padding:
-    11px 12px;
+    11px
+    12px;
 
   border:
-
     1px solid
     rgba(245,189,50,.48);
 
-  border-radius:
-    14px;
+  border-radius:14px;
 
   background:
-
     linear-gradient(
       145deg,
       rgba(20,20,20,.985),
       rgba(7,7,7,.985)
     );
 
-  text-align:
-    center;
+  text-align:center;
 
   box-shadow:
-
     0 18px 55px
     rgba(0,0,0,.5);
-
 }
 
+.game-panel img{
+  width:45px;
+  height:45px;
 
-.game-panel img {
+  object-fit:contain;
 
-  width:
-    45px;
-
-  height:
-    45px;
-
-  object-fit:
-    contain;
-
-  pointer-events:
-    none;
-
+  pointer-events:none;
 }
 
-
-.game-panel h3 {
-
+.game-panel h3{
   margin:
-
     2px
     0
     4px;
 
   font-size:
-
     clamp(
       18px,
       3vw,
       25px
     );
-
 }
 
-
-.game-panel p {
-
+.game-panel p{
   margin:
-    5px auto;
+    5px
+    auto;
 
-  color:
-    #bebebe;
+  color:#bebebe;
 
-  font-size:
-    10px;
+  font-size:10px;
 
-  line-height:
-    1.42;
-
+  line-height:1.42;
 }
 
+.highlight{
+  color:var(--gold-light);
 
-.highlight {
-
-  color:
-    var(--gold-light);
-
-  font-weight:
-    900;
-
+  font-weight:900;
 }
 
-
-.game-button {
-
-  min-width:
-    130px;
-
-  min-height:
-    38px;
+.game-button{
+  min-width:130px;
+  min-height:38px;
 
   padding:
-    8px 13px;
+    8px
+    13px;
 
-  border-radius:
-    9px;
+  border-radius:9px;
 
-  font-size:
-    11px;
+  font-size:11px;
+}
 
+.pause-actions{
+  margin-top:8px;
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:6px;
 }
 
 
-.pause-actions {
+/* ======================================================
+   PROGRESS
+====================================================== */
 
-  margin-top:
-    8px;
+.game-meter{
+  margin-top:7px;
 
-  display:
-    flex;
-
-  justify-content:
-    center;
-
-  flex-wrap:
-    wrap;
-
-  gap:
-    6px;
-
-}
-
-
-/* =========================================================
-   LEVEL BAR
-========================================================= */
-
-.game-meter {
-
-  margin-top:
-    7px;
-
-  display:
-    grid;
+  display:grid;
 
   grid-template-columns:
-
     1fr
     auto;
 
-  gap:
-    8px;
+  gap:8px;
 
-  align-items:
-    center;
-
+  align-items:center;
 }
 
+.progress-wrap{
+  height:6px;
 
-.progress-wrap {
+  overflow:hidden;
 
-  height:
-    6px;
+  border-radius:999px;
 
-  overflow:
-    hidden;
-
-  border-radius:
-    999px;
-
-  background:
-    #171717;
-
+  background:#171717;
 }
 
+.progress-bar{
+  width:0;
 
-.progress-bar {
+  height:100%;
 
-  width:
-    0;
-
-  height:
-    100%;
-
-  border-radius:
-    999px;
+  border-radius:999px;
 
   background:
-
     linear-gradient(
       90deg,
       #b87809,
       var(--gold),
       var(--gold-light)
     );
+}
 
+.next-level{
+  min-width:115px;
+
+  color:#8c8c8c;
+
+  text-align:right;
+
+  font-size:8px;
+  font-weight:850;
 }
 
 
-.next-level {
+/* ======================================================
+   GAME CONTROLS
+====================================================== */
 
-  min-width:
-    115px;
+.game-controls{
+  margin-top:7px;
 
-  color:
-    #8c8c8c;
-
-  text-align:
-    right;
-
-  font-size:
-    8px;
-
-  font-weight:
-    850;
-
-}
-
-
-/* =========================================================
-   GAME BUTTONS
-========================================================= */
-
-.game-controls {
-
-  margin-top:
-    7px;
-
-  display:
-    grid;
+  display:grid;
 
   grid-template-columns:
-
     1fr
     1fr;
 
-  gap:
-    6px;
-
+  gap:6px;
 }
-
 
 .jump-button,
-.pause-button {
+.pause-button{
+  min-height:42px;
 
-  min-height:
-    42px;
+  display:flex;
 
-  display:
-    flex;
+  align-items:center;
+  justify-content:center;
 
-  align-items:
-    center;
+  border-radius:10px;
 
-  justify-content:
-    center;
+  font-size:11px;
 
-  border-radius:
-    10px;
-
-  font-size:
-    11px;
-
-  text-align:
-    center;
-
+  text-align:center;
 }
 
 
-/* =========================================================
+/* ======================================================
    DISCLAIMER
-========================================================= */
+====================================================== */
 
-.game-disclaimer {
-
-  max-width:
-    700px;
+.game-disclaimer{
+  max-width:700px;
 
   margin:
-
     12px
     auto
     0;
 
   padding:
-    10px 12px;
+    10px
+    12px;
 
   border:
     1px solid
     #39311d;
 
-  border-radius:
-    10px;
+  border-radius:10px;
 
-  background:
-    #131107;
+  background:#131107;
 
-  color:
-    #cfc7a7;
+  color:#cfc7a7;
 
-  text-align:
-    center;
+  text-align:center;
 
-  font-size:
-    9px;
+  font-size:9px;
 
-  line-height:
-    1.5;
+  line-height:1.5;
+}
 
+.game-disclaimer strong{
+  color:var(--gold-light);
 }
 
 
-.game-disclaimer strong {
-
-  color:
-    var(--gold-light);
-
-}
-
-
-/* =========================================================
+/* ======================================================
    VERIFY
-========================================================= */
+====================================================== */
 
-.verify-box {
+.verify-box{
+  margin-top:25px;
 
-  margin-top:
-    25px;
-
-  padding:
-    21px;
+  padding:21px;
 
   border:
     1px solid
     #3a3320;
 
-  border-radius:
-    16px;
+  border-radius:16px;
 
   background:
     rgba(245,189,50,.05);
-
 }
 
-
-.verify-box strong {
-
-  color:
-    var(--gold);
-
+.verify-box strong{
+  color:var(--gold);
 }
 
+.warning{
+  margin-top:21px;
 
-.warning {
-
-  margin-top:
-    21px;
-
-  padding:
-    18px;
+  padding:18px;
 
   border:
     1px solid
     #3b3320;
 
-  border-radius:
-    13px;
+  border-radius:13px;
 
-  background:
-    #15130c;
+  background:#15130c;
 
-  color:
-    #d4cda9;
+  color:#d4cda9;
 
-  line-height:
-    1.6;
-
+  line-height:1.6;
 }
 
 
-/* =========================================================
+/* ======================================================
    LINKS
-========================================================= */
+====================================================== */
 
-.links {
+.links{
+  margin-top:26px;
 
-  margin-top:
-    26px;
-
-  display:
-    grid;
+  display:grid;
 
   grid-template-columns:
-
     repeat(
       4,
       1fr
     );
 
-  gap:
-    13px;
-
+  gap:13px;
 }
 
+.link-card{
+  display:block;
 
-.link-card {
-
-  display:
-    block;
-
-  padding:
-    21px;
+  padding:21px;
 
   border:
     1px solid
     var(--border);
 
-  border-radius:
-    15px;
+  border-radius:15px;
 
-  background:
-    #101010;
+  background:#101010;
 
-  transition:
-    .2s;
+  transition:.2s;
+}
 
+.link-card:hover{
+  transform:translateY(-2px);
+
+  border-color:var(--gold);
+}
+
+.link-card strong{
+  display:block;
+
+  margin-bottom:6px;
+
+  color:var(--gold);
+}
+
+.link-card small{
+  color:var(--muted);
 }
 
 
-.link-card:hover {
-
-  transform:
-    translateY(-2px);
-
-  border-color:
-    var(--gold);
-
-}
-
-
-.link-card strong {
-
-  display:
-    block;
-
-  margin-bottom:
-    6px;
-
-  color:
-    var(--gold);
-
-}
-
-
-.link-card small {
-
-  color:
-    var(--muted);
-
-}
-
-
-/* =========================================================
+/* ======================================================
    FOOTER
-========================================================= */
+====================================================== */
 
-footer {
+footer{
+  max-width:1180px;
 
-  max-width:
-    1180px;
-
-  margin:
-    auto;
+  margin:auto;
 
   padding:
-
     52px
     22px
     40px;
 
-  color:
-    #777777;
+  color:#777777;
 
-  text-align:
-    center;
+  text-align:center;
 
-  line-height:
-    1.8;
+  line-height:1.8;
+}
 
+.pack{
+  color:var(--gold);
+
+  font-weight:900;
 }
 
 
-.pack {
-
-  color:
-    var(--gold);
-
-  font-weight:
-    900;
-
-}
-
-
-/* =========================================================
+/* ======================================================
    TABLET
-========================================================= */
+====================================================== */
 
-@media(max-width:900px) {
+@media(max-width:900px){
 
-  .hero {
+  .hero{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
 
+  .hero-image{
+    order:-1;
+
+    max-width:650px;
+
+    margin:auto;
+  }
+
+  .hero-copy{
+    text-align:center;
+  }
+
+  .subtext{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .buttons{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .links{
     grid-template-columns:
-      1fr;
-
-    gap:
-      30px;
-
-  }
-
-
-  .hero-image {
-
-    order:
-      -1;
-
-    max-width:
-      650px;
-
-    margin:
-      auto;
-
-  }
-
-
-  .hero-copy {
-
-    text-align:
-      center;
-
-  }
-
-
-  .subtext {
-
-    margin-left:
-      auto;
-
-    margin-right:
-      auto;
-
-  }
-
-
-  .buttons {
-
-    margin-left:
-      auto;
-
-    margin-right:
-      auto;
-
-  }
-
-
-  .grid {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
-
-  .links {
-
-    grid-template-columns:
-
       repeat(
         2,
         1fr
       );
-
   }
 
 }
 
 
-/* =========================================================
+/* ======================================================
    MOBILE
-========================================================= */
+====================================================== */
 
-@media(max-width:760px) {
+@media(max-width:760px){
 
-  .nav {
-
-    min-height:
-      62px;
+  .nav{
+    min-height:62px;
 
     padding:
-      8px 13px;
-
+      8px
+      13px;
   }
 
-
-  .brand {
-
-    font-size:
-      18px;
-
+  .brand{
+    font-size:18px;
   }
 
-
-  .brand img {
-
-    width:
-      38px;
-
-    height:
-      38px;
-
+  .brand img{
+    width:38px;
+    height:38px;
   }
 
-
-  .nav-links {
-
-    display:
-      none;
-
+  .nav-links{
+    display:none;
   }
 
-
-  .menu-button {
-
-    display:
-      block;
-
+  .menu-button{
+    display:block;
   }
 
-
-  .hero {
-
+  .hero{
     padding:
-
       24px
       14px
       54px;
-
   }
 
-
-  h1 {
-
-    letter-spacing:
-      -3px;
-
+  h1{
+    letter-spacing:-3px;
   }
 
-
-  .hero-copy {
-
-    text-align:
-      left;
-
+  .hero-copy{
+    text-align:left;
   }
 
-
-  .buttons {
-
-    width:
-      100%;
+  .buttons{
+    width:100%;
 
     grid-template-columns:
-
       repeat(
         2,
         minmax(0,1fr)
       );
 
-    gap:
+    gap:7px;
+  }
+
+  .btn{
+    min-height:44px;
+
+    padding:
+      9px
       7px;
 
+    font-size:11px;
   }
 
+  section{
+    padding-left:14px;
+    padding-right:14px;
+  }
 
-  .btn {
+  .contract-row{
+    flex-direction:column;
+  }
 
-    min-height:
-      44px;
+  .copy{
+    width:100%;
+  }
 
+  .game-wrap{
     padding:
-      9px 7px;
-
-    font-size:
-      11px;
-
-  }
-
-
-  section {
-
-    padding-left:
-      14px;
-
-    padding-right:
-      14px;
-
-  }
-
-
-  .contract-row {
-
-    flex-direction:
-      column;
-
-  }
-
-
-  .copy {
-
-    width:
-      100%;
-
-  }
-
-
-  .game-wrap {
-
-    padding:
-
       40px
       0;
-
   }
 
-
-  .game-inner {
-
+  .game-inner{
     padding:
-
       0
       6px;
-
   }
 
-
-  .game-heading {
-
-    margin-bottom:
-      12px;
-
+  .game-heading{
+    margin-bottom:12px;
   }
 
-
-  .game-heading h2 {
-
+  .game-heading h2{
     font-size:
-
       clamp(
         32px,
         10vw,
         45px
       );
-
   }
 
-
-  .game-heading p {
-
+  .game-heading p{
     padding:
-
       0
       5px;
 
-    font-size:
-      11px;
-
+    font-size:11px;
   }
 
+  .game-shell{
+    max-width:390px;
 
-  .game-shell {
+    padding:5px;
 
-    max-width:
-      390px;
-
-    padding:
-      5px;
-
-    border-radius:
-      14px;
-
+    border-radius:14px;
   }
 
+  .game-logo{
+    width:100%;
 
-  .game-logo {
+    text-align:center;
 
-    width:
-      100%;
-
-    text-align:
-      center;
-
-    font-size:
-      11px;
-
+    font-size:11px;
   }
 
-
-  .hud-row {
-
-    width:
-      100%;
+  .hud-row{
+    width:100%;
 
     grid-template-columns:
-
       repeat(
         2,
         1fr
       );
 
-    gap:
-      4px;
-
+    gap:4px;
   }
 
-
-  .hud {
-
+  .hud{
     padding:
-      4px 3px;
-
+      4px
+      3px;
   }
 
-
-  .hud strong {
-
-    font-size:
-      9px;
-
+  .hud strong{
+    font-size:9px;
   }
 
-
-  .game-panel {
-
+  .game-panel{
     width:
-
       min(
         260px,
         86%
       );
 
     padding:
-      8px 9px;
-
-  }
-
-
-  .game-panel img {
-
-    width:
-      36px;
-
-    height:
-      36px;
-
-  }
-
-
-  .game-panel h3 {
-
-    font-size:
-      17px;
-
-  }
-
-
-  .game-panel p {
-
-    font-size:
+      8px
       9px;
-
   }
 
-
-  .game-meter {
-
-    grid-template-columns:
-      1fr;
-
+  .game-panel img{
+    width:36px;
+    height:36px;
   }
 
-
-  .next-level {
-
-    min-width:
-      0;
-
-    text-align:
-      center;
-
-    font-size:
-      8px;
-
+  .game-panel h3{
+    font-size:17px;
   }
 
-
-  .game-controls {
-
-    gap:
-      5px;
-
+  .game-panel p{
+    font-size:9px;
   }
 
+  .game-meter{
+    grid-template-columns:1fr;
+  }
+
+  .next-level{
+    min-width:0;
+
+    text-align:center;
+
+    font-size:8px;
+  }
+
+  .game-controls{
+    gap:5px;
+  }
 
   .jump-button,
-  .pause-button {
+  .pause-button{
+    min-height:42px;
 
-    min-height:
-      42px;
-
-    font-size:
-      10px;
-
+    font-size:10px;
   }
 
+  .game-disclaimer{
+    max-width:390px;
 
-  .game-disclaimer {
-
-    max-width:
-      390px;
-
-    font-size:
-      8px;
-
+    font-size:8px;
   }
 
 }
 
 
-@media(max-width:430px) {
+@media(max-width:430px){
 
-  .buttons {
-
-    grid-template-columns:
-      1fr;
-
+  .buttons{
+    grid-template-columns:1fr;
   }
 
-
-  .btn {
-
-    font-size:
-      12px;
-
+  .btn{
+    font-size:12px;
   }
 
-
-  .links {
-
-    grid-template-columns:
-      1fr;
-
+  .links{
+    grid-template-columns:1fr;
   }
 
+  .status{
+    left:8px;
+    right:8px;
+    bottom:8px;
 
-  .status {
-
-    left:
-      8px;
-
-    right:
-      8px;
-
-    bottom:
-      8px;
-
-    text-align:
-      center;
-
+    text-align:center;
   }
 
 }
@@ -2514,10 +1662,7 @@ footer {
 
   <nav class="nav">
 
-    <a
-      class="brand"
-      href="#"
-    >
+    <a class="brand" href="#">
 
       <img
         src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
@@ -2636,6 +1781,7 @@ footer {
 
       <a
         class="btn"
+        id="pumpButton"
         href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
         target="_blank"
         rel="noopener"
@@ -2646,6 +1792,7 @@ footer {
 
       <a
         class="btn"
+        id="twitterButton"
         href="https://x.com/doggit_sol"
         target="_blank"
         rel="noopener"
@@ -2656,6 +1803,7 @@ footer {
 
       <a
         class="btn"
+        id="solscanButton"
         href="https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
         target="_blank"
         rel="noopener"
@@ -3226,9 +2374,34 @@ footer {
 "use strict";
 
 
-/* =========================================================
+/* ======================================================
+   ANALYTICS HELPER
+====================================================== */
+
+function trackEvent(
+  eventName,
+  parameters = {}
+){
+
+  if(
+    typeof window.gtag ===
+    "function"
+  ){
+
+    window.gtag(
+      "event",
+      eventName,
+      parameters
+    );
+
+  }
+
+}
+
+
+/* ======================================================
    WEBSITE
-========================================================= */
+====================================================== */
 
 const CONTRACT =
   "D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump";
@@ -3244,7 +2417,7 @@ copyContract.addEventListener(
   "click",
   async () => {
 
-    try {
+    try{
 
       await navigator.clipboard.writeText(
         CONTRACT
@@ -3252,7 +2425,7 @@ copyContract.addEventListener(
 
     }
 
-    catch(error) {
+    catch(error){
 
       const area =
         document.createElement(
@@ -3294,6 +2467,11 @@ copyContract.addEventListener(
       "Copied ✓";
 
 
+    trackEvent(
+      "copy_contract"
+    );
+
+
     setTimeout(
       () => {
 
@@ -3308,9 +2486,61 @@ copyContract.addEventListener(
 );
 
 
-/* =========================================================
+/* ======================================================
+   BUTTON ANALYTICS
+====================================================== */
+
+document
+  .getElementById(
+    "pumpButton"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      trackEvent(
+        "pumpfun_click"
+      );
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "twitterButton"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      trackEvent(
+        "twitter_click"
+      );
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "solscanButton"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      trackEvent(
+        "solscan_click"
+      );
+
+    }
+  );
+
+
+/* ======================================================
    MOBILE MENU
-========================================================= */
+====================================================== */
 
 const menuButton =
   document.getElementById(
@@ -3371,15 +2601,15 @@ mobileMenu
   );
 
 
-/* =========================================================
+/* ======================================================
    STORAGE
-========================================================= */
+====================================================== */
 
 function readNumber(
   key
-) {
+){
 
-  try {
+  try{
 
     const value =
       Number(
@@ -3399,7 +2629,7 @@ function readNumber(
 
   }
 
-  catch(error) {
+  catch(error){
 
     return 0;
 
@@ -3411,9 +2641,9 @@ function readNumber(
 function saveNumber(
   key,
   value
-) {
+){
 
-  try {
+  try{
 
     localStorage.setItem(
       key,
@@ -3422,16 +2652,16 @@ function saveNumber(
 
   }
 
-  catch(error) {
+  catch(error){
 
   }
 
 }
 
 
-/* =========================================================
+/* ======================================================
    GAME REFERENCES
-========================================================= */
+====================================================== */
 
 const canvas =
   document.getElementById(
@@ -3511,9 +2741,9 @@ const pauseButton =
   );
 
 
-/* =========================================================
+/* ======================================================
    GAME CONFIG
-========================================================= */
+====================================================== */
 
 const W =
   960;
@@ -3527,17 +2757,9 @@ const GROUND =
   430;
 
 
-/*
-   Level increases every 15 seconds.
-*/
-
 const LEVEL_SECONDS =
   15;
 
-
-/*
-   Each level is faster than the previous level.
-*/
 
 const START_SPEED =
   320;
@@ -3551,17 +2773,13 @@ const MAX_SPEED =
   800;
 
 
-/*
-   Prevent impossible obstacle spam.
-*/
-
 const MIN_OBSTACLE_GAP =
   .78;
 
 
-/* =========================================================
-   DOGGIT IMAGE
-========================================================= */
+/* ======================================================
+   DOG IMAGE
+====================================================== */
 
 const dogImage =
   new Image();
@@ -3597,9 +2815,9 @@ dogImage.src =
   "doggit-runner.png";
 
 
-/* =========================================================
+/* ======================================================
    GAME STATE
-========================================================= */
+====================================================== */
 
 const game = {
 
@@ -3709,15 +2927,15 @@ const hearts =
   [];
 
 
-/* =========================================================
+/* ======================================================
    HELPERS
-========================================================= */
+====================================================== */
 
 function clamp(
   value,
   minimum,
   maximum
-) {
+){
 
   return Math.max(
     minimum,
@@ -3733,9 +2951,9 @@ function clamp(
 function random(
   minimum,
   maximum
-) {
+){
 
-  return (
+  return(
     minimum +
     Math.random() *
     (
@@ -3747,16 +2965,11 @@ function random(
 }
 
 
-/* =========================================================
+/* ======================================================
    HUD
-========================================================= */
+====================================================== */
 
-function updateHUD() {
-
-  /*
-     Unlimited coins.
-     No 30/30.
-  */
+function updateHUD(){
 
   coinsHUD.textContent =
     String(
@@ -3814,7 +3027,7 @@ function updateHUD() {
   if(
     remaining <=
     0
-  ) {
+  ){
 
     remaining =
       LEVEL_SECONDS;
@@ -3848,11 +3061,11 @@ function updateHUD() {
 }
 
 
-/* =========================================================
+/* ======================================================
    RESET
-========================================================= */
+====================================================== */
 
-function resetGame() {
+function resetGame(){
 
   game.state =
     "ready";
@@ -3960,11 +3173,11 @@ function resetGame() {
 }
 
 
-/* =========================================================
+/* ======================================================
    START SCREEN
-========================================================= */
+====================================================== */
 
-function showStartScreen() {
+function showStartScreen(){
 
   overlay.style.display =
     "flex";
@@ -4037,8 +3250,7 @@ function showStartScreen() {
 
     },
     {
-      passive:
-        false
+      passive:false
     }
   );
 
@@ -4059,16 +3271,16 @@ function showStartScreen() {
 }
 
 
-/* =========================================================
-   START GAME
-========================================================= */
+/* ======================================================
+   START
+====================================================== */
 
-function startGame() {
+function startGame(){
 
   if(
     game.state ===
     "gameover"
-  ) {
+  ){
 
     resetGame();
 
@@ -4087,16 +3299,21 @@ function startGame() {
     "none";
 
 
+  trackEvent(
+    "doggit_run_start"
+  );
+
+
   updateHUD();
 
 }
 
 
-/* =========================================================
+/* ======================================================
    PAUSE
-========================================================= */
+====================================================== */
 
-function showPause() {
+function showPause(){
 
   overlay.style.display =
     "flex";
@@ -4160,90 +3377,40 @@ function showPause() {
   `;
 
 
-  const resumeButton =
-    document.getElementById(
+  document
+    .getElementById(
       "resumeButton"
+    )
+    .addEventListener(
+      "click",
+      resumeGame
     );
 
 
-  const restartButton =
-    document.getElementById(
+  document
+    .getElementById(
       "restartButton"
+    )
+    .addEventListener(
+      "click",
+      () => {
+
+        resetGame();
+
+        startGame();
+
+      }
     );
-
-
-  resumeButton.addEventListener(
-    "pointerdown",
-    event => {
-
-      event.preventDefault();
-
-      event.stopPropagation();
-
-    },
-    {
-      passive:
-        false
-    }
-  );
-
-
-  restartButton.addEventListener(
-    "pointerdown",
-    event => {
-
-      event.preventDefault();
-
-      event.stopPropagation();
-
-    },
-    {
-      passive:
-        false
-    }
-  );
-
-
-  resumeButton.addEventListener(
-    "click",
-    event => {
-
-      event.preventDefault();
-
-      event.stopPropagation();
-
-      resumeGame();
-
-    }
-  );
-
-
-  restartButton.addEventListener(
-    "click",
-    event => {
-
-      event.preventDefault();
-
-      event.stopPropagation();
-
-
-      resetGame();
-
-
-      startGame();
-
-    }
-  );
 
 }
 
 
-function pauseGame() {
+function pauseGame(){
 
   if(
     game.state !==
     "running"
-  ) {
+  ){
 
     return;
 
@@ -4266,12 +3433,12 @@ function pauseGame() {
 }
 
 
-function resumeGame() {
+function resumeGame(){
 
   if(
     game.state !==
     "paused"
-  ) {
+  ){
 
     return;
 
@@ -4295,12 +3462,12 @@ function resumeGame() {
 }
 
 
-function togglePause() {
+function togglePause(){
 
   if(
     game.state ===
     "running"
-  ) {
+  ){
 
     pauseGame();
 
@@ -4309,7 +3476,7 @@ function togglePause() {
   else if(
     game.state ===
     "paused"
-  ) {
+  ){
 
     resumeGame();
 
@@ -4318,11 +3485,11 @@ function togglePause() {
 }
 
 
-/* =========================================================
+/* ======================================================
    GAME OVER
-========================================================= */
+====================================================== */
 
-function gameOver() {
+function gameOver(){
 
   game.state =
     "gameover";
@@ -4331,7 +3498,7 @@ function gameOver() {
   if(
     game.coins >
     game.bestCoins
-  ) {
+  ){
 
     game.bestCoins =
       game.coins;
@@ -4348,7 +3515,7 @@ function gameOver() {
   if(
     game.distance >
     game.bestDistance
-  ) {
+  ){
 
     game.bestDistance =
       Math.floor(
@@ -4362,6 +3529,23 @@ function gameOver() {
     );
 
   }
+
+
+  trackEvent(
+    "doggit_run_game_over",
+    {
+      coins:
+        game.coins,
+
+      distance:
+        Math.floor(
+          game.distance
+        ),
+
+      level:
+        game.level
+    }
+  );
 
 
   overlay.style.display =
@@ -4434,58 +3618,34 @@ function gameOver() {
   `;
 
 
-  const againButton =
-    document.getElementById(
+  document
+    .getElementById(
       "againButton"
+    )
+    .addEventListener(
+      "click",
+      () => {
+
+        resetGame();
+
+        startGame();
+
+      }
     );
-
-
-  againButton.addEventListener(
-    "pointerdown",
-    event => {
-
-      event.preventDefault();
-
-      event.stopPropagation();
-
-    },
-    {
-      passive:
-        false
-    }
-  );
-
-
-  againButton.addEventListener(
-    "click",
-    event => {
-
-      event.preventDefault();
-
-      event.stopPropagation();
-
-
-      resetGame();
-
-
-      startGame();
-
-    }
-  );
 
 }
 
 
-/* =========================================================
+/* ======================================================
    JUMP
-========================================================= */
+====================================================== */
 
-function jumpRequest() {
+function jumpRequest(){
 
   if(
     game.state ===
     "ready"
-  ) {
+  ){
 
     startGame();
 
@@ -4495,7 +3655,7 @@ function jumpRequest() {
   if(
     game.state !==
     "running"
-  ) {
+  ){
 
     return;
 
@@ -4512,7 +3672,7 @@ function jumpRequest() {
 }
 
 
-function jumpRelease() {
+function jumpRelease(){
 
   game.jumpHeld =
     false;
@@ -4521,7 +3681,7 @@ function jumpRelease() {
   if(
     player.velocityY <
     -420
-  ) {
+  ){
 
     player.velocityY =
       -420;
@@ -4531,7 +3691,7 @@ function jumpRelease() {
 }
 
 
-function performJump() {
+function performJump(){
 
   player.velocityY =
     -880;
@@ -4551,20 +3711,18 @@ function performJump() {
 }
 
 
-/* =========================================================
+/* ======================================================
    OBSTACLES
-========================================================= */
+====================================================== */
 
-function spawnObstacle() {
+function spawnObstacle(){
 
   const types = [
-
     "crate",
     "rock",
     "spikes",
     "barrier",
     "bush"
-
   ];
 
 
@@ -4588,7 +3746,7 @@ function spawnObstacle() {
   if(
     type ===
     "rock"
-  ) {
+  ){
 
     width =
       62;
@@ -4602,7 +3760,7 @@ function spawnObstacle() {
   if(
     type ===
     "spikes"
-  ) {
+  ){
 
     width =
       70;
@@ -4616,7 +3774,7 @@ function spawnObstacle() {
   if(
     type ===
     "barrier"
-  ) {
+  ){
 
     width =
       78;
@@ -4630,7 +3788,7 @@ function spawnObstacle() {
   if(
     type ===
     "bush"
-  ) {
+  ){
 
     width =
       64;
@@ -4658,8 +3816,7 @@ function spawnObstacle() {
 
       type,
 
-      hit:
-        false
+      hit:false
 
     }
   );
@@ -4667,11 +3824,11 @@ function spawnObstacle() {
 }
 
 
-/* =========================================================
+/* ======================================================
    COINS
-========================================================= */
+====================================================== */
 
-function spawnCoins() {
+function spawnCoins(){
 
   const amount =
     Math.random() <
@@ -4699,7 +3856,7 @@ function spawnCoins() {
       amount;
 
     index++
-  ) {
+  ){
 
     let y =
       GROUND -
@@ -4709,7 +3866,7 @@ function spawnCoins() {
     if(
       pattern <
       .45
-    ) {
+    ){
 
       const progress =
         index /
@@ -4736,7 +3893,7 @@ function spawnCoins() {
     else if(
       pattern <
       .72
-    ) {
+    ){
 
       y =
         GROUND -
@@ -4745,7 +3902,7 @@ function spawnCoins() {
     }
 
 
-    else {
+    else{
 
       y =
         GROUND -
@@ -4773,8 +3930,7 @@ function spawnCoins() {
           index *
           .7,
 
-        taken:
-          false
+        taken:false
 
       }
     );
@@ -4784,16 +3940,16 @@ function spawnCoins() {
 }
 
 
-/* =========================================================
-   HEART PICKUP
-========================================================= */
+/* ======================================================
+   HEART
+====================================================== */
 
-function spawnHeart() {
+function spawnHeart(){
 
   if(
     game.lives >=
     3
-  ) {
+  ){
 
     return;
 
@@ -4820,8 +3976,7 @@ function spawnHeart() {
       phase:
         0,
 
-      taken:
-        false
+      taken:false
 
     }
   );
@@ -4829,13 +3984,13 @@ function spawnHeart() {
 }
 
 
-/* =========================================================
+/* ======================================================
    COLLISION
-========================================================= */
+====================================================== */
 
-function playerCollisionBox() {
+function playerCollisionBox(){
 
-  return {
+  return{
 
     x:
       player.x +
@@ -4859,9 +4014,9 @@ function playerCollisionBox() {
 function rectanglesOverlap(
   first,
   second
-) {
+){
 
-  return (
+  return(
 
     first.x <
     second.x +
@@ -4893,7 +4048,7 @@ function rectanglesOverlap(
 function circleHitsBox(
   circle,
   box
-) {
+){
 
   const closestX =
     clamp(
@@ -4928,7 +4083,7 @@ function circleHitsBox(
     7;
 
 
-  return (
+  return(
 
     dx *
     dx
@@ -4948,27 +4103,23 @@ function circleHitsBox(
 }
 
 
-/* =========================================================
-   UPDATE GAME
-========================================================= */
+/* ======================================================
+   UPDATE
+====================================================== */
 
 function updateGame(
   deltaTime
-) {
+){
 
   if(
     game.state !==
     "running"
-  ) {
+  ){
 
     return;
 
   }
 
-
-  /* =======================================================
-     LEVEL / SPEED
-  ======================================================= */
 
   game.elapsed +=
     deltaTime;
@@ -4990,7 +4141,7 @@ function updateGame(
   if(
     game.level !==
     previousLevel
-  ) {
+  ){
 
     game.message =
       "LEVEL "
@@ -5003,44 +4154,41 @@ function updateGame(
     game.messageTimer =
       1.5;
 
+
+    trackEvent(
+      "doggit_run_level",
+      {
+        level:
+          game.level
+      }
+    );
+
   }
 
 
   game.speed =
     Math.min(
-
       MAX_SPEED,
-
       START_SPEED +
-
       (
         game.level -
         1
       )
-
       *
-
       SPEED_PER_LEVEL
-
     );
 
 
   game.distance +=
-
     game.speed *
     deltaTime *
     .052;
 
 
   game.world +=
-
     game.speed *
     deltaTime;
 
-
-  /* =======================================================
-     TIMERS
-  ======================================================= */
 
   game.invincible =
     Math.max(
@@ -5069,7 +4217,7 @@ function updateGame(
   if(
     game.messageTimer ===
     0
-  ) {
+  ){
 
     game.message =
       "";
@@ -5077,20 +4225,16 @@ function updateGame(
   }
 
 
-  /* =======================================================
-     JUMP PHYSICS
-  ======================================================= */
-
   if(
     player.grounded
-  ) {
+  ){
 
     game.coyote =
       .10;
 
   }
 
-  else {
+  else{
 
     game.coyote =
       Math.max(
@@ -5116,7 +4260,7 @@ function updateGame(
       game.coyote >
       0
     )
-  ) {
+  ){
 
     performJump();
 
@@ -5139,7 +4283,6 @@ function updateGame(
 
 
   player.velocityY +=
-
     gravity *
     deltaTime;
 
@@ -5152,7 +4295,6 @@ function updateGame(
 
 
   player.y +=
-
     player.velocityY *
     deltaTime;
 
@@ -5161,7 +4303,7 @@ function updateGame(
     player.y +
     player.height >=
     GROUND
-  ) {
+  ){
 
     player.y =
       GROUND -
@@ -5177,7 +4319,7 @@ function updateGame(
 
   }
 
-  else {
+  else{
 
     player.grounded =
       false;
@@ -5186,7 +4328,6 @@ function updateGame(
 
 
   player.phase +=
-
     deltaTime *
     (
       10 +
@@ -5195,9 +4336,7 @@ function updateGame(
     );
 
 
-  /* =======================================================
-     OBSTACLES
-  ======================================================= */
+  /* OBSTACLES */
 
   game.obstacleTimer -=
     deltaTime;
@@ -5206,27 +4345,21 @@ function updateGame(
   if(
     game.obstacleTimer <=
     0
-  ) {
+  ){
 
     spawnObstacle();
 
 
     const gap =
       Math.max(
-
         MIN_OBSTACLE_GAP,
-
         1.55 -
-
         (
           game.level -
           1
         )
-
         *
-
         .06
-
       );
 
 
@@ -5240,9 +4373,7 @@ function updateGame(
   }
 
 
-  /* =======================================================
-     UNLIMITED COINS
-  ======================================================= */
+  /* UNLIMITED COINS */
 
   game.coinTimer -=
     deltaTime;
@@ -5251,7 +4382,7 @@ function updateGame(
   if(
     game.coinTimer <=
     0
-  ) {
+  ){
 
     spawnCoins();
 
@@ -5265,9 +4396,7 @@ function updateGame(
   }
 
 
-  /* =======================================================
-     HEART PICKUP
-  ======================================================= */
+  /* HEART */
 
   game.heartTimer -=
     deltaTime;
@@ -5276,12 +4405,12 @@ function updateGame(
   if(
     game.heartTimer <=
     0
-  ) {
+  ){
 
     if(
       game.lives <
       3
-    ) {
+    ){
 
       spawnHeart();
 
@@ -5297,15 +4426,10 @@ function updateGame(
   }
 
 
-  /* =======================================================
-     MOVE ITEMS
-  ======================================================= */
-
   obstacles.forEach(
     obstacle => {
 
       obstacle.x -=
-
         game.speed *
         deltaTime;
 
@@ -5317,13 +4441,11 @@ function updateGame(
     coin => {
 
       coin.x -=
-
         game.speed *
         deltaTime;
 
 
       coin.phase +=
-
         deltaTime *
         6;
 
@@ -5335,23 +4457,17 @@ function updateGame(
     heart => {
 
       heart.x -=
-
         game.speed *
         deltaTime;
 
 
       heart.phase +=
-
         deltaTime *
         5;
 
     }
   );
 
-
-  /* =======================================================
-     COLLISIONS
-  ======================================================= */
 
   const box =
     playerCollisionBox();
@@ -5360,12 +4476,12 @@ function updateGame(
   if(
     game.invincible <=
     0
-  ) {
+  ){
 
     for(
       const obstacle
       of obstacles
-    ) {
+    ){
 
       if(
         !obstacle.hit
@@ -5376,7 +4492,7 @@ function updateGame(
           box,
           obstacle
         )
-      ) {
+      ){
 
         obstacle.hit =
           true;
@@ -5408,7 +4524,7 @@ function updateGame(
         if(
           game.lives <=
           0
-        ) {
+        ){
 
           gameOver();
 
@@ -5436,7 +4552,7 @@ function updateGame(
           coin,
           box
         )
-      ) {
+      ){
 
         coin.taken =
           true;
@@ -5470,7 +4586,7 @@ function updateGame(
           heart,
           box
         )
-      ) {
+      ){
 
         heart.taken =
           true;
@@ -5479,7 +4595,7 @@ function updateGame(
         if(
           game.lives <
           3
-        ) {
+        ){
 
           game.lives++;
 
@@ -5499,10 +4615,6 @@ function updateGame(
   );
 
 
-  /* =======================================================
-     CLEAN OLD ITEMS
-  ======================================================= */
-
   for(
     let index =
       obstacles.length -
@@ -5512,13 +4624,13 @@ function updateGame(
       0;
 
     index--
-  ) {
+  ){
 
     if(
       obstacles[index].x +
       obstacles[index].width <
       -70
-    ) {
+    ){
 
       obstacles.splice(
         index,
@@ -5539,7 +4651,7 @@ function updateGame(
       0;
 
     index--
-  ) {
+  ){
 
     if(
       coins[index].taken
@@ -5548,7 +4660,7 @@ function updateGame(
 
       coins[index].x <
       -50
-    ) {
+    ){
 
       coins.splice(
         index,
@@ -5569,7 +4681,7 @@ function updateGame(
       0;
 
     index--
-  ) {
+  ){
 
     if(
       hearts[index].taken
@@ -5578,7 +4690,7 @@ function updateGame(
 
       hearts[index].x <
       -50
-    ) {
+    ){
 
       hearts.splice(
         index,
@@ -5595,11 +4707,11 @@ function updateGame(
 }
 
 
-/* =========================================================
+/* ======================================================
    BACKGROUND
-========================================================= */
+====================================================== */
 
-function drawBackground() {
+function drawBackground(){
 
   const sky =
     ctx.createLinearGradient(
@@ -5640,8 +4752,6 @@ function drawBackground() {
   );
 
 
-  /* SUN */
-
   ctx.fillStyle =
     "rgba(255,245,190,.60)";
 
@@ -5662,8 +4772,6 @@ function drawBackground() {
   ctx.fill();
 
 
-  /* CITY */
-
   ctx.fillStyle =
     "rgba(70,130,160,.20)";
 
@@ -5676,7 +4784,7 @@ function drawBackground() {
       16;
 
     index++
-  ) {
+  ){
 
     let x =
       (
@@ -5700,7 +4808,7 @@ function drawBackground() {
     if(
       x <
       -100
-    ) {
+    ){
 
       x +=
         W +
@@ -5711,14 +4819,11 @@ function drawBackground() {
 
     const height =
       55 +
-
       (
         index *
         31
       )
-
       %
-
       110;
 
 
@@ -5734,8 +4839,6 @@ function drawBackground() {
   }
 
 
-  /* PALM TREES */
-
   for(
     let index =
       0;
@@ -5744,7 +4847,7 @@ function drawBackground() {
       8;
 
     index++
-  ) {
+  ){
 
     let x =
       (
@@ -5768,7 +4871,7 @@ function drawBackground() {
     if(
       x <
       -120
-    ) {
+    ){
 
       x +=
         W +
@@ -5820,7 +4923,7 @@ function drawBackground() {
         6;
 
       leaf++
-    ) {
+    ){
 
       const angle =
         leaf /
@@ -5862,8 +4965,6 @@ function drawBackground() {
 
   }
 
-
-  /* GROUND */
 
   ctx.fillStyle =
     "#62b82f";
@@ -5907,11 +5008,11 @@ function drawBackground() {
 }
 
 
-/* =========================================================
-   DOGGIT
-========================================================= */
+/* ======================================================
+   DOG
+====================================================== */
 
-function drawDog() {
+function drawDog(){
 
   const bounce =
     player.grounded
@@ -5963,12 +5064,10 @@ function drawDog() {
       game.invincible *
       14
     )
-
     %
-
     2 ===
     0
-  ) {
+  ){
 
     ctx.globalAlpha =
       .4;
@@ -5989,7 +5088,7 @@ function drawDog() {
 
   if(
     dogReady
-  ) {
+  ){
 
     ctx.drawImage(
       dogImage,
@@ -6001,7 +5100,7 @@ function drawDog() {
 
   }
 
-  else {
+  else{
 
     ctx.fillStyle =
       "#d69f48";
@@ -6030,18 +5129,18 @@ function drawDog() {
 }
 
 
-/* =========================================================
+/* ======================================================
    OBSTACLE DRAWING
-========================================================= */
+====================================================== */
 
 function drawObstacle(
   obstacle
-) {
+){
 
   if(
     obstacle.type ===
     "crate"
-  ) {
+  ){
 
     ctx.fillStyle =
       "#9c5b25";
@@ -6080,7 +5179,7 @@ function drawObstacle(
   else if(
     obstacle.type ===
     "rock"
-  ) {
+  ){
 
     ctx.fillStyle =
       "#5f6268";
@@ -6106,7 +5205,7 @@ function drawObstacle(
   else if(
     obstacle.type ===
     "spikes"
-  ) {
+  ){
 
     const part =
       obstacle.width /
@@ -6125,7 +5224,7 @@ function drawObstacle(
         3;
 
       index++
-    ) {
+    ){
 
       ctx.beginPath();
 
@@ -6175,7 +5274,7 @@ function drawObstacle(
   else if(
     obstacle.type ===
     "barrier"
-  ) {
+  ){
 
     ctx.fillStyle =
       "#eeeeee";
@@ -6213,7 +5312,7 @@ function drawObstacle(
   }
 
 
-  else {
+  else{
 
     ctx.fillStyle =
       "#30913e";
@@ -6265,23 +5364,20 @@ function drawObstacle(
 }
 
 
-/* =========================================================
-   COINS
-========================================================= */
+/* ======================================================
+   COIN
+====================================================== */
 
 function drawCoin(
   coin
-) {
+){
 
   const y =
     coin.y +
-
     Math.sin(
       coin.phase
     )
-
     *
-
     4;
 
 
@@ -6341,23 +5437,20 @@ function drawCoin(
 }
 
 
-/* =========================================================
+/* ======================================================
    HEART
-========================================================= */
+====================================================== */
 
 function drawHeart(
   heart
-) {
+){
 
   const y =
     heart.y +
-
     Math.sin(
       heart.phase
     )
-
     *
-
     5;
 
 
@@ -6382,11 +5475,11 @@ function drawHeart(
 }
 
 
-/* =========================================================
-   DRAW GAME
-========================================================= */
+/* ======================================================
+   DRAW
+====================================================== */
 
-function drawGame() {
+function drawGame(){
 
   drawBackground();
 
@@ -6401,7 +5494,7 @@ function drawGame() {
 
       if(
         !coin.taken
-      ) {
+      ){
 
         drawCoin(
           coin
@@ -6418,7 +5511,7 @@ function drawGame() {
 
       if(
         !heart.taken
-      ) {
+      ){
 
         drawHeart(
           heart
@@ -6435,7 +5528,7 @@ function drawGame() {
 
   if(
     game.message
-  ) {
+  ){
 
     ctx.fillStyle =
       game.message ===
@@ -6466,17 +5559,17 @@ function drawGame() {
 }
 
 
-/* =========================================================
-   MAIN LOOP
-========================================================= */
+/* ======================================================
+   LOOP
+====================================================== */
 
 function gameLoop(
   now
-) {
+){
 
   if(
     !game.lastTime
-  ) {
+  ){
 
     game.lastTime =
       now;
@@ -6486,9 +5579,7 @@ function gameLoop(
 
   const deltaTime =
     Math.min(
-
       .032,
-
       Math.max(
         0,
         (
@@ -6498,7 +5589,6 @@ function gameLoop(
         /
         1000
       )
-
     );
 
 
@@ -6521,9 +5611,9 @@ function gameLoop(
 }
 
 
-/* =========================================================
+/* ======================================================
    KEYBOARD
-========================================================= */
+====================================================== */
 
 document.addEventListener(
   "keydown",
@@ -6543,7 +5633,7 @@ document.addEventListener(
       &&
 
       !event.repeat
-    ) {
+    ){
 
       event.preventDefault();
 
@@ -6560,7 +5650,7 @@ document.addEventListener(
       &&
 
       !event.repeat
-    ) {
+    ){
 
       event.preventDefault();
 
@@ -6585,7 +5675,7 @@ document.addEventListener(
 
       event.code ===
       "ArrowUp"
-    ) {
+    ){
 
       jumpRelease();
 
@@ -6595,9 +5685,9 @@ document.addEventListener(
 );
 
 
-/* =========================================================
-   PHONE / TOUCH GAME SCREEN
-========================================================= */
+/* ======================================================
+   TOUCH GAME SCREEN
+====================================================== */
 
 gameFrame.addEventListener(
   "pointerdown",
@@ -6606,7 +5696,7 @@ gameFrame.addEventListener(
     if(
       overlay.style.display !==
       "none"
-    ) {
+    ){
 
       return;
 
@@ -6620,8 +5710,7 @@ gameFrame.addEventListener(
 
   },
   {
-    passive:
-      false
+    passive:false
   }
 );
 
@@ -6637,8 +5726,7 @@ gameFrame.addEventListener(
 
   },
   {
-    passive:
-      false
+    passive:false
   }
 );
 
@@ -6654,15 +5742,10 @@ gameFrame.addEventListener(
 
   },
   {
-    passive:
-      false
+    passive:false
   }
 );
 
-
-/*
-   Stops Safari long-press context menu.
-*/
 
 gameFrame.addEventListener(
   "contextmenu",
@@ -6674,10 +5757,6 @@ gameFrame.addEventListener(
 );
 
 
-/*
-   Prevent drag behavior.
-*/
-
 gameFrame.addEventListener(
   "dragstart",
   event => {
@@ -6688,9 +5767,9 @@ gameFrame.addEventListener(
 );
 
 
-/* =========================================================
+/* ======================================================
    JUMP BUTTON
-========================================================= */
+====================================================== */
 
 jumpButton.addEventListener(
   "pointerdown",
@@ -6698,16 +5777,13 @@ jumpButton.addEventListener(
 
     event.preventDefault();
 
-
     event.stopPropagation();
-
 
     jumpRequest();
 
   },
   {
-    passive:
-      false
+    passive:false
   }
 );
 
@@ -6718,16 +5794,13 @@ jumpButton.addEventListener(
 
     event.preventDefault();
 
-
     event.stopPropagation();
-
 
     jumpRelease();
 
   },
   {
-    passive:
-      false
+    passive:false
   }
 );
 
@@ -6738,23 +5811,20 @@ jumpButton.addEventListener(
 
     event.preventDefault();
 
-
     event.stopPropagation();
-
 
     jumpRelease();
 
   },
   {
-    passive:
-      false
+    passive:false
   }
 );
 
 
-/* =========================================================
-   PAUSE BUTTON
-========================================================= */
+/* ======================================================
+   PAUSE
+====================================================== */
 
 pauseButton.addEventListener(
   "pointerdown",
@@ -6762,13 +5832,11 @@ pauseButton.addEventListener(
 
     event.preventDefault();
 
-
     event.stopPropagation();
 
   },
   {
-    passive:
-      false
+    passive:false
   }
 );
 
@@ -6779,9 +5847,7 @@ pauseButton.addEventListener(
 
     event.preventDefault();
 
-
     event.stopPropagation();
-
 
     togglePause();
 
@@ -6789,9 +5855,9 @@ pauseButton.addEventListener(
 );
 
 
-/* =========================================================
-   AUTOMATIC PAUSE
-========================================================= */
+/* ======================================================
+   AUTO PAUSE
+====================================================== */
 
 document.addEventListener(
   "visibilitychange",
@@ -6804,7 +5870,7 @@ document.addEventListener(
 
       game.state ===
       "running"
-    ) {
+    ){
 
       pauseGame();
 
@@ -6814,18 +5880,15 @@ document.addEventListener(
 );
 
 
-/* =========================================================
+/* ======================================================
    INITIALIZE
-========================================================= */
+====================================================== */
 
 resetGame();
 
-
 showStartScreen();
 
-
 drawGame();
-
 
 requestAnimationFrame(
   gameLoop
@@ -6835,5 +5898,4 @@ requestAnimationFrame(
 
 
 </body>
-
 </html>
