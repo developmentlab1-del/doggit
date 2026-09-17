@@ -1,3690 +1,6468 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Search Console -->
-  <meta
-    name="google-site-verification"
-    content="YNKli4656eXJ00AM71RsOIJdz3jDl68CEezcMki2GV8"
-  >
-
-  <!-- Favicon -->
-  <link
-    rel="icon"
-    type="image/png"
-    href="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-  >
-
-  <!-- Canonical -->
-  <link
-    rel="canonical"
-    href="https://developmentlab1-del.github.io/doggit/"
-  >
-
-  <title>DOGGIT ($DOGGIT) | Official Solana Meme Coin</title>
-
-  <meta
-    name="description"
-    content="Official website of DOGGIT ($DOGGIT), a Solana meme coin. Verify the official mint, follow DOGGIT and play the free DOGGIT Run community game."
-  >
-
-  <meta
-    name="robots"
-    content="index, follow"
-  >
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="DOGGIT ($DOGGIT) — The Dog of Solana">
-
-  <meta
-    property="og:description"
-    content="Official DOGGIT website. Verify the mint, join the pack and play DOGGIT Run."
-  >
-
-  <meta
-    property="og:image"
-    content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-  >
-
-  <meta
-    property="og:url"
-    content="https://developmentlab1-del.github.io/doggit/"
-  >
-
-  <meta property="og:type" content="website">
-
-  <!-- X -->
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta
-    name="twitter:title"
-    content="DOGGIT ($DOGGIT) — The Dog of Solana"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Official DOGGIT website and DOGGIT Run community game."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-  >
-
-  <style>
-    :root {
-      --bg: #050505;
-      --surface: #0e0e0e;
-      --surface2: #151515;
-      --border: #292929;
-      --gold: #f5bd32;
-      --goldLight: #ffe38a;
-      --text: #ffffff;
-      --muted: #aaa;
-      --red: #ff554d;
-      --green: #4cf39b;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Inter, Arial, Helvetica, sans-serif;
-      color: var(--text);
-
-      background:
-        radial-gradient(
-          circle at 50% 0%,
-          rgba(245,189,50,.12),
-          transparent 30%
-        ),
-        var(--bg);
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* NAV */
-
-    .nav {
-      max-width: 1220px;
-      margin: auto;
-      min-height: 78px;
-      padding: 12px 24px;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-
-      font-size: 21px;
-      font-weight: 900;
-    }
-
-    .brand img {
-      width: 47px;
-      height: 47px;
-      object-fit: cover;
-
-      border-radius: 50%;
-      border: 2px solid var(--gold);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-
-      font-size: 14px;
-      color: #d0d0d0;
-    }
-
-    .nav-links a {
-      transition: .2s;
-    }
-
-    .nav-links a:hover {
-      color: var(--gold);
-    }
-
-    .nav-game {
-      color: var(--gold) !important;
-      font-weight: 900;
-    }
-
-    /* HERO */
-
-    .hero {
-      max-width: 1220px;
-      margin: auto;
-
-      padding: 75px 24px 100px;
-
-      display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 65px;
-
-      align-items: center;
-    }
-
-    .eyebrow {
-      color: var(--gold);
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 3px;
-
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      margin: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="YNKli4656eXJ00AM71RsOIJdz3jDl68CEezcMki2GV8">
+
+<link
+  rel="icon"
+  type="image/png"
+  href="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+>
+
+<link
+  rel="canonical"
+  href="https://developmentlab1-del.github.io/doggit/"
+>
+
+<title>DOGGIT ($DOGGIT) | Official Solana Meme Coin</title>
+
+<meta
+  name="description"
+  content="Official website of DOGGIT ($DOGGIT), a Solana meme coin. Verify the official mint, follow DOGGIT and play the free DOGGIT Run community game."
+>
+
+<meta name="robots" content="index,follow">
+
+<meta
+  property="og:title"
+  content="DOGGIT ($DOGGIT) — The Dog of Solana"
+>
+
+<meta
+  property="og:description"
+  content="Official DOGGIT website. Verify the mint, join the pack and play DOGGIT Run."
+>
+
+<meta
+  property="og:image"
+  content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+>
+
+<meta
+  property="og:url"
+  content="https://developmentlab1-del.github.io/doggit/"
+>
+
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+  name="twitter:title"
+  content="DOGGIT ($DOGGIT) — The Dog of Solana"
+>
+
+<meta
+  name="twitter:description"
+  content="Official DOGGIT website and DOGGIT Run community game."
+>
+
+<meta
+  name="twitter:image"
+  content="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+>
+
+<style>
+:root {
+  --bg: #050505;
+  --surface: #101010;
+  --border: #292929;
+  --gold: #f5bd32;
+  --gold2: #ffe38a;
+  --text: #fff;
+  --muted: #aaa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--text);
 
-      font-size: clamp(62px,9vw,112px);
-      line-height: .9;
-      letter-spacing: -5px;
-    }
+  background:
+    radial-gradient(
+      circle at 50% 0,
+      rgba(245,189,50,.12),
+      transparent 30%
+    ),
+    var(--bg);
+}
 
-    h1 span {
-      color: var(--gold);
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .tagline {
-      margin: 23px 0 13px;
+button {
+  font: inherit;
+}
 
-      font-size: clamp(24px,3vw,38px);
-      font-weight: 900;
-    }
 
-    .subtext {
-      max-width: 630px;
+/* =========================================================
+   NAV
+========================================================= */
 
-      font-size: 18px;
-      line-height: 1.7;
-      color: var(--muted);
-    }
+.nav {
+  max-width: 1220px;
+  margin: auto;
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+  min-height: 78px;
 
-      margin-top: 30px;
-    }
+  padding: 12px 24px;
 
-    .btn {
-      padding: 15px 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 
-      border-radius: 12px;
-      border: 1px solid var(--border);
+  font-size: 21px;
+  font-weight: 900;
+}
 
-      font-weight: 900;
+.brand img {
+  width: 47px;
+  height: 47px;
 
-      transition: .2s;
-    }
+  object-fit: cover;
 
-    .btn:hover {
-      transform: translateY(-3px);
-      border-color: var(--gold);
-    }
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+}
 
-    .primary {
-      background: var(--gold);
-      color: #060606;
-      border-color: var(--gold);
-    }
+.nav-links {
+  display: flex;
+  gap: 25px;
 
-    .secondary {
-      background: #141414;
-    }
+  font-size: 14px;
 
-    .play-btn {
-      color: #060606;
+  color: #d0d0d0;
+}
 
-      background:
-        linear-gradient(
-          135deg,
-          #f5bd32,
-          #ffe278
-        );
+.nav-links a:hover {
+  color: var(--gold);
+}
 
-      border-color: var(--gold);
+.nav-game {
+  color: var(--gold) !important;
+  font-weight: 900;
+}
 
-      box-shadow:
-        0 0 35px rgba(245,189,50,.17);
-    }
 
-    .hero-image {
-      position: relative;
-    }
+/* =========================================================
+   HERO
+========================================================= */
 
-    .hero-image img {
-      width: 100%;
-      display: block;
+.hero {
+  max-width: 1220px;
+  margin: auto;
 
-      border-radius: 28px;
-      border: 1px solid #303030;
+  padding: 75px 24px 100px;
 
-      box-shadow:
-        0 35px 100px rgba(0,0,0,.7);
-    }
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 65px;
 
-    .status {
-      position: absolute;
+  align-items: center;
+}
 
-      left: 18px;
-      bottom: 18px;
+.eyebrow {
+  color: var(--gold);
 
-      padding: 11px 14px;
+  font-size: 13px;
+  font-weight: 900;
 
-      background: rgba(0,0,0,.88);
+  letter-spacing: 3px;
 
-      border-radius: 11px;
-      border: 1px solid rgba(255,255,255,.14);
+  margin-bottom: 15px;
+}
 
-      backdrop-filter: blur(10px);
+h1 {
+  margin: 0;
 
-      font-size: 13px;
-      font-weight: 900;
-    }
+  font-size: clamp(62px,9vw,112px);
 
-    .status span {
-      color: var(--gold);
-    }
+  line-height: .9;
 
-    /* GENERAL */
+  letter-spacing: -5px;
+}
 
-    section {
-      max-width: 1220px;
-      margin: auto;
+h1 span {
+  color: var(--gold);
+}
 
-      padding: 70px 24px;
-    }
+.tagline {
+  margin: 23px 0 13px;
 
-    .section-title {
-      margin: 0 0 13px;
+  font-size: clamp(24px,3vw,38px);
+  font-weight: 900;
+}
 
-      font-size: clamp(34px,5vw,56px);
-    }
+.subtext {
+  max-width: 630px;
 
-    .section-subtitle {
-      max-width: 780px;
+  font-size: 18px;
+  line-height: 1.7;
 
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.7;
-    }
+  color: var(--muted);
+}
 
-    /* CONTRACT */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
 
-    .contract-card {
-      margin-top: 30px;
-      padding: 23px;
+  gap: 12px;
 
-      border-radius: 18px;
-      border: 1px solid var(--border);
+  margin-top: 30px;
+}
 
-      background:
-        linear-gradient(
-          135deg,
-          #151515,
-          #0b0b0b
-        );
-    }
+.btn {
+  padding: 15px 21px;
 
-    .contract-label {
-      margin-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-      color: var(--gold);
+  border-radius: 12px;
 
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
+  border: 1px solid var(--border);
 
-    .contract-row {
-      display: flex;
-      gap: 12px;
-    }
+  font-weight: 900;
 
-    .contract {
-      flex: 1;
+  transition: .2s;
+}
 
-      padding: 15px;
+.btn:hover {
+  transform: translateY(-3px);
 
-      background: #060606;
+  border-color: var(--gold);
+}
 
-      border: 1px solid #282828;
-      border-radius: 10px;
+.primary,
+.play-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #f5bd32,
+      #ffe278
+    );
 
-      font-family: monospace;
-      word-break: break-all;
-    }
+  color: #060606;
 
-    .copy {
-      padding: 15px 20px;
+  border-color: var(--gold);
+}
 
-      border: 0;
-      border-radius: 10px;
+.secondary {
+  background: #141414;
+}
 
-      cursor: pointer;
+.hero-image {
+  position: relative;
+}
 
-      background: var(--gold);
-      color: #060606;
+.hero-image img {
+  width: 100%;
 
-      font-weight: 900;
-    }
+  display: block;
 
-    /* ABOUT */
+  border-radius: 28px;
 
-    .grid {
-      margin-top: 30px;
+  border: 1px solid #303030;
 
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 17px;
-    }
+  box-shadow:
+    0 35px 100px rgba(0,0,0,.7);
+}
 
-    .card {
-      padding: 27px;
+.status {
+  position: absolute;
 
-      border: 1px solid var(--border);
-      border-radius: 18px;
+  left: 18px;
+  bottom: 18px;
 
-      background: #101010;
-    }
+  padding: 11px 14px;
 
-    .card-icon {
-      margin-bottom: 15px;
-      font-size: 31px;
-    }
+  background: rgba(0,0,0,.88);
 
-    .card h3 {
-      margin: 0 0 10px;
-    }
+  border-radius: 11px;
 
-    .card p {
-      margin: 0;
+  border: 1px solid rgba(255,255,255,.14);
 
-      color: var(--muted);
-      line-height: 1.65;
-    }
+  font-size: 13px;
+  font-weight: 900;
+}
 
-    /* GAME */
+.status span {
+  color: var(--gold);
+}
 
-    #game {
-      scroll-margin-top: 0;
-    }
 
-    .game-wrap {
-      max-width: none;
+/* =========================================================
+   GENERAL
+========================================================= */
 
-      padding: 90px 0;
+section {
+  max-width: 1220px;
 
-      border-top: 1px solid #1d1d1d;
-      border-bottom: 1px solid #1d1d1d;
+  margin: auto;
 
-      background:
-        radial-gradient(
-          circle at 50% 25%,
-          rgba(245,189,50,.14),
-          transparent 35%
-        ),
-        linear-gradient(
-          180deg,
-          #050505,
-          #100b04,
-          #050505
-        );
-    }
+  padding: 70px 24px;
+}
 
-    .game-inner {
-      max-width: 1220px;
-      margin: auto;
+.section-title {
+  margin: 0 0 13px;
 
-      padding: 0 24px;
-    }
+  font-size: clamp(34px,5vw,56px);
+}
 
-    .game-heading {
-      text-align: center;
+.section-subtitle {
+  max-width: 780px;
 
-      margin-bottom: 35px;
-    }
+  color: var(--muted);
 
-    .game-badge {
-      display: inline-block;
+  font-size: 17px;
+  line-height: 1.7;
+}
 
-      padding: 8px 14px;
 
-      border-radius: 999px;
-      border: 1px solid rgba(245,189,50,.4);
+/* =========================================================
+   CONTRACT
+========================================================= */
 
-      background: rgba(245,189,50,.08);
+.contract-card {
+  margin-top: 30px;
 
-      color: var(--gold);
+  padding: 23px;
 
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
+  border-radius: 18px;
 
-    .game-heading h2 {
-      margin: 15px 0 8px;
+  border: 1px solid var(--border);
 
-      font-size: clamp(48px,8vw,82px);
-    }
+  background:
+    linear-gradient(
+      135deg,
+      #151515,
+      #0b0b0b
+    );
+}
 
-    .game-heading h2 span {
-      color: var(--gold);
-    }
+.contract-label {
+  margin-bottom: 12px;
 
-    .game-heading p {
-      margin: 0 auto;
+  color: var(--gold);
 
-      max-width: 720px;
+  font-size: 12px;
+  font-weight: 900;
 
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.6;
-    }
+  letter-spacing: 2px;
+}
 
-    .game-frame {
-      position: relative;
+.contract-row {
+  display: flex;
+  gap: 12px;
+}
 
-      overflow: hidden;
+.contract {
+  flex: 1;
 
-      border-radius: 28px;
-      border: 1px solid #3a3a3a;
+  padding: 15px;
 
-      background: #050505;
+  background: #060606;
 
-      box-shadow:
-        0 40px 120px rgba(0,0,0,.8),
-        0 0 65px rgba(245,189,50,.07);
-    }
+  border: 1px solid #282828;
+  border-radius: 10px;
 
-    #doggitGame {
-      width: 100%;
-      display: block;
+  font-family: monospace;
 
-      background: #080808;
-    }
+  word-break: break-all;
+}
 
-    .game-hud {
-      position: absolute;
-      z-index: 5;
+.copy {
+  padding: 15px 20px;
 
-      top: 14px;
-      left: 14px;
-      right: 14px;
+  border: 0;
 
-      display: grid;
-      grid-template-columns: repeat(4,auto);
-      justify-content: space-between;
-      gap: 8px;
+  border-radius: 10px;
 
-      pointer-events: none;
-    }
+  cursor: pointer;
 
-    .hud {
-      padding: 9px 12px;
+  background: var(--gold);
 
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,.12);
+  color: #060606;
 
-      background: rgba(0,0,0,.77);
+  font-weight: 900;
+}
 
-      backdrop-filter: blur(10px);
 
-      font-size: 12px;
-      font-weight: 900;
-    }
+/* =========================================================
+   ABOUT
+========================================================= */
 
-    .gold {
-      color: var(--gold);
-    }
+.grid {
+  margin-top: 30px;
 
-    .game-only {
-      position: absolute;
-      z-index: 6;
+  display: grid;
 
-      top: 62px;
-      left: 50%;
+  grid-template-columns: repeat(3,1fr);
 
-      transform: translateX(-50%);
+  gap: 17px;
+}
 
-      padding: 7px 12px;
+.card {
+  padding: 27px;
 
-      white-space: nowrap;
+  border: 1px solid var(--border);
 
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
 
-      background: rgba(0,0,0,.72);
+  background: #101010;
+}
 
-      color: #cfcfcf;
+.card-icon {
+  margin-bottom: 15px;
 
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 1px;
+  font-size: 31px;
+}
 
-      pointer-events: none;
-    }
+.card h3 {
+  margin: 0 0 10px;
+}
 
-    .game-progress-shell {
-      position: absolute;
+.card p {
+  margin: 0;
 
-      z-index: 5;
+  color: var(--muted);
 
-      left: 16px;
-      right: 16px;
-      bottom: 16px;
+  line-height: 1.65;
+}
 
-      height: 9px;
 
-      overflow: hidden;
+/* =========================================================
+   GAME
+========================================================= */
 
-      background: rgba(255,255,255,.12);
+#game {
+  scroll-margin-top: 0;
+}
 
-      border-radius: 999px;
-    }
+.game-wrap {
+  max-width: none;
 
-    .game-progress {
-      width: 0%;
-      height: 100%;
+  padding: 90px 0;
 
-      background:
-        linear-gradient(
-          90deg,
-          #d89b0e,
-          #ffe98d
-        );
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
 
-      border-radius: inherit;
+  background:
+    radial-gradient(
+      circle at 50% 25%,
+      rgba(245,189,50,.14),
+      transparent 35%
+    ),
 
-      transition: width .2s;
-    }
+    linear-gradient(
+      180deg,
+      #050505,
+      #100b04,
+      #050505
+    );
+}
 
-    .game-overlay {
-      position: absolute;
-      z-index: 20;
+.game-inner {
+  max-width: 1220px;
 
-      inset: 0;
+  margin: auto;
 
-      padding: 24px;
+  padding: 0 24px;
+}
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+.game-heading {
+  text-align: center;
 
-      background: rgba(0,0,0,.75);
+  margin-bottom: 28px;
+}
 
-      backdrop-filter: blur(8px);
-    }
+.game-badge {
+  display: inline-block;
 
-    .game-panel {
-      width: min(620px,100%);
+  padding: 8px 14px;
 
-      padding: 32px;
+  border-radius: 999px;
 
-      text-align: center;
+  border:
+    1px solid rgba(245,189,50,.4);
 
-      border-radius: 26px;
-      border: 1px solid #353535;
+  background:
+    rgba(245,189,50,.08);
 
-      background:
-        linear-gradient(
-          145deg,
-          #181818,
-          #090909
-        );
+  color: var(--gold);
 
-      box-shadow:
-        0 35px 100px rgba(0,0,0,.75);
-    }
+  font-size: 11px;
+  font-weight: 900;
 
-    .game-panel img {
-      width: 96px;
-      height: 96px;
+  letter-spacing: 2px;
+}
 
-      object-fit: cover;
+.game-heading h2 {
+  margin: 15px 0 8px;
 
-      border-radius: 50%;
-      border: 3px solid var(--gold);
-    }
+  font-size: clamp(48px,8vw,82px);
+}
 
-    .game-panel h3 {
-      margin: 16px 0 10px;
+.game-heading h2 span {
+  color: var(--gold);
+}
 
-      font-size: clamp(30px,5vw,42px);
-    }
+.game-heading p {
+  margin: 0 auto;
 
-    .game-panel p {
-      color: #bdbdbd;
-      line-height: 1.6;
-    }
+  max-width: 760px;
 
-    .space {
-      display: inline-block;
+  color: var(--muted);
 
-      min-width: 160px;
+  font-size: 17px;
 
-      margin: 10px 0;
-      padding: 11px 24px;
+  line-height: 1.6;
+}
 
-      border-radius: 8px;
-      border: 1px solid #555;
 
-      background: #202020;
+/* NEW SMALL DOGGIT CHARACTER */
 
-      box-shadow:
-        inset 0 -4px 0 #080808;
+.game-character {
+  max-width: 900px;
 
-      color: var(--gold);
+  margin: 0 auto 20px;
 
-      font-weight: 900;
-      letter-spacing: 3px;
-    }
+  padding: 16px 18px;
 
-    .game-disclaimer {
-      margin-top: 18px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
 
-      padding: 15px 18px;
+  border:
+    1px solid #3a3220;
 
-      text-align: center;
+  border-radius: 18px;
 
-      border-radius: 13px;
-      border: 1px solid #39311d;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(245,189,50,.08),
+      rgba(255,255,255,.015)
+    );
+}
 
-      background: #131107;
+.game-character img {
+  width: 90px;
+  height: 90px;
 
-      color: #cfc7a7;
+  object-fit: contain;
 
-      font-size: 12px;
-      line-height: 1.7;
-    }
+  filter:
+    drop-shadow(
+      0 10px 18px rgba(0,0,0,.55)
+    );
+}
 
-    .game-disclaimer strong {
-      color: var(--goldLight);
-    }
+.game-character strong {
+  display: block;
 
-    /* VERIFY */
+  color: var(--gold2);
 
-    .verify-box {
-      margin-top: 28px;
-      padding: 24px;
+  font-size: 18px;
 
-      border-radius: 18px;
-      border: 1px solid #3a3320;
+  margin-bottom: 4px;
+}
 
-      background: rgba(245,189,50,.05);
-    }
+.game-character span {
+  color: #bdb7a7;
 
-    .verify-box strong {
-      color: var(--gold);
-    }
+  line-height: 1.55;
+}
 
-    .warning {
-      margin-top: 24px;
-      padding: 20px;
 
-      border-radius: 14px;
-      border: 1px solid #3b3320;
+/* GAME FRAME */
 
-      background: #15130c;
+.game-frame {
+  position: relative;
 
-      color: #d4cda9;
-      line-height: 1.6;
-    }
+  overflow: hidden;
 
-    /* LINKS */
+  border-radius: 28px;
 
-    .links {
-      margin-top: 30px;
+  border: 1px solid #3a3a3a;
 
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      gap: 15px;
-    }
+  background: #050505;
 
-    .link-card {
-      display: block;
+  box-shadow:
+    0 40px 120px rgba(0,0,0,.8),
+    0 0 65px rgba(245,189,50,.07);
 
-      padding: 24px;
+  touch-action: manipulation;
 
-      border-radius: 17px;
-      border: 1px solid var(--border);
+  user-select: none;
+}
 
-      background: #101010;
+#doggitGame {
+  width: 100%;
+  height: auto;
 
-      transition: .2s;
-    }
+  display: block;
 
-    .link-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--gold);
-    }
+  background: #080808;
+}
 
-    .link-card strong {
-      display: block;
 
-      margin-bottom: 7px;
+/* GAME HUD */
 
-      color: var(--gold);
-    }
+.game-hud {
+  position: absolute;
 
-    .link-card small {
-      color: var(--muted);
-    }
+  z-index: 5;
 
-    footer {
-      max-width: 1220px;
-      margin: auto;
+  top: 14px;
+  left: 14px;
+  right: 14px;
 
-      padding: 60px 24px 45px;
+  display: grid;
 
-      text-align: center;
+  grid-template-columns:
+    repeat(4,auto);
 
-      color: #777;
-      line-height: 1.8;
-    }
+  justify-content: space-between;
 
-    .pack {
-      color: var(--gold);
-      font-weight: 900;
-    }
+  gap: 8px;
 
-    @media(max-width:850px) {
-      .nav-links {
-        display: none;
-      }
+  pointer-events: none;
+}
 
-      .hero {
-        grid-template-columns: 1fr;
-      }
+.hud {
+  padding: 9px 12px;
 
-      .hero-image {
-        order: -1;
-      }
+  border-radius: 10px;
 
-      h1 {
-        letter-spacing: -3px;
-      }
+  border:
+    1px solid rgba(255,255,255,.12);
 
-      .grid,
-      .links {
-        grid-template-columns: 1fr;
-      }
+  background:
+    rgba(0,0,0,.77);
 
-      .contract-row {
-        flex-direction: column;
-      }
+  font-size: 12px;
 
-      .copy {
-        width: 100%;
-      }
+  font-weight: 900;
+}
 
-      .game-hud {
-        top: 6px;
-        left: 6px;
-        right: 6px;
+.gold {
+  color: var(--gold);
+}
 
-        grid-template-columns: repeat(2,auto);
-      }
+.game-only {
+  position: absolute;
 
-      .hud {
-        padding: 6px 8px;
-        font-size: 9px;
-      }
+  z-index: 6;
 
-      .game-only {
-        top: 59px;
+  top: 62px;
 
-        font-size: 8px;
-      }
-    }
-  </style>
+  left: 50%;
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"WebSite",
-    "name":"DOGGIT",
-    "alternateName":"$DOGGIT",
-    "url":"https://developmentlab1-del.github.io/doggit/",
-    "description":"Official DOGGIT website and free DOGGIT Run community game.",
-    "sameAs":[
-      "https://x.com/doggit_sol",
-      "https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump",
-      "https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
-    ]
+  transform:
+    translateX(-50%);
+
+  padding: 7px 12px;
+
+  white-space: nowrap;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(255,255,255,.12);
+
+  background:
+    rgba(0,0,0,.72);
+
+  color: #cfcfcf;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+
+  pointer-events: none;
+}
+
+
+/* PROGRESS */
+
+.game-progress-shell {
+  position: absolute;
+
+  z-index: 5;
+
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+
+  height: 9px;
+
+  overflow: hidden;
+
+  background:
+    rgba(255,255,255,.12);
+
+  border-radius: 999px;
+
+  pointer-events: none;
+}
+
+.game-progress {
+  width: 0;
+
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #d89b0e,
+      #ffe98d
+    );
+
+  border-radius: inherit;
+
+  transition:
+    width .18s;
+}
+
+
+/* GAME OVERLAY */
+
+.game-overlay {
+  position: absolute;
+
+  z-index: 20;
+
+  inset: 0;
+
+  padding: 24px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    rgba(0,0,0,.77);
+
+  backdrop-filter:
+    blur(8px);
+}
+
+.game-panel {
+  width: min(620px,100%);
+
+  padding: 28px;
+
+  text-align: center;
+
+  border-radius: 26px;
+
+  border: 1px solid #353535;
+
+  background:
+    linear-gradient(
+      145deg,
+      #181818,
+      #090909
+    );
+
+  box-shadow:
+    0 35px 100px rgba(0,0,0,.75);
+}
+
+.game-panel img {
+  width: 115px;
+  height: 115px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 14px 22px rgba(0,0,0,.55)
+    );
+}
+
+.game-panel h3 {
+  margin: 10px 0 8px;
+
+  font-size:
+    clamp(30px,5vw,42px);
+}
+
+.game-panel p {
+  color: #bdbdbd;
+
+  line-height: 1.6;
+}
+
+.game-start {
+  min-width: 190px;
+
+  padding: 13px 20px;
+
+  border:
+    1px solid var(--gold);
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5bd32,
+      #ffe278
+    );
+
+  color: #070707;
+
+  font-weight: 950;
+}
+
+.controls {
+  margin: 16px auto 0;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #aaa;
+
+  font-size: 12px;
+}
+
+.key {
+  padding: 5px 9px;
+
+  border:
+    1px solid #4a4a4a;
+
+  border-radius: 7px;
+
+  background: #191919;
+
+  color: var(--gold2);
+
+  font-weight: 900;
+}
+
+
+/* MOBILE BUTTONS */
+
+.mobile-controls {
+  margin-top: 12px;
+
+  display: none;
+
+  grid-template-columns:
+    1fr auto;
+
+  gap: 10px;
+}
+
+.mobile-controls button {
+  min-height: 48px;
+
+  border-radius: 13px;
+
+  font-weight: 950;
+
+  cursor: pointer;
+}
+
+.jump-btn {
+  border:
+    1px solid var(--gold);
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5bd32,
+      #ffe278
+    );
+
+  color: #070707;
+}
+
+.pause-btn {
+  min-width: 100px;
+
+  border:
+    1px solid #393939;
+
+  background: #121212;
+
+  color: #fff;
+}
+
+.game-disclaimer {
+  margin-top: 18px;
+
+  padding: 15px 18px;
+
+  text-align: center;
+
+  border-radius: 13px;
+
+  border:
+    1px solid #39311d;
+
+  background: #131107;
+
+  color: #cfc7a7;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+.game-disclaimer strong {
+  color: var(--gold2);
+}
+
+
+/* =========================================================
+   VERIFY
+========================================================= */
+
+.verify-box {
+  margin-top: 28px;
+
+  padding: 24px;
+
+  border-radius: 18px;
+
+  border:
+    1px solid #3a3320;
+
+  background:
+    rgba(245,189,50,.05);
+}
+
+.verify-box strong {
+  color: var(--gold);
+}
+
+.warning {
+  margin-top: 24px;
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  border:
+    1px solid #3b3320;
+
+  background: #15130c;
+
+  color: #d4cda9;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.links {
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap: 15px;
+}
+
+.link-card {
+  display: block;
+
+  padding: 24px;
+
+  border-radius: 17px;
+
+  border:
+    1px solid var(--border);
+
+  background: #101010;
+
+  transition: .2s;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+
+  border-color: var(--gold);
+}
+
+.link-card strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--gold);
+}
+
+.link-card small {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  max-width: 1220px;
+
+  margin: auto;
+
+  padding: 60px 24px 45px;
+
+  text-align: center;
+
+  color: #777;
+
+  line-height: 1.8;
+}
+
+.pack {
+  color: var(--gold);
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:850px) {
+
+  .nav-links {
+    display: none;
   }
-  </script>
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  h1 {
+    letter-spacing: -3px;
+  }
+
+  .grid,
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+  .contract-row {
+    flex-direction: column;
+  }
+
+  .copy {
+    width: 100%;
+  }
+
+  .game-hud {
+    top: 6px;
+    left: 6px;
+    right: 6px;
+
+    grid-template-columns:
+      repeat(2,auto);
+  }
+
+  .hud {
+    padding: 6px 8px;
+
+    font-size: 9px;
+  }
+
+  .game-only {
+    top: 59px;
+
+    font-size: 8px;
+  }
+
+  .mobile-controls {
+    display: grid;
+  }
+}
+
+@media(max-width:560px) {
+
+  .hero {
+    padding-top: 32px;
+  }
+
+  section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .game-inner {
+    padding: 0 12px;
+  }
+
+  .game-character {
+    padding: 13px;
+
+    align-items: flex-start;
+  }
+
+  .game-character img {
+    width: 66px;
+    height: 66px;
+  }
+
+  .game-overlay {
+    padding: 10px;
+  }
+
+  .game-panel {
+    padding: 16px 12px;
+  }
+
+  .game-panel img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .game-only {
+    max-width:
+      calc(100% - 16px);
+
+    white-space: normal;
+
+    text-align: center;
+  }
+
+  .game-progress-shell {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+  }
+}
+</style>
+
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"DOGGIT",
+  "alternateName":"$DOGGIT",
+  "url":"https://developmentlab1-del.github.io/doggit/",
+  "description":"Official DOGGIT website and free DOGGIT Run community game.",
+  "sameAs":[
+    "https://x.com/doggit_sol",
+    "https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump",
+    "https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+  ]
+}
+</script>
+
 </head>
+
 
 <body>
 
-  <!-- NAV -->
 
-  <nav class="nav">
-    <a href="#" class="brand">
-      <img
-        src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-        alt="DOGGIT logo"
-      >
-      DOGGIT
-    </a>
+<!-- =========================================================
+     NAV
+========================================================= -->
 
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a class="nav-game" href="#game">🎮 DOGGIT Run</a>
-      <a href="#contract">Contract</a>
-      <a href="#links">Official Links</a>
-    </div>
-  </nav>
+<nav class="nav">
 
-  <!-- HERO -->
-
-  <main class="hero">
-    <div>
-      <div class="eyebrow">
-        SOLANA MEME COIN 🐶
-      </div>
-
-      <h1>
-        $DOG<span>GIT</span>
-      </h1>
-
-      <div class="tagline">
-        The Dog of Solana.
-      </div>
-
-      <p class="subtext">
-        DOGGIT is a community-focused Solana meme coin built around
-        memes, creativity, good vibes and the DOGGIT pack.
-        Still early. Still building.
-      </p>
-
-      <div class="buttons">
-
-        <a
-          class="btn play-btn"
-          href="#game"
-        >
-          🎮 PLAY DOGGIT RUN
-        </a>
-
-        <a
-          class="btn primary"
-          href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
-          target="_blank"
-          rel="noopener"
-        >
-          View on Pump.fun
-        </a>
-
-        <a
-          class="btn secondary"
-          href="https://x.com/doggit_sol"
-          target="_blank"
-          rel="noopener"
-        >
-          Follow @doggit_sol
-        </a>
-
-        <a
-          class="btn secondary"
-          href="https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
-          target="_blank"
-          rel="noopener"
-        >
-          View on Solscan
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-image">
-
-      <img
-        src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-        alt="DOGGIT golden retriever mascot"
-      >
-
-      <div class="status">
-        Jupiter Verification:
-        <span>Pending</span>
-      </div>
-    </div>
-  </main>
-
-  <!-- CONTRACT -->
-
-  <section id="contract">
-    <h2 class="section-title">
-      Official Contract
-    </h2>
-
-    <p class="section-subtitle">
-      Always verify the complete Solana mint before trading DOGGIT.
-    </p>
-
-    <div class="contract-card">
-
-      <div class="contract-label">
-        OFFICIAL DOGGIT MINT
-      </div>
-
-      <div class="contract-row">
-
-        <div class="contract">
-          D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
-        </div>
-
-        <button
-          class="copy"
-          onclick="copyContract()"
-        >
-          Copy CA
-        </button>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-
-  <section id="about">
-
-    <h2 class="section-title">
-      Meet DOGGIT 🐾
-    </h2>
-
-    <p class="section-subtitle">
-      DOGGIT started with one dog and one holder.
-      Now we're building the pack from the ground up.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="card-icon">🐶</div>
-
-        <h3>Community Focused</h3>
-
-        <p>
-          Built publicly from day one with the DOGGIT community.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">⚡</div>
-
-        <h3>Built on Solana</h3>
-
-        <p>
-          Fast, low-cost and built inside the Solana ecosystem.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🎮</div>
-
-        <h3>More Than a Ticker</h3>
-
-        <p>
-          Play the free DOGGIT Run community game directly here.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- GAME -->
-
-  <section
-    id="game"
-    class="game-wrap"
+  <a
+    href="#"
+    class="brand"
   >
 
-    <div class="game-inner">
+    <img
+      src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+      alt="DOGGIT logo"
+    >
 
-      <div class="game-heading">
+    DOGGIT
 
-        <div class="game-badge">
-          OFFICIAL DOGGIT COMMUNITY GAME
-        </div>
+  </a>
 
-        <h2>
-          DOGGIT <span>RUN</span>
-        </h2>
 
-        <p>
-          Run with DOGGIT, jump over branded barriers and collect
-          30 DOGGIT <strong>game coins</strong> as the course becomes
-          faster and more challenging.
-        </p>
+  <div class="nav-links">
 
-      </div>
+    <a href="#about">
+      About
+    </a>
 
-      <div class="game-frame">
+    <a
+      class="nav-game"
+      href="#game"
+    >
+      🎮 DOGGIT Run
+    </a>
 
-        <canvas
-          id="doggitGame"
-          width="1280"
-          height="600"
-        ></canvas>
+    <a href="#contract">
+      Contract
+    </a>
 
-        <div class="game-hud">
+    <a href="#links">
+      Official Links
+    </a>
 
-          <div class="hud">
-            🪙 GAME COINS
-            <span
-              id="coinValue"
-              class="gold"
-            >0</span>/30
-          </div>
+  </div>
 
-          <div class="hud">
-            LEVEL
-            <span
-              id="levelValue"
-              class="gold"
-            >1</span>
-          </div>
+</nav>
 
-          <div class="hud">
-            DISTANCE
-            <span
-              id="distanceValue"
-              class="gold"
-            >0</span>m
-          </div>
 
-          <div class="hud">
-            ❤️
-            <span id="lifeValue">3</span>
-          </div>
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-        </div>
+<main class="hero">
 
-        <div class="game-only">
-          🎮 GAME ONLY • NOT REAL $DOGGIT • NO MONETARY VALUE
-        </div>
+  <div>
 
-        <div class="game-progress-shell">
-          <div
-            id="gameProgress"
-            class="game-progress"
-          ></div>
-        </div>
-
-        <div
-          id="gameOverlay"
-          class="game-overlay"
-        >
-
-          <div class="game-panel">
-
-            <img
-              src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-              alt="DOGGIT"
-            >
-
-            <h3>
-              DOGGIT RUN 🐶
-            </h3>
-
-            <p>
-              Help DOGGIT collect
-              <strong>30 game coins</strong>
-              while avoiding the DOGGIT barriers.
-            </p>
-
-            <p>
-              The speed and obstacle patterns increase as you progress.
-            </p>
-
-            <div class="space">
-              SPACE
-            </div>
-
-            <p>
-              Press SPACE to start.<br>
-              SPACE jumps • hold slightly longer for a higher jump.
-            </p>
-
-            <div class="game-disclaimer">
-              <strong>GAME NOTICE:</strong><br>
-              DOGGIT Run is an entertainment-only community game.
-              The coins collected inside this game are
-              <strong>virtual game points only</strong>.
-              They are NOT real $DOGGIT tokens, have no monetary value,
-              cannot be withdrawn, transferred or redeemed,
-              and playing the game does not award cryptocurrency.
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="game-disclaimer">
-        🎮 <strong>DOGGIT RUN DISCLAIMER:</strong>
-        All coins, scores, lives, levels and rewards displayed in this
-        game exist only inside the game for entertainment.
-        No real DOGGIT tokens or other cryptocurrency are awarded,
-        earned, transferred or redeemable by playing.
-        No wallet connection is required.
-      </div>
-
+    <div class="eyebrow">
+      SOLANA MEME COIN 🐶
     </div>
 
-  </section>
 
-  <!-- VERIFY -->
+    <h1>
+      $DOG<span>GIT</span>
+    </h1>
 
-  <section id="official">
 
-    <h2 class="section-title">
-      How to Find the Real DOGGIT
-    </h2>
+    <div class="tagline">
+      The Dog of Solana.
+    </div>
 
-    <p class="section-subtitle">
-      Copycat tokens may use the same DOGGIT name,
-      logo or ticker. Always verify the complete mint.
+
+    <p class="subtext">
+
+      DOGGIT is a community-focused Solana meme coin built around
+      memes, creativity, good vibes and the DOGGIT pack.
+
+      Still early. Still building.
+
     </p>
 
-    <div class="verify-box">
 
-      <strong>
-        Official DOGGIT Mint
-      </strong>
+    <div class="buttons">
 
-      <div
-        class="contract"
-        style="margin-top:14px;"
-      >
-        D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
-      </div>
-
-    </div>
-
-    <div class="warning">
-      ⚠️ Official ticker:
-      <strong>$DOGGIT</strong>.
-      Always verify the complete Solana mint before trading.
-    </div>
-
-  </section>
-
-  <!-- LINKS -->
-
-  <section id="links">
-
-    <h2 class="section-title">
-      Official DOGGIT Links
-    </h2>
-
-    <p class="section-subtitle">
-      Use only the official links below.
-    </p>
-
-    <div class="links">
 
       <a
-        class="link-card"
-        href="https://x.com/doggit_sol"
-        target="_blank"
-        rel="noopener"
+        class="btn play-btn"
+        href="#game"
       >
-        <strong>𝕏 / Twitter</strong>
-        <small>@doggit_sol</small>
+        🎮 PLAY DOGGIT RUN
       </a>
 
+
       <a
-        class="link-card"
+        class="btn primary"
         href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
         target="_blank"
         rel="noopener"
       >
-        <strong>Pump.fun</strong>
-        <small>Official DOGGIT token page</small>
+        View on Pump.fun
       </a>
 
+
       <a
-        class="link-card"
+        class="btn secondary"
+        href="https://x.com/doggit_sol"
+        target="_blank"
+        rel="noopener"
+      >
+        Follow @doggit_sol
+      </a>
+
+
+      <a
+        class="btn secondary"
         href="https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
         target="_blank"
         rel="noopener"
       >
-        <strong>Solscan</strong>
-        <small>Verify DOGGIT on-chain</small>
+        View on Solscan
       </a>
 
-      <a
-        class="link-card"
-        href="https://verified.jup.ag/"
-        target="_blank"
-        rel="noopener"
+
+    </div>
+
+  </div>
+
+
+  <div class="hero-image">
+
+    <img
+      src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
+      alt="DOGGIT golden retriever mascot"
+    >
+
+
+    <div class="status">
+
+      Jupiter Verification:
+
+      <span>
+        Pending
+      </span>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<!-- =========================================================
+     CONTRACT
+========================================================= -->
+
+<section id="contract">
+
+  <h2 class="section-title">
+    Official Contract
+  </h2>
+
+
+  <p class="section-subtitle">
+
+    Always verify the complete Solana mint before trading DOGGIT.
+
+  </p>
+
+
+  <div class="contract-card">
+
+
+    <div class="contract-label">
+      OFFICIAL DOGGIT MINT
+    </div>
+
+
+    <div class="contract-row">
+
+
+      <div class="contract">
+
+        D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
+
+      </div>
+
+
+      <button
+        class="copy"
+        id="copyCA"
+        type="button"
       >
-        <strong>Jupiter</strong>
-        <small>Verification currently pending</small>
-      </a>
+        Copy CA
+      </button>
+
 
     </div>
 
-    <div class="warning">
-      ⚠️ <strong>Risk notice:</strong>
-      DOGGIT is a meme token.
-      Crypto assets can be highly volatile.
-      Nothing on this website constitutes financial advice.
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about">
+
+  <h2 class="section-title">
+    Meet DOGGIT 🐾
+  </h2>
+
+
+  <p class="section-subtitle">
+
+    DOGGIT started with one dog and one holder.
+
+    Now we're building the pack from the ground up.
+
+  </p>
+
+
+  <div class="grid">
+
+
+    <div class="card">
+
+      <div class="card-icon">
+        🐶
+      </div>
+
+      <h3>
+        Community Focused
+      </h3>
+
+      <p>
+
+        Built publicly from day one with the DOGGIT community.
+
+      </p>
+
     </div>
 
-  </section>
 
-  <footer>
+    <div class="card">
 
-    <div class="pack">
-      GOOD DOGS. BIGGER MEMES. 🐶
+      <div class="card-icon">
+        ⚡
+      </div>
+
+      <h3>
+        Built on Solana
+      </h3>
+
+      <p>
+
+        Fast, low-cost and built inside the Solana ecosystem.
+
+      </p>
+
     </div>
 
-    <div>
-      $DOGGIT • Solana • @doggit_sol
+
+    <div class="card">
+
+      <div class="card-icon">
+        🎮
+      </div>
+
+      <h3>
+        More Than a Ticker
+      </h3>
+
+      <p>
+
+        Play the free DOGGIT Run community game directly here.
+
+      </p>
+
     </div>
 
-    <div>
-      Official Mint:
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     GAME
+========================================================= -->
+
+<section
+  id="game"
+  class="game-wrap"
+>
+
+  <div class="game-inner">
+
+
+    <div class="game-heading">
+
+
+      <div class="game-badge">
+
+        OFFICIAL DOGGIT COMMUNITY GAME
+
+      </div>
+
+
+      <h2>
+
+        DOGGIT <span>RUN</span>
+
+      </h2>
+
+
+      <p>
+
+        Run with the small 3D DOGGIT,
+        jump over obstacles and collect
+        30 DOGGIT <strong>game coins</strong>.
+
+        The game gets faster,
+        but every obstacle pattern stays possible to clear.
+
+      </p>
+
+
+    </div>
+
+
+    <!-- SMALL PROFESSIONAL GAME CHARACTER -->
+
+    <div class="game-character">
+
+
+      <img
+        src="doggit-runner.png"
+        alt="Small 3D DOGGIT game character"
+      >
+
+
+      <div>
+
+
+        <strong>
+          Small Dog. Big Moves. 🐾
+        </strong>
+
+
+        <span>
+
+          The runner is deliberately compact,
+          with a smaller collision box,
+          fair obstacle spacing
+          and smoother jumping.
+
+        </span>
+
+
+      </div>
+
+
+    </div>
+
+
+    <!-- GAME FRAME -->
+
+    <div
+      class="game-frame"
+      id="gameFrame"
+    >
+
+
+      <canvas
+        id="doggitGame"
+        width="1280"
+        height="600"
+        aria-label="DOGGIT Run game"
+      ></canvas>
+
+
+      <!-- HUD -->
+
+      <div class="game-hud">
+
+
+        <div class="hud">
+
+          🪙 GAME COINS
+
+          <span
+            id="coinValue"
+            class="gold"
+          >
+            0
+          </span>/30
+
+        </div>
+
+
+        <div class="hud">
+
+          LEVEL
+
+          <span
+            id="levelValue"
+            class="gold"
+          >
+            1
+          </span>
+
+        </div>
+
+
+        <div class="hud">
+
+          DISTANCE
+
+          <span
+            id="distanceValue"
+            class="gold"
+          >
+            0
+          </span>m
+
+        </div>
+
+
+        <div class="hud">
+
+          ❤️
+
+          <span id="lifeValue">
+            3
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="game-only">
+
+        🎮 GAME ONLY • NOT REAL $DOGGIT • NO MONETARY VALUE
+
+      </div>
+
+
+      <div class="game-progress-shell">
+
+        <div
+          id="gameProgress"
+          class="game-progress"
+        ></div>
+
+      </div>
+
+
+      <!-- START / END SCREEN -->
+
+      <div
+        id="gameOverlay"
+        class="game-overlay"
+      >
+
+        <div
+          class="game-panel"
+          id="gamePanel"
+        ></div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- MOBILE CONTROLS -->
+
+    <div class="mobile-controls">
+
+
+      <button
+        class="jump-btn"
+        id="mobileJump"
+        type="button"
+      >
+        🐾 JUMP
+      </button>
+
+
+      <button
+        class="pause-btn"
+        id="mobilePause"
+        type="button"
+      >
+        PAUSE
+      </button>
+
+
+    </div>
+
+
+    <div class="game-disclaimer">
+
+      🎮 <strong>DOGGIT RUN DISCLAIMER:</strong>
+
+      All coins, scores, lives, levels and rewards displayed in this
+      game exist only inside the game for entertainment.
+
+      No real DOGGIT tokens or other cryptocurrency are awarded,
+      earned, transferred or redeemable by playing.
+
+      No wallet connection is required.
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     VERIFY DOGGIT
+========================================================= -->
+
+<section id="official">
+
+
+  <h2 class="section-title">
+
+    How to Find the Real DOGGIT
+
+  </h2>
+
+
+  <p class="section-subtitle">
+
+    Copycat tokens may use the same DOGGIT name,
+    logo or ticker.
+
+    Always verify the complete mint.
+
+  </p>
+
+
+  <div class="verify-box">
+
+
+    <strong>
+
+      Official DOGGIT Mint
+
+    </strong>
+
+
+    <div
+      class="contract"
+      style="margin-top:14px"
+    >
+
       D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
+
     </div>
 
-    <div>
-      © 2026 DOGGIT.
-    </div>
 
-  </footer>
+  </div>
 
-  <script>
 
-    /* WEBSITE */
+  <div class="warning">
 
-    function copyContract() {
+    ⚠️ Official ticker:
 
-      const address =
-        "D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump";
+    <strong>
+      $DOGGIT
+    </strong>.
 
-      navigator.clipboard.writeText(address);
+    Always verify the complete Solana mint before trading.
 
-      const button =
-        document.querySelector(".copy");
+  </div>
 
-      button.textContent =
-        "Copied ✓";
 
-      setTimeout(() => {
-        button.textContent =
-          "Copy CA";
-      }, 1600);
+</section>
 
-    }
 
+<!-- =========================================================
+     OFFICIAL LINKS
+========================================================= -->
 
-    /* ==========================================================
-       DOGGIT RUN
-    ========================================================== */
+<section id="links">
 
-    const canvas =
-      document.getElementById("doggitGame");
 
-    const ctx =
-      canvas.getContext("2d");
+  <h2 class="section-title">
 
+    Official DOGGIT Links
 
-    const overlay =
-      document.getElementById("gameOverlay");
+  </h2>
 
 
-    const coinText =
-      document.getElementById("coinValue");
+  <p class="section-subtitle">
 
-    const levelText =
-      document.getElementById("levelValue");
+    Use only the official links below.
 
-    const distanceText =
-      document.getElementById("distanceValue");
+  </p>
 
-    const lifeText =
-      document.getElementById("lifeValue");
 
-    const progress =
-      document.getElementById("gameProgress");
+  <div class="links">
 
 
-    /* ASSETS */
+    <a
+      class="link-card"
+      href="https://x.com/doggit_sol"
+      target="_blank"
+      rel="noopener"
+    >
 
-    const dogImage =
-      new Image();
+      <strong>
+        𝕏 / Twitter
+      </strong>
 
-    dogImage.src =
-      "https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png";
+      <small>
+        @doggit_sol
+      </small>
 
+    </a>
 
-    const logoImage =
-      new Image();
 
-    logoImage.src =
-      "https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png";
+    <a
+      class="link-card"
+      href="https://pump.fun/coin/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+      target="_blank"
+      rel="noopener"
+    >
 
+      <strong>
+        Pump.fun
+      </strong>
 
-    /* GAME SETTINGS */
+      <small>
+        Official DOGGIT token page
+      </small>
 
-    const GOAL = 30;
+    </a>
 
-    const GROUND = 505;
 
+    <a
+      class="link-card"
+      href="https://solscan.io/token/D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump"
+      target="_blank"
+      rel="noopener"
+    >
 
-    let running = false;
+      <strong>
+        Solscan
+      </strong>
 
-    let started = false;
+      <small>
+        Verify DOGGIT on-chain
+      </small>
 
-    let frame = 0;
+    </a>
 
-    let distance = 0;
 
-    let gameCoins = 0;
+    <a
+      class="link-card"
+      href="https://verified.jup.ag/"
+      target="_blank"
+      rel="noopener"
+    >
 
-    let level = 1;
+      <strong>
+        Jupiter
+      </strong>
 
-    let lives = 3;
+      <small>
+        Verification currently pending
+      </small>
 
-    let speed = 7;
+    </a>
 
-    let shake = 0;
 
-    let invulnerable = 0;
+  </div>
 
-    let obstacleTimer = 110;
 
-    let coinTimer = 75;
+  <div class="warning">
 
-    let jumpBuffer = 0;
+    ⚠️ <strong>Risk notice:</strong>
 
-    let coyoteTime = 0;
+    DOGGIT is a meme token.
 
+    Crypto assets can be highly volatile.
 
-    const player = {
+    Nothing on this website constitutes financial advice.
 
-      x: 135,
+  </div>
 
-      y: GROUND - 125,
 
-      width: 155,
+</section>
 
-      height: 125,
 
-      velocityY: 0,
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
-      gravity: 1.10,
+<footer>
 
-      jumpPower: -24,
 
-      grounded: true,
+  <div class="pack">
 
-      runPhase: 0
+    GOOD DOGS. BIGGER MEMES. 🐶
 
-    };
+  </div>
 
 
-    let obstacles = [];
+  <div>
 
-    let coins = [];
+    $DOGGIT • Solana • @doggit_sol
 
-    let particles = [];
+  </div>
 
-    let clouds = [];
 
-    let buildings = [];
+  <div>
 
+    Official Mint:
 
-    /* BACKGROUND OBJECTS */
+    D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump
 
-    for (let i = 0; i < 11; i++) {
+  </div>
 
-      clouds.push({
 
-        x:
-          Math.random() *
-          canvas.width,
+  <div>
 
-        y:
-          80 +
-          Math.random() *
-          170,
+    © 2026 DOGGIT.
 
-        size:
-          45 +
-          Math.random() *
-          85,
+  </div>
 
-        speed:
-          .15 +
-          Math.random() *
-          .28
 
-      });
+</footer>
 
-    }
 
+<script>
+"use strict";
 
-    for (let i = 0; i < 18; i++) {
 
-      buildings.push({
+/* ==========================================================
+   WEBSITE
+========================================================== */
 
-        x:
-          i * 95,
+const CA =
+  "D2mnr9bqUdwbr9FnEJu8pistF4etaRYeArygfy8xpump";
 
-        width:
-          55 +
-          Math.random() *
-          45,
 
-        height:
-          80 +
-          Math.random() *
-          175
+const copyCA =
+  document.getElementById(
+    "copyCA"
+  );
 
-      });
 
-    }
+copyCA.addEventListener(
+  "click",
+  async () => {
 
+    try {
 
-    /* SMALL AUDIO FX */
-
-    let audioContext = null;
-
-
-    function tone(
-      frequency,
-      duration,
-      type = "sine",
-      volume = .025
-    ) {
-
-      try {
-
-        if (!audioContext) {
-          audioContext =
-            new (
-              window.AudioContext ||
-              window.webkitAudioContext
-            )();
-        }
-
-
-        const oscillator =
-          audioContext.createOscillator();
-
-        const gain =
-          audioContext.createGain();
-
-
-        oscillator.type =
-          type;
-
-        oscillator.frequency.value =
-          frequency;
-
-        gain.gain.value =
-          volume;
-
-
-        oscillator.connect(gain);
-
-        gain.connect(
-          audioContext.destination
-        );
-
-
-        oscillator.start();
-
-
-        gain.gain.exponentialRampToValueAtTime(
-          .0001,
-          audioContext.currentTime +
-          duration
-        );
-
-
-        oscillator.stop(
-          audioContext.currentTime +
-          duration
-        );
-
-      }
-
-      catch (e) {}
-
-    }
-
-
-    /* UI */
-
-    function updateUI() {
-
-      coinText.textContent =
-        gameCoins;
-
-      levelText.textContent =
-        level;
-
-      distanceText.textContent =
-        Math.floor(distance);
-
-      lifeText.textContent =
-        lives;
-
-
-      progress.style.width =
-        Math.min(
-          100,
-          gameCoins /
-          GOAL *
-          100
-        ) + "%";
-
-    }
-
-
-    /* RESET */
-
-    function resetGame() {
-
-      frame = 0;
-
-      distance = 0;
-
-      gameCoins = 0;
-
-      level = 1;
-
-      lives = 3;
-
-      speed = 7;
-
-      shake = 0;
-
-      invulnerable = 0;
-
-      obstacleTimer = 100;
-
-      coinTimer = 70;
-
-      jumpBuffer = 0;
-
-      coyoteTime = 0;
-
-
-      obstacles = [];
-
-      coins = [];
-
-      particles = [];
-
-
-      player.y =
-        GROUND -
-        player.height;
-
-      player.velocityY = 0;
-
-      player.grounded = true;
-
-      player.runPhase = 0;
-
-
-      updateUI();
-
-    }
-
-
-    function startGame() {
-
-      resetGame();
-
-      running = true;
-
-      started = true;
-
-      overlay.style.display =
-        "none";
-
-    }
-
-
-    /* PROFESSIONAL JUMP SYSTEM */
-
-    function requestJump() {
-
-      if (!running) {
-        return;
-      }
-
-
-      jumpBuffer = 8;
-
-    }
-
-
-    function performJump() {
-
-      player.velocityY =
-        player.jumpPower;
-
-      player.grounded =
-        false;
-
-      coyoteTime = 0;
-
-      jumpBuffer = 0;
-
-
-      tone(
-        340,
-        .07,
-        "square",
-        .02
+      await navigator.clipboard.writeText(
+        CA
       );
 
     }
 
+    catch (error) {
 
-    function spaceAction() {
-
-      if (
-        !started ||
-        !running
-      ) {
-
-        startGame();
-
-        return;
-
-      }
+      const textarea =
+        document.createElement(
+          "textarea"
+        );
 
 
-      requestJump();
+      textarea.value =
+        CA;
+
+
+      textarea.style.position =
+        "fixed";
+
+
+      textarea.style.opacity =
+        "0";
+
+
+      document.body.appendChild(
+        textarea
+      );
+
+
+      textarea.select();
+
+
+      document.execCommand(
+        "copy"
+      );
+
+
+      textarea.remove();
 
     }
 
 
-    /* OBSTACLES */
+    copyCA.textContent =
+      "Copied ✓";
 
-    function createObstacle(
-      type,
-      offset = 0
+
+    setTimeout(
+      () => {
+
+        copyCA.textContent =
+          "Copy CA";
+
+      },
+      1600
+    );
+
+  }
+);
+
+
+/* ==========================================================
+   DOGGIT RUN
+   STABLE PROFESSIONAL RUNNER
+========================================================== */
+
+
+const canvas =
+  document.getElementById(
+    "doggitGame"
+  );
+
+
+const ctx =
+  canvas.getContext(
+    "2d",
+    {
+      alpha: false
+    }
+  );
+
+
+const frame =
+  document.getElementById(
+    "gameFrame"
+  );
+
+
+const overlay =
+  document.getElementById(
+    "gameOverlay"
+  );
+
+
+const panel =
+  document.getElementById(
+    "gamePanel"
+  );
+
+
+const coinEl =
+  document.getElementById(
+    "coinValue"
+  );
+
+
+const levelEl =
+  document.getElementById(
+    "levelValue"
+  );
+
+
+const distanceEl =
+  document.getElementById(
+    "distanceValue"
+  );
+
+
+const lifeEl =
+  document.getElementById(
+    "lifeValue"
+  );
+
+
+const progress =
+  document.getElementById(
+    "gameProgress"
+  );
+
+
+const mobileJump =
+  document.getElementById(
+    "mobileJump"
+  );
+
+
+const mobilePause =
+  document.getElementById(
+    "mobilePause"
+  );
+
+
+const W = 1280;
+
+const H = 600;
+
+const GROUND = 500;
+
+const GOAL = 30;
+
+
+/* ==========================================================
+   DOG ASSET
+========================================================== */
+
+const dog =
+  new Image();
+
+
+let dogReady =
+  false;
+
+
+dog.onload =
+  () => {
+
+    dogReady =
+      true;
+
+  };
+
+
+dog.onerror =
+  () => {
+
+    dogReady =
+      false;
+
+  };
+
+
+dog.src =
+  "doggit-runner.png";
+
+
+/* ==========================================================
+   GAME STATE
+========================================================== */
+
+const game = {
+
+  state:
+    "ready",
+
+  last:
+    0,
+
+  time:
+    0,
+
+  distance:
+    0,
+
+  coins:
+    0,
+
+  lives:
+    3,
+
+  level:
+    1,
+
+  speed:
+    470,
+
+  shift:
+    0,
+
+  obsTimer:
+    1.5,
+
+  coinTimer:
+    .8,
+
+  inv:
+    0,
+
+  shake:
+    0,
+
+  jumpHeld:
+    false,
+
+  jumpBuffer:
+    0,
+
+  coyote:
+    0,
+
+  msg:
+    "",
+
+  msgTimer:
+    0
+
+};
+
+
+const player = {
+
+  x:
+    150,
+
+  y:
+    398,
+
+  w:
+    94,
+
+  h:
+    102,
+
+  vy:
+    0,
+
+  grounded:
+    true,
+
+  phase:
+    0
+
+};
+
+
+const obstacles = [];
+
+const coins = [];
+
+const particles = [];
+
+
+/* BACKGROUND */
+
+const skyline =
+  Array.from(
+    {
+      length: 18
+    },
+
+    (_, i) => ({
+
+      x:
+        i * 86,
+
+      w:
+        46 +
+        (
+          i * 17
+        ) % 44,
+
+      h:
+        70 +
+        (
+          i * 39
+        ) % 170
+
+    })
+  );
+
+
+const stars =
+  Array.from(
+    {
+      length: 34
+    },
+
+    (_, i) => ({
+
+      x:
+        (
+          i * 97 +
+          31
+        ) % W,
+
+      y:
+        38 +
+        (
+          i * 53
+        ) % 260,
+
+      s:
+        i % 5 === 0
+        ?
+        2
+        :
+        1,
+
+      a:
+        .18 +
+        (
+          (
+            i * 7
+          ) % 24
+        ) / 100
+
+    })
+  );
+
+
+/* ==========================================================
+   HELPERS
+========================================================== */
+
+function clamp(
+  value,
+  min,
+  max
+) {
+
+  return Math.max(
+    min,
+
+    Math.min(
+      max,
+      value
+    )
+  );
+
+}
+
+
+function random(
+  min,
+  max
+) {
+
+  return (
+    min +
+    Math.random() *
+    (
+      max -
+      min
+    )
+  );
+
+}
+
+
+function gameVisible() {
+
+  const bounds =
+    document
+    .getElementById(
+      "game"
+    )
+    .getBoundingClientRect();
+
+
+  return (
+
+    bounds.top <
+    window.innerHeight
+
+    &&
+
+    bounds.bottom >
+    0
+
+  );
+
+}
+
+
+/* ==========================================================
+   HUD
+========================================================== */
+
+function updateHUD() {
+
+  coinEl.textContent =
+    game.coins;
+
+
+  levelEl.textContent =
+    game.level;
+
+
+  distanceEl.textContent =
+    Math.floor(
+      game.distance
+    );
+
+
+  lifeEl.textContent =
+    game.lives;
+
+
+  progress.style.width =
+
+    clamp(
+      game.coins /
+      GOAL *
+      100,
+
+      0,
+      100
+    )
+
+    +
+
+    "%";
+
+
+  mobilePause.textContent =
+
+    game.state ===
+    "paused"
+
+    ?
+
+    "RESUME"
+
+    :
+
+    "PAUSE";
+
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+function resetGame() {
+
+  game.state =
+    "ready";
+
+
+  game.last =
+    0;
+
+
+  game.time =
+    0;
+
+
+  game.distance =
+    0;
+
+
+  game.coins =
+    0;
+
+
+  game.lives =
+    3;
+
+
+  game.level =
+    1;
+
+
+  game.speed =
+    470;
+
+
+  game.shift =
+    0;
+
+
+  game.obsTimer =
+    1.5;
+
+
+  game.coinTimer =
+    .8;
+
+
+  game.inv =
+    0;
+
+
+  game.shake =
+    0;
+
+
+  game.jumpHeld =
+    false;
+
+
+  game.jumpBuffer =
+    0;
+
+
+  game.coyote =
+    0;
+
+
+  game.msg =
+    "";
+
+
+  game.msgTimer =
+    0;
+
+
+  player.y =
+    GROUND -
+    player.h;
+
+
+  player.vy =
+    0;
+
+
+  player.grounded =
+    true;
+
+
+  player.phase =
+    0;
+
+
+  obstacles.length =
+    0;
+
+
+  coins.length =
+    0;
+
+
+  particles.length =
+    0;
+
+
+  updateHUD();
+
+}
+
+
+/* ==========================================================
+   START SCREEN
+========================================================== */
+
+function readyScreen() {
+
+  overlay.style.display =
+    "flex";
+
+
+  panel.innerHTML = `
+
+    <img
+      src="doggit-runner.png"
+      alt="DOGGIT 3D game character"
+    >
+
+    <h3>
+      DOGGIT RUN 🐶
+    </h3>
+
+    <p>
+
+      Collect
+      <strong>30 game coins</strong>,
+      avoid the obstacles
+      and keep all three lives.
+
+    </p>
+
+    <button
+      class="game-start"
+      id="startRun"
+      type="button"
+    >
+      START RUN
+    </button>
+
+    <div class="controls">
+
+      <span class="key">
+        SPACE
+      </span>
+
+      <span>
+        Jump
+      </span>
+
+      <span class="key">
+        HOLD
+      </span>
+
+      <span>
+        Higher jump
+      </span>
+
+      <span class="key">
+        P
+      </span>
+
+      <span>
+        Pause
+      </span>
+
+      <span class="key">
+        TAP
+      </span>
+
+      <span>
+        Mobile jump
+      </span>
+
+    </div>
+
+    <div class="game-disclaimer">
+
+      <strong>
+        GAME NOTICE:
+      </strong>
+
+      <br>
+
+      DOGGIT Run is entertainment only.
+
+      Game coins are virtual points,
+      NOT real $DOGGIT,
+      have no monetary value
+      and cannot be withdrawn,
+      transferred or redeemed.
+
+    </div>
+
+  `;
+
+
+  document
+  .getElementById(
+    "startRun"
+  )
+  .onclick =
+    startGame;
+
+}
+
+
+/* ==========================================================
+   END SCREEN
+========================================================== */
+
+function endScreen(
+  won
+) {
+
+  overlay.style.display =
+    "flex";
+
+
+  panel.innerHTML = `
+
+    <img
+      src="doggit-runner.png"
+      alt="DOGGIT 3D game character"
+    >
+
+    <h3>
+
+      ${
+        won
+        ?
+        "DOGGIT MADE IT! 🏆"
+        :
+        "THE PACK NEVER QUITS 🐶"
+      }
+
+    </h3>
+
+    <p
+      style="
+        color:#f5bd32;
+        font-size:20px;
+        font-weight:900;
+      "
+    >
+
+      ${
+        won
+        ?
+        "YOU CLEARED THE RUN."
+        :
+        "RUN ENDED."
+      }
+
+    </p>
+
+    <p>
+
+      <strong>
+        ${game.coins}/${GOAL}
+      </strong>
+
+      game coins
+
+      •
+
+      <strong>
+        ${Math.floor(game.distance)}m
+      </strong>
+
+    </p>
+
+    <button
+      class="game-start"
+      id="again"
+      type="button"
+    >
+      PLAY AGAIN
+    </button>
+
+    <div class="game-disclaimer">
+
+      <strong>
+        GAME COINS ONLY
+      </strong>
+
+      <br>
+
+      No real $DOGGIT
+      or cryptocurrency is awarded.
+
+    </div>
+
+  `;
+
+
+  document
+  .getElementById(
+    "again"
+  )
+  .onclick =
+    () => {
+
+      resetGame();
+
+      startGame();
+
+    };
+
+}
+
+
+/* ==========================================================
+   START / PAUSE
+========================================================== */
+
+function startGame() {
+
+  if (
+    game.state ===
+      "won"
+
+    ||
+
+    game.state ===
+      "gameover"
+  ) {
+
+    resetGame();
+
+  }
+
+
+  if (
+    game.state ===
+      "ready"
+
+    ||
+
+    game.state ===
+      "paused"
+  ) {
+
+    game.state =
+      "running";
+
+
+    game.last =
+      performance.now();
+
+
+    overlay.style.display =
+      "none";
+
+
+    game.msg =
+      "";
+
+
+    game.msgTimer =
+      0;
+
+
+    updateHUD();
+
+  }
+
+}
+
+
+function togglePause() {
+
+  if (
+    game.state ===
+    "running"
+  ) {
+
+    game.state =
+      "paused";
+
+
+    game.msg =
+      "PAUSED";
+
+
+    game.msgTimer =
+      Infinity;
+
+  }
+
+  else if (
+    game.state ===
+    "paused"
+  ) {
+
+    game.state =
+      "running";
+
+
+    game.last =
+      performance.now();
+
+
+    game.msg =
+      "";
+
+
+    game.msgTimer =
+      0;
+
+  }
+
+
+  updateHUD();
+
+}
+
+
+/* ==========================================================
+   PARTICLES
+========================================================== */
+
+function burst(
+  x,
+  y,
+  color,
+  amount,
+  power
+) {
+
+  for (
+    let i = 0;
+    i < amount;
+    i++
+  ) {
+
+    const angle =
+      random(
+        Math.PI,
+        Math.PI * 2
+      );
+
+
+    const force =
+      random(
+        power * .35,
+        power
+      );
+
+
+    particles.push({
+
+      x,
+
+      y,
+
+      vx:
+        Math.cos(angle) *
+        force,
+
+      vy:
+        Math.sin(angle) *
+        force,
+
+      r:
+        random(
+          2,
+          5
+        ),
+
+      life:
+        random(
+          .25,
+          .55
+        ),
+
+      max:
+        .55,
+
+      color
+
+    });
+
+  }
+
+}
+
+
+/* ==========================================================
+   JUMP
+========================================================== */
+
+function requestJump() {
+
+  if (
+    game.state ===
+    "ready"
+  ) {
+
+    startGame();
+
+  }
+
+
+  if (
+    game.state !==
+    "running"
+  ) {
+
+    return;
+
+  }
+
+
+  game.jumpHeld =
+    true;
+
+
+  game.jumpBuffer =
+    .12;
+
+}
+
+
+function releaseJump() {
+
+  game.jumpHeld =
+    false;
+
+
+  if (
+    player.vy <
+    -430
+  ) {
+
+    player.vy =
+      -430;
+
+  }
+
+}
+
+
+function performJump() {
+
+  player.vy =
+    -1000;
+
+
+  player.grounded =
+    false;
+
+
+  game.coyote =
+    0;
+
+
+  game.jumpBuffer =
+    0;
+
+
+  burst(
+
+    player.x + 38,
+
+    GROUND - 3,
+
+    "#e8c975",
+
+    7,
+
+    125
+
+  );
+
+}
+
+
+/* ==========================================================
+   OBSTACLES
+========================================================== */
+
+function spawnObstacle() {
+
+  const roll =
+    Math.random();
+
+
+  let type =
+    "crate";
+
+
+  let width =
+    60;
+
+
+  let height =
+    66;
+
+
+  if (
+    roll <
+    .25
+  ) {
+
+    type =
+      "rock";
+
+
+    width =
+      72;
+
+
+    height =
+      46;
+
+  }
+
+  else if (
+    roll <
+    .50
+  ) {
+
+    type =
+      "crate";
+
+  }
+
+  else if (
+    roll <
+    .72
+  ) {
+
+    type =
+      "spikes";
+
+
+    width =
+      86;
+
+
+    height =
+      36;
+
+  }
+
+  else if (
+    roll <
+    .90
+  ) {
+
+    type =
+      "barrier";
+
+
+    width =
+      96;
+
+
+    height =
+      58;
+
+  }
+
+  else {
+
+    type =
+      "tall";
+
+
+    width =
+      58;
+
+
+    height =
+      82;
+
+  }
+
+
+  obstacles.push({
+
+    type,
+
+    x:
+      W +
+      50,
+
+    y:
+      GROUND -
+      height,
+
+    w:
+      width,
+
+    h:
+      height,
+
+    hit:
+      false
+
+  });
+
+
+  /*
+   * Higher levels can occasionally
+   * spawn a second obstacle.
+   *
+   * The gap is deliberately large
+   * so it remains possible to clear.
+   */
+
+  if (
+    game.level >=
+      4
+
+    &&
+
+    Math.random() <
+      .16
+  ) {
+
+    const secondHeight =
+
+      Math.random() <
+      .5
+
+      ?
+
+      46
+
+      :
+
+      64;
+
+
+    const safeGap =
+
+      330 +
+
+      game.speed *
+      .08;
+
+
+    obstacles.push({
+
+      type:
+
+        Math.random() <
+        .5
+
+        ?
+
+        "rock"
+
+        :
+
+        "crate",
+
+      x:
+
+        W +
+        50 +
+        safeGap,
+
+      y:
+
+        GROUND -
+        secondHeight,
+
+      w:
+        62,
+
+      h:
+        secondHeight,
+
+      hit:
+        false
+
+    });
+
+  }
+
+}
+
+
+/* ==========================================================
+   COINS
+========================================================== */
+
+function spawnCoins() {
+
+  if (
+    game.coins >=
+    GOAL
+  ) {
+
+    return;
+
+  }
+
+
+  const startX =
+    W +
+    60;
+
+
+  const remaining =
+    GOAL -
+    game.coins;
+
+
+  const amount =
+
+    Math.min(
+
+      remaining,
+
+      Math.random() <
+      .55
+
+      ?
+
+      3
+
+      :
+
+      4
+
+    );
+
+
+  const pattern =
+    Math.random();
+
+
+  for (
+    let i = 0;
+    i < amount;
+    i++
+  ) {
+
+    let y =
+      GROUND -
+      105;
+
+
+    if (
+      pattern <
+      .45
     ) {
 
-      let width = 70;
-      let height = 72;
+      y =
 
+        GROUND -
+        102 -
 
-      if (type === "wide") {
-        width = 112;
-        height = 64;
-      }
+        Math.sin(
 
-
-      if (type === "tall") {
-        width = 64;
-        height = 110;
-      }
-
-
-      if (type === "tower") {
-        width = 78;
-        height = 135;
-      }
-
-
-      obstacles.push({
-
-        x:
-          canvas.width +
-          60 +
-          offset,
-
-        y:
-          GROUND -
-          height,
-
-        width,
-        height,
-        type
-
-      });
-
-    }
-
-
-    function spawnPattern() {
-
-      const r =
-        Math.random();
-
-
-      if (level === 1) {
-
-        createObstacle(
-          r < .65 ?
-          "normal" :
-          "wide"
-        );
-
-      }
-
-      else if (level === 2) {
-
-        if (r < .7) {
-
-          createObstacle(
-            r < .35 ?
-            "tall" :
-            "normal"
-          );
-
-        }
-
-        else {
-
-          createObstacle(
-            "normal"
-          );
-
-          createObstacle(
-            "normal",
-            210
-          );
-
-        }
-
-      }
-
-      else if (level === 3) {
-
-        if (r < .5) {
-
-          createObstacle(
-            "tall"
-          );
-
-        }
-
-        else {
-
-          createObstacle(
-            "normal"
-          );
-
-          createObstacle(
-            "wide",
-            220
-          );
-
-        }
-
-      }
-
-      else if (level === 4) {
-
-        if (r < .48) {
-
-          createObstacle(
-            "tower"
-          );
-
-        }
-
-        else {
-
-          createObstacle(
-            "wide"
-          );
-
-          createObstacle(
-            "tall",
-            230
-          );
-
-        }
-
-      }
-
-      else {
-
-        if (r < .34) {
-
-          createObstacle(
-            "tower"
-          );
-
-        }
-
-        else if (r < .68) {
-
-          createObstacle(
-            "normal"
-          );
-
-          createObstacle(
-            "tall",
-            205
-          );
-
-        }
-
-        else {
-
-          createObstacle(
-            "normal"
-          );
-
-          createObstacle(
-            "wide",
-            210
-          );
-
-          createObstacle(
-            "normal",
-            420
-          );
-
-        }
-
-      }
-
-    }
-
-
-    /* COIN ARCS */
-
-    function spawnCoinArc() {
-
-      const amount =
-        4 +
-        Math.floor(
-          Math.random() * 2
-        );
-
-
-      const baseX =
-        canvas.width +
-        120;
-
-
-      for (
-        let i = 0;
-        i < amount;
-        i++
-      ) {
-
-        const t =
           i /
           Math.max(
             1,
             amount - 1
-          );
+          )
 
+          *
 
-        const arc =
-          Math.sin(
-            t *
-            Math.PI
-          );
+          Math.PI
 
-
-        coins.push({
-
-          x:
-            baseX +
-            i * 58,
-
-          y:
-            GROUND -
-            100 -
-            arc * 145,
-
-          radius: 18,
-
-          rotation:
-            Math.random() * 5
-
-        });
-
-      }
-
-    }
-
-
-    /* COLLISION */
-
-    function hitTest(
-      a,
-      b
-    ) {
-
-      const mx = 25;
-      const my = 17;
-
-
-      return (
-
-        a.x + mx <
-        b.x + b.width
-
-        &&
-
-        a.x +
-        a.width -
-        mx >
-        b.x
-
-        &&
-
-        a.y + my <
-        b.y + b.height
-
-        &&
-
-        a.y +
-        a.height -
-        my >
-        b.y
-
-      );
-
-    }
-
-
-    /* PARTICLES */
-
-    function burst(
-      x,
-      y,
-      color,
-      amount = 15
-    ) {
-
-      for (
-        let i = 0;
-        i < amount;
-        i++
-      ) {
-
-        particles.push({
-
-          x,
-          y,
-
-          dx:
-            (Math.random() - .5) *
-            8,
-
-          dy:
-            (Math.random() - .5) *
-            8,
-
-          life: 32,
-
-          color
-
-        });
-
-      }
-
-    }
-
-
-    /* DIFFICULTY */
-
-    function updateDifficulty() {
-
-      level =
-        Math.min(
-          6,
-          Math.floor(
-            gameCoins / 5
-          ) + 1
-        );
-
-
-      speed =
-        Math.min(
-          15,
-          7 +
-          (level - 1) *
-          1.25
-        );
-
-    }
-
-
-    /* END SCREENS */
-
-    function showWin() {
-
-      running = false;
-
-
-      tone(
-        650,
-        .15,
-        "sine",
-        .04
-      );
-
-
-      setTimeout(() => {
-
-        tone(
-          900,
-          .22,
-          "sine",
-          .04
-        );
-
-      }, 130);
-
-
-      overlay.innerHTML = `
-
-        <div class="game-panel">
-
-          <img
-            src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-            alt="DOGGIT"
-          >
-
-          <h3>
-            DOGGIT 🏆
-          </h3>
-
-          <p
-            style="
-              color:#f5bd32;
-              font-size:22px;
-              font-weight:900;
-            "
-          >
-            YOU MASTERED THE RUN.
-          </p>
-
-          <p
-            style="
-              color:white;
-              font-size:18px;
-              font-weight:900;
-            "
-          >
-            WELCOME TO THE DOGGIT PACK. 🐾
-          </p>
-
-          <p>
-            ${gameCoins} game coins collected
-            • ${Math.floor(distance)}m survived
-          </p>
-
-          <div class="game-disclaimer">
-
-            <strong>GAME COINS ONLY</strong><br>
-
-            These are virtual game points.
-            No real $DOGGIT tokens or cryptocurrency
-            have been awarded.
-
-            Game coins have no monetary value,
-            cannot be transferred and cannot be redeemed.
-
-          </div>
-
-          <div class="space">
-            SPACE
-          </div>
-
-          <p>
-            Press SPACE to play again.
-          </p>
-
-        </div>
-
-      `;
-
-
-      overlay.style.display =
-        "flex";
-
-    }
-
-
-    function gameOver() {
-
-      running = false;
-
-
-      overlay.innerHTML = `
-
-        <div class="game-panel">
-
-          <img
-            src="https://i.ibb.co/PZvHKMbs/Codex-Image-Sep-15-2026-09-35-34-AM.png"
-            alt="DOGGIT"
-          >
-
-          <h3>
-            THE PACK NEVER QUITS 🐶
-          </h3>
-
-          <p>
-            You collected
-            <strong>${gameCoins} DOGGIT game coins</strong>.
-          </p>
-
-          <p>
-            Distance:
-            <strong>${Math.floor(distance)}m</strong>
-          </p>
-
-          <div class="game-disclaimer">
-
-            <strong>GAME NOTICE:</strong><br>
-
-            DOGGIT game coins are virtual points
-            used only inside DOGGIT Run.
-
-            They are NOT real $DOGGIT tokens,
-            have no monetary value and cannot
-            be withdrawn, transferred or redeemed.
-
-            Playing does not award cryptocurrency.
-
-          </div>
-
-          <div class="space">
-            SPACE
-          </div>
-
-          <p>
-            Press SPACE to try again.
-          </p>
-
-        </div>
-
-      `;
-
-
-      overlay.style.display =
-        "flex";
-
-    }
-
-
-    /* UPDATE */
-
-    function updateGame() {
-
-      if (!running) {
-        return;
-      }
-
-
-      frame++;
-
-
-      distance +=
-        speed * .018;
-
-
-      if (invulnerable > 0) {
-        invulnerable--;
-      }
-
-
-      /* Jump Buffer */
-
-      if (jumpBuffer > 0) {
-        jumpBuffer--;
-      }
-
-
-      if (player.grounded) {
-        coyoteTime = 7;
-      }
-
-      else if (coyoteTime > 0) {
-        coyoteTime--;
-      }
-
-
-      if (
-        jumpBuffer > 0 &&
-        (
-          player.grounded ||
-          coyoteTime > 0
         )
-      ) {
 
-        performJump();
+        *
 
-      }
-
-
-      /* Physics */
-
-      player.velocityY +=
-        player.gravity;
-
-
-      player.velocityY =
-        Math.min(
-          player.velocityY,
-          28
-        );
-
-
-      player.y +=
-        player.velocityY;
-
-
-      if (
-        player.y +
-        player.height >=
-        GROUND
-      ) {
-
-        player.y =
-          GROUND -
-          player.height;
-
-        player.velocityY =
-          0;
-
-        player.grounded =
-          true;
-
-      }
-
-      else {
-
-        player.grounded =
-          false;
-
-      }
-
-
-      player.runPhase +=
-        .22 *
-        speed /
-        7;
-
-
-      /* Spawn */
-
-      obstacleTimer--;
-
-
-      if (obstacleTimer <= 0) {
-
-        spawnPattern();
-
-
-        obstacleTimer =
-
-          Math.max(
-            72,
-            132 -
-            level * 8
-          )
-
-          +
-
-          Math.floor(
-            Math.random() * 24
-          );
-
-      }
-
-
-      coinTimer--;
-
-
-      if (coinTimer <= 0) {
-
-        spawnCoinArc();
-
-
-        coinTimer =
-
-          Math.max(
-            92,
-            128 -
-            level * 4
-          )
-
-          +
-
-          Math.floor(
-            Math.random() * 18
-          );
-
-      }
-
-
-      /* Move */
-
-      obstacles.forEach(
-        obstacle => {
-
-          obstacle.x -=
-            speed;
-
-        }
-      );
-
-
-      coins.forEach(
-        coin => {
-
-          coin.x -=
-            speed;
-
-        }
-      );
-
-
-      obstacles =
-        obstacles.filter(
-          obstacle =>
-            obstacle.x +
-            obstacle.width >
-            -100
-        );
-
-
-      coins =
-        coins.filter(
-          coin =>
-            coin.x +
-            coin.radius >
-            -50
-        );
-
-
-      /* Obstacle collision */
-
-      for (
-        let i =
-          obstacles.length - 1;
-
-        i >= 0;
-
-        i--
-      ) {
-
-        if (
-          hitTest(
-            player,
-            obstacles[i]
-          )
-          &&
-          invulnerable <= 0
-        ) {
-
-          lives--;
-
-
-          invulnerable =
-            75;
-
-
-          shake =
-            15;
-
-
-          burst(
-            player.x +
-            player.width / 2,
-
-            player.y +
-            player.height / 2,
-
-            "#ff554d",
-            18
-          );
-
-
-          tone(
-            120,
-            .16,
-            "sawtooth",
-            .035
-          );
-
-
-          updateUI();
-
-
-          if (lives <= 0) {
-
-            gameOver();
-
-            return;
-
-          }
-
-        }
-
-      }
-
-
-      /* Coin pickup */
-
-      for (
-        let i =
-          coins.length - 1;
-
-        i >= 0;
-
-        i--
-      ) {
-
-        const coin =
-          coins[i];
-
-
-        const box = {
-
-          x:
-            coin.x -
-            coin.radius,
-
-          y:
-            coin.y -
-            coin.radius,
-
-          width:
-            coin.radius * 2,
-
-          height:
-            coin.radius * 2
-
-        };
-
-
-        if (
-          hitTest(
-            player,
-            box
-          )
-        ) {
-
-          coins.splice(
-            i,
-            1
-          );
-
-
-          gameCoins++;
-
-
-          burst(
-            coin.x,
-            coin.y,
-            "#f5bd32",
-            14
-          );
-
-
-          tone(
-            680,
-            .07,
-            "sine",
-            .02
-          );
-
-
-          updateDifficulty();
-
-
-          if (
-            gameCoins >=
-            GOAL
-          ) {
-
-            updateUI();
-
-            showWin();
-
-            return;
-
-          }
-
-        }
-
-      }
-
-
-      /* Particles */
-
-      particles.forEach(
-        particle => {
-
-          particle.x +=
-            particle.dx;
-
-          particle.y +=
-            particle.dy;
-
-          particle.dy +=
-            .08;
-
-          particle.life--;
-
-        }
-      );
-
-
-      particles =
-        particles.filter(
-          particle =>
-            particle.life > 0
-        );
-
-
-      updateUI();
+        92;
 
     }
 
-
-    /* BACKGROUND */
-
-    function drawBackground() {
-
-      const sky =
-        ctx.createLinearGradient(
-          0,
-          0,
-          0,
-          canvas.height
-        );
-
-
-      sky.addColorStop(
-        0,
-        "#101a2a"
-      );
-
-      sky.addColorStop(
-        .55,
-        "#17110b"
-      );
-
-      sky.addColorStop(
-        1,
-        "#060606"
-      );
-
-
-      ctx.fillStyle =
-        sky;
-
-
-      ctx.fillRect(
-        0,
-        0,
-        canvas.width,
-        canvas.height
-      );
-
-
-      /* Glow / moon */
-
-      const moon =
-        ctx.createRadialGradient(
-          1020,
-          110,
-          10,
-          1020,
-          110,
-          90
-        );
-
-
-      moon.addColorStop(
-        0,
-        "rgba(255,225,140,.26)"
-      );
-
-      moon.addColorStop(
-        1,
-        "rgba(255,225,140,0)"
-      );
-
-
-      ctx.fillStyle =
-        moon;
-
-
-      ctx.beginPath();
-
-      ctx.arc(
-        1020,
-        110,
-        90,
-        0,
-        Math.PI * 2
-      );
-
-      ctx.fill();
-
-
-      /* Clouds */
-
-      clouds.forEach(
-        cloud => {
-
-          cloud.x -=
-            cloud.speed *
-            speed /
-            7;
-
-
-          if (
-            cloud.x <
-            -cloud.size * 2
-          ) {
-
-            cloud.x =
-              canvas.width +
-              cloud.size;
-
-          }
-
-
-          ctx.fillStyle =
-            "rgba(255,255,255,.022)";
-
-
-          ctx.beginPath();
-
-          ctx.arc(
-            cloud.x,
-            cloud.y,
-            cloud.size,
-            0,
-            Math.PI * 2
-          );
-
-          ctx.fill();
-
-        }
-      );
-
-
-      /* City */
-
-      buildings.forEach(
-        building => {
-
-          let x =
-
-            (
-              building.x -
-              distance * 4
-            )
-
-            %
-
-            (
-              canvas.width +
-              150
-            );
-
-
-          if (x < -130) {
-
-            x +=
-              canvas.width +
-              150;
-
-          }
-
-
-          ctx.fillStyle =
-            "rgba(245,189,50,.05)";
-
-
-          ctx.fillRect(
-            x,
-            GROUND -
-            building.height,
-            building.width,
-            building.height
-          );
-
-
-          ctx.fillStyle =
-            "rgba(245,189,50,.16)";
-
-
-          for (
-            let row = 0;
-            row < 5;
-            row++
-          ) {
-
-            for (
-              let col = 0;
-              col < 2;
-              col++
-            ) {
-
-              ctx.fillRect(
-                x +
-                13 +
-                col * 27,
-
-                GROUND -
-                building.height +
-                14 +
-                row * 27,
-
-                4,
-                7
-              );
-
-            }
-
-          }
-
-        }
-      );
-
-
-      /* Ground */
-
-      ctx.fillStyle =
-        "#101010";
-
-
-      ctx.fillRect(
-        0,
-        GROUND,
-        canvas.width,
-        canvas.height -
-        GROUND
-      );
-
-
-      /* Moving runway */
-
-      const spacing = 110;
-
-
-      const shift =
-        (
-          frame *
-          speed *
-          .7
-        ) % spacing;
-
-
-      ctx.strokeStyle =
-        "rgba(245,189,50,.14)";
-
-
-      ctx.lineWidth = 2;
-
-
-      for (
-        let x = -shift;
-        x < canvas.width;
-        x += spacing
-      ) {
-
-        ctx.beginPath();
-
-        ctx.moveTo(
-          x,
-          GROUND
-        );
-
-        ctx.lineTo(
-          x - 40,
-          canvas.height
-        );
-
-        ctx.stroke();
-
-      }
-
-
-      ctx.strokeStyle =
-        "#f5bd32";
-
-
-      ctx.lineWidth = 3;
-
-
-      ctx.beginPath();
-
-      ctx.moveTo(
-        0,
-        GROUND
-      );
-
-      ctx.lineTo(
-        canvas.width,
-        GROUND
-      );
-
-      ctx.stroke();
-
-    }
-
-
-    /* REAL DOG CHARACTER */
-
-    function drawDog() {
-
-      const bounce =
-
-        player.grounded
-
-        ?
-
-        Math.sin(
-          player.runPhase
-        ) * 3
-
-        :
-
-        0;
-
-
-      const jumpRotation =
-
-        player.grounded
-
-        ?
-
-        Math.sin(
-          player.runPhase
-        ) * .018
-
-        :
-
-        Math.max(
-          -.10,
-          Math.min(
-            .10,
-            player.velocityY *
-            .004
-          )
-        );
-
-
-      ctx.save();
-
-
-      if (
-        invulnerable > 0 &&
-        Math.floor(
-          invulnerable / 5
-        ) % 2 === 0
-      ) {
-
-        ctx.globalAlpha =
-          .35;
-
-      }
-
-
-      /* Shadow */
-
-      const airAmount =
-        Math.min(
-          1,
-          (
-            GROUND -
-            (
-              player.y +
-              player.height
-            )
-          ) / 220
-        );
-
-
-      ctx.fillStyle =
-        `rgba(0,0,0,${
-          .45 -
-          airAmount * .20
-        })`;
-
-
-      ctx.beginPath();
-
-
-      ctx.ellipse(
-        player.x +
-        player.width / 2,
-
-        GROUND + 5,
-
-        58 -
-        airAmount * 15,
-
-        12 -
-        airAmount * 4,
-
-        0,
-        0,
-        Math.PI * 2
-      );
-
-
-      ctx.fill();
-
-
-      /* DOG */
-
-      if (
-        dogImage.naturalWidth &&
-        dogImage.naturalHeight
-      ) {
-
-        const sw =
-          dogImage.naturalWidth;
-
-        const sh =
-          dogImage.naturalHeight;
-
-
-        /*
-          Crop ONLY the realistic golden retriever area
-          from the DOGGIT artwork.
-          This is NOT the circular logo.
-        */
-
-        const sourceX =
-          sw * .19;
-
-        const sourceY =
-          sh * .27;
-
-        const sourceW =
-          sw * .63;
-
-        const sourceH =
-          sh * .56;
-
-
-        const cx =
-          player.x +
-          player.width / 2;
-
-        const cy =
-          player.y +
-          player.height / 2 +
-          bounce;
-
-
-        ctx.translate(
-          cx,
-          cy
-        );
-
-
-        ctx.rotate(
-          jumpRotation
-        );
-
-
-        const runningScale =
-
-          player.grounded
-
-          ?
-
-          1 +
-          Math.sin(
-            player.runPhase * 2
-          ) * .018
-
-          :
-
-          1;
-
-
-        ctx.scale(
-          1 / runningScale,
-          runningScale
-        );
-
-
-        ctx.shadowColor =
-          "rgba(245,189,50,.32)";
-
-        ctx.shadowBlur =
-          14;
-
-
-        /*
-          Rectangle intentionally extends beyond
-          the original poster logo boundaries,
-          showing the realistic dog body crop.
-        */
-
-        ctx.drawImage(
-          dogImage,
-
-          sourceX,
-          sourceY,
-          sourceW,
-          sourceH,
-
-          -player.width / 2,
-          -player.height / 2,
-
-          player.width,
-          player.height
-        );
-
-
-        ctx.shadowBlur = 0;
-
-      }
-
-
-      ctx.restore();
-
-    }
-
-
-    /* PROFESSIONAL DOGGIT OBSTACLE */
-
-    function drawObstacle(
-      obstacle
+    else if (
+      pattern <
+      .78
     ) {
 
-      ctx.save();
+      y =
+        GROUND -
+        150;
 
+    }
 
-      const gradient =
-        ctx.createLinearGradient(
-          obstacle.x,
-          obstacle.y,
-          obstacle.x,
-          obstacle.y +
-          obstacle.height
-        );
+    else {
 
+      y =
 
-      gradient.addColorStop(
-        0,
-        "#343434"
-      );
-
-      gradient.addColorStop(
-        .5,
-        "#171717"
-      );
-
-      gradient.addColorStop(
-        1,
-        "#080808"
-      );
-
-
-      ctx.fillStyle =
-        gradient;
-
-
-      ctx.strokeStyle =
-        "#f5bd32";
-
-
-      ctx.lineWidth = 3;
-
-
-      ctx.beginPath();
-
-
-      if (ctx.roundRect) {
-
-        ctx.roundRect(
-          obstacle.x,
-          obstacle.y,
-          obstacle.width,
-          obstacle.height,
-          10
-        );
-
-      }
-
-      else {
-
-        ctx.rect(
-          obstacle.x,
-          obstacle.y,
-          obstacle.width,
-          obstacle.height
-        );
-
-      }
-
-
-      ctx.fill();
-      ctx.stroke();
-
-
-      /* hazard stripes */
-
-      ctx.save();
-
-
-      ctx.beginPath();
-
-
-      if (ctx.roundRect) {
-
-        ctx.roundRect(
-          obstacle.x,
-          obstacle.y,
-          obstacle.width,
-          obstacle.height,
-          10
-        );
-
-      }
-
-      else {
-
-        ctx.rect(
-          obstacle.x,
-          obstacle.y,
-          obstacle.width,
-          obstacle.height
-        );
-
-      }
-
-
-      ctx.clip();
-
-
-      ctx.globalAlpha =
-        .20;
-
-
-      ctx.strokeStyle =
-        "#f5bd32";
-
-
-      ctx.lineWidth =
-        10;
-
-
-      for (
-        let i = -130;
-        i <
-        obstacle.width + 160;
-        i += 32
-      ) {
-
-        ctx.beginPath();
-
-        ctx.moveTo(
-          obstacle.x + i,
-          obstacle.y +
-          obstacle.height
-        );
-
-        ctx.lineTo(
-          obstacle.x +
-          i +
-          obstacle.height,
-          obstacle.y
-        );
-
-        ctx.stroke();
-
-      }
-
-
-      ctx.restore();
-
-
-      /* DOGGIT logo plate */
-
-      const logoSize =
-        Math.min(
-          obstacle.width * .58,
-          obstacle.height * .52
-        );
-
-
-      if (
-        logoImage.naturalWidth
-      ) {
-
-        ctx.save();
-
-
-        ctx.beginPath();
-
-        ctx.arc(
-          obstacle.x +
-          obstacle.width / 2,
-
-          obstacle.y +
-          obstacle.height / 2 -
-          4,
-
-          logoSize / 2,
-
-          0,
-          Math.PI * 2
-        );
-
-        ctx.clip();
-
-
-        ctx.drawImage(
-          logoImage,
-
-          obstacle.x +
-          obstacle.width / 2 -
-          logoSize / 2,
-
-          obstacle.y +
-          obstacle.height / 2 -
-          logoSize / 2 -
-          4,
-
-          logoSize,
-          logoSize
-        );
-
-
-        ctx.restore();
-
-      }
-
-
-      /* Label */
-
-      ctx.fillStyle =
-        "#f5bd32";
-
-
-      ctx.font =
-        "900 9px Arial";
-
-
-      ctx.textAlign =
-        "center";
-
-
-      ctx.fillText(
-        "DOGGIT",
-        obstacle.x +
-        obstacle.width / 2,
-
-        obstacle.y +
-        obstacle.height -
-        7
-      );
-
-
-      ctx.restore();
+        GROUND -
+        105 -
+        i * 24;
 
     }
 
 
-    /* GAME COIN */
+    coins.push({
 
-    function drawCoin(
-      coin
-    ) {
+      x:
+        startX +
+        i * 64,
 
-      coin.rotation +=
-        .09;
+      y,
 
+      r:
+        17,
 
-      const scaleX =
-        Math.max(
-          .22,
-          Math.abs(
-            Math.cos(
-              coin.rotation
-            )
-          )
-        );
+      phase:
+        i * .8,
 
+      taken:
+        false
 
-      ctx.save();
+    });
 
+  }
 
-      ctx.translate(
-        coin.x,
-        coin.y
-      );
+}
 
 
-      ctx.scale(
-        scaleX,
-        1
-      );
+/* ==========================================================
+   COLLISION
+========================================================== */
 
+function playerHitbox() {
 
-      const glow =
-        ctx.createRadialGradient(
-          0,
-          0,
-          2,
-          0,
-          0,
-          coin.radius * 2
-        );
+  return {
 
+    x:
+      player.x +
+      25,
 
-      glow.addColorStop(
-        0,
-        "rgba(255,230,140,.6)"
-      );
+    y:
+      player.y +
+      20,
 
-      glow.addColorStop(
-        1,
-        "rgba(245,189,50,0)"
-      );
+    w:
+      50,
 
+    h:
+      72
 
-      ctx.fillStyle =
-        glow;
+  };
 
+}
 
-      ctx.beginPath();
 
-      ctx.arc(
-        0,
-        0,
-        coin.radius * 2,
-        0,
-        Math.PI * 2
-      );
+function overlaps(
+  a,
+  b
+) {
 
-      ctx.fill();
+  return (
 
+    a.x <
+      b.x +
+      b.w
 
-      ctx.fillStyle =
-        "#f5bd32";
+    &&
 
+    a.x +
+      a.w >
+      b.x
 
-      ctx.beginPath();
+    &&
 
-      ctx.arc(
-        0,
-        0,
-        coin.radius,
-        0,
-        Math.PI * 2
-      );
+    a.y <
+      b.y +
+      b.h
 
-      ctx.fill();
+    &&
 
+    a.y +
+      a.h >
+      b.y
 
-      ctx.strokeStyle =
-        "#ffe79c";
+  );
 
+}
 
-      ctx.lineWidth = 3;
 
-      ctx.stroke();
+function coinHitsPlayer(
+  coin,
+  box
+) {
 
+  const closestX =
 
-      ctx.fillStyle =
-        "#111";
+    clamp(
 
+      coin.x,
 
-      ctx.font =
-        "900 10px Arial";
+      box.x,
 
+      box.x +
+      box.w
 
-      ctx.textAlign =
-        "center";
-
-      ctx.textBaseline =
-        "middle";
-
-
-      ctx.fillText(
-        "GAME",
-        0,
-        1
-      );
-
-
-      ctx.restore();
-
-    }
-
-
-    function drawParticles() {
-
-      particles.forEach(
-        particle => {
-
-          ctx.globalAlpha =
-            Math.max(
-              0,
-              particle.life / 32
-            );
-
-
-          ctx.fillStyle =
-            particle.color;
-
-
-          ctx.beginPath();
-
-          ctx.arc(
-            particle.x,
-            particle.y,
-            3.5,
-            0,
-            Math.PI * 2
-          );
-
-          ctx.fill();
-
-        }
-      );
-
-
-      ctx.globalAlpha =
-        1;
-
-    }
-
-
-    function drawGame() {
-
-      ctx.save();
-
-
-      if (shake > .2) {
-
-        ctx.translate(
-          (
-            Math.random() - .5
-          ) * shake,
-
-          (
-            Math.random() - .5
-          ) * shake
-        );
-
-
-        shake *=
-          .82;
-
-      }
-
-
-      drawBackground();
-
-
-      obstacles.forEach(
-        drawObstacle
-      );
-
-
-      coins.forEach(
-        drawCoin
-      );
-
-
-      drawDog();
-
-
-      drawParticles();
-
-
-      ctx.restore();
-
-    }
-
-
-    function gameLoop() {
-
-      updateGame();
-
-      drawGame();
-
-      requestAnimationFrame(
-        gameLoop
-      );
-
-    }
-
-
-    gameLoop();
-
-
-    /* SPACE CONTROL */
-
-    document.addEventListener(
-      "keydown",
-      event => {
-
-        if (
-          event.code !==
-          "Space"
-        ) {
-          return;
-        }
-
-
-        const section =
-          document.getElementById(
-            "game"
-          );
-
-
-        const bounds =
-          section.getBoundingClientRect();
-
-
-        const visible =
-
-          bounds.top <
-          window.innerHeight
-
-          &&
-
-          bounds.bottom >
-          0;
-
-
-        if (!visible) {
-          return;
-        }
-
-
-        event.preventDefault();
-
-
-        if (!event.repeat) {
-          spaceAction();
-        }
-
-      }
     );
+
+
+  const closestY =
+
+    clamp(
+
+      coin.y,
+
+      box.y,
+
+      box.y +
+      box.h
+
+    );
+
+
+  const dx =
+    coin.x -
+    closestX;
+
+
+  const dy =
+    coin.y -
+    closestY;
+
+
+  return (
+
+    dx * dx +
+    dy * dy
+
+    <
+
+    (
+      coin.r +
+      6
+    )
+
+    *
+
+    (
+      coin.r +
+      6
+    )
+
+  );
+
+}
+
+
+/* ==========================================================
+   DAMAGE
+========================================================== */
+
+function damagePlayer() {
+
+  if (
+    game.inv >
+      0
+
+    ||
+
+    game.state !==
+      "running"
+  ) {
+
+    return;
+
+  }
+
+
+  game.lives--;
+
+
+  game.inv =
+    1.15;
+
+
+  game.shake =
+    10;
+
+
+  game.msg =
+    "OUCH!";
+
+
+  game.msgTimer =
+    .55;
+
+
+  burst(
+
+    player.x +
+    player.w *
+    .65,
+
+    player.y +
+    player.h *
+    .55,
+
+    "#ff554d",
+
+    15,
+
+    250
+
+  );
+
+
+  updateHUD();
+
+
+  if (
+    game.lives <=
+    0
+  ) {
+
+    game.state =
+      "gameover";
+
+
+    endScreen(
+      false
+    );
+
+  }
+
+}
+
+
+/* ==========================================================
+   COLLECT COIN
+========================================================== */
+
+function collectCoin(
+  coin
+) {
+
+  coin.taken =
+    true;
+
+
+  game.coins++;
+
+
+  game.msg =
+    "+1";
+
+
+  game.msgTimer =
+    .32;
+
+
+  burst(
+
+    coin.x,
+
+    coin.y,
+
+    "#f5bd32",
+
+    11,
+
+    175
+
+  );
+
+
+  updateHUD();
+
+
+  if (
+    game.coins >=
+    GOAL
+  ) {
+
+    game.state =
+      "won";
+
+
+    endScreen(
+      true
+    );
+
+  }
+
+}
+
+
+/* ==========================================================
+   UPDATE
+========================================================== */
+
+function updateGame(
+  dt
+) {
+
+  if (
+    game.state !==
+    "running"
+  ) {
+
+    return;
+
+  }
+
+
+  game.time +=
+    dt;
+
+
+  /*
+   * Difficulty increases only
+   * every 5 collected coins.
+   */
+
+  game.level =
+
+    Math.min(
+
+      6,
+
+      1 +
+
+      Math.floor(
+        game.coins /
+        5
+      )
+
+    );
+
+
+  /*
+   * Controlled speed increase.
+   *
+   * This is fast enough to feel harder
+   * without becoming unfair.
+   */
+
+  game.speed =
+
+    470 +
+
+    (
+      game.level -
+      1
+    )
+
+    *
+
+    48;
+
+
+  game.distance +=
+
+    game.speed *
+    dt *
+    .045;
+
+
+  game.shift +=
+
+    game.speed *
+    dt;
+
+
+  game.inv =
+
+    Math.max(
+      0,
+      game.inv -
+      dt
+    );
+
+
+  game.shake =
+
+    Math.max(
+      0,
+      game.shake -
+      36 * dt
+    );
+
+
+  if (
+    Number.isFinite(
+      game.msgTimer
+    )
+
+    &&
+
+    game.msgTimer >
+    0
+  ) {
+
+    game.msgTimer =
+
+      Math.max(
+        0,
+        game.msgTimer -
+        dt
+      );
+
+
+    if (
+      game.msgTimer ===
+      0
+    ) {
+
+      game.msg =
+        "";
+
+    }
+
+  }
+
+
+  /* JUMP BUFFER */
+
+  game.jumpBuffer =
+
+    Math.max(
+      0,
+      game.jumpBuffer -
+      dt
+    );
+
+
+  /*
+   * COYOTE TIME
+   *
+   * DOGGIT can still jump for
+   * a tiny moment after leaving ground.
+   */
+
+  if (
+    player.grounded
+  ) {
+
+    game.coyote =
+      .10;
+
+  }
+
+  else {
+
+    game.coyote =
+
+      Math.max(
+        0,
+        game.coyote -
+        dt
+      );
+
+  }
+
+
+  if (
+    game.jumpBuffer >
+      0
+
+    &&
+
+    (
+      player.grounded
+
+      ||
+
+      game.coyote >
+      0
+    )
+  ) {
+
+    performJump();
+
+  }
+
+
+  /*
+   * VARIABLE HEIGHT JUMP
+   *
+   * Holding SPACE / touch slightly longer
+   * produces a higher jump.
+   */
+
+  const gravity =
+
+    player.vy <
+      0
+
+    &&
+
+    game.jumpHeld
+
+    ?
+
+    1900
+
+    :
+
+    2900;
+
+
+  player.vy +=
+
+    gravity *
+    dt;
+
+
+  player.vy =
+
+    Math.min(
+      player.vy,
+      1450
+    );
+
+
+  player.y +=
+
+    player.vy *
+    dt;
+
+
+  /*
+   * LANDING
+   */
+
+  if (
+    player.y +
+    player.h >=
+    GROUND
+  ) {
+
+    const wasAirborne =
+      !player.grounded;
+
+
+    player.y =
+      GROUND -
+      player.h;
+
+
+    player.vy =
+      0;
+
+
+    player.grounded =
+      true;
+
+
+    if (
+      wasAirborne
+    ) {
+
+      burst(
+
+        player.x +
+        44,
+
+        GROUND -
+        2,
+
+        "#9c8554",
+
+        6,
+
+        95
+
+      );
+
+    }
+
+  }
+
+  else {
+
+    player.grounded =
+      false;
+
+  }
+
+
+  player.phase +=
+
+    dt *
+
+    (
+      8.4 +
+      game.speed /
+      120
+    );
+
+
+  /* ========================================================
+     SPAWN OBSTACLES
+  ======================================================== */
+
+  game.obsTimer -=
+    dt;
+
+
+  if (
+    game.obsTimer <=
+    0
+  ) {
+
+    spawnObstacle();
 
 
     /*
-      Variable jump height.
+     * Minimum gap is controlled.
+     * Prevents impossible obstacle spam.
+     */
 
-      Releasing SPACE early produces
-      a smaller jump.
+    const minimum =
 
-      Holding it slightly longer gives
-      DOGGIT the full-height jump.
-    */
+      Math.max(
 
-    document.addEventListener(
-      "keyup",
-      event => {
+        .95,
+
+        1.42 -
+
+        (
+          game.level -
+          1
+        )
+
+        *
+
+        .055
+
+      );
+
+
+    game.obsTimer =
+
+      random(
+
+        minimum,
+
+        minimum +
+        .34
+
+      );
+
+  }
+
+
+  /* ========================================================
+     SPAWN COINS
+  ======================================================== */
+
+  game.coinTimer -=
+    dt;
+
+
+  if (
+    game.coinTimer <=
+    0
+  ) {
+
+    spawnCoins();
+
+
+    game.coinTimer =
+
+      random(
+        1.12,
+        1.62
+      );
+
+  }
+
+
+  /* ========================================================
+     MOVE OBSTACLES
+  ======================================================== */
+
+  for (
+    const obstacle
+    of obstacles
+  ) {
+
+    obstacle.x -=
+
+      game.speed *
+      dt;
+
+  }
+
+
+  while (
+
+    obstacles.length
+
+    &&
+
+    obstacles[0].x +
+    obstacles[0].w <
+    -100
+
+  ) {
+
+    obstacles.shift();
+
+  }
+
+
+  /* ========================================================
+     MOVE COINS
+  ======================================================== */
+
+  for (
+    const coin
+    of coins
+  ) {
+
+    coin.x -=
+
+      game.speed *
+      dt;
+
+
+    coin.phase +=
+
+      dt *
+      7;
+
+  }
+
+
+  for (
+    let i =
+      coins.length -
+      1;
+
+    i >=
+    0;
+
+    i--
+  ) {
+
+    if (
+
+      coins[i].taken
+
+      ||
+
+      coins[i].x +
+      coins[i].r <
+      -60
+
+    ) {
+
+      coins.splice(
+        i,
+        1
+      );
+
+    }
+
+  }
+
+
+  /* ========================================================
+     COLLISION
+  ======================================================== */
+
+  const box =
+    playerHitbox();
+
+
+  if (
+    game.inv <=
+    0
+  ) {
+
+    for (
+      const obstacle
+      of obstacles
+    ) {
+
+      if (
+
+        !obstacle.hit
+
+        &&
+
+        overlaps(
+          box,
+          obstacle
+        )
+
+      ) {
+
+        obstacle.hit =
+          true;
+
+
+        damagePlayer();
+
+
+        break;
+
+      }
+
+    }
+
+  }
+
+
+  /* ========================================================
+     COIN PICKUP
+  ======================================================== */
+
+  for (
+    const coin
+    of coins
+  ) {
+
+    if (
+
+      !coin.taken
+
+      &&
+
+      coinHitsPlayer(
+        coin,
+        box
+      )
+
+    ) {
+
+      collectCoin(
+        coin
+      );
+
+
+      if (
+        game.state !==
+        "running"
+      ) {
+
+        break;
+
+      }
+
+    }
+
+  }
+
+
+  /* ========================================================
+     PARTICLES
+  ======================================================== */
+
+  for (
+    const particle
+    of particles
+  ) {
+
+    particle.x +=
+
+      particle.vx *
+      dt;
+
+
+    particle.y +=
+
+      particle.vy *
+      dt;
+
+
+    particle.vy +=
+
+      780 *
+      dt;
+
+
+    particle.life -=
+      dt;
+
+  }
+
+
+  for (
+    let i =
+      particles.length -
+      1;
+
+    i >=
+      0;
+
+    i--
+  ) {
+
+    if (
+      particles[i].life <=
+      0
+    ) {
+
+      particles.splice(
+        i,
+        1
+      );
+
+    }
+
+  }
+
+
+  updateHUD();
+
+}
+
+
+/* ==========================================================
+   ROUND RECT HELPER
+========================================================== */
+
+function roundedRect(
+  x,
+  y,
+  width,
+  height,
+  radius
+) {
+
+  radius =
+
+    Math.min(
+      radius,
+      width / 2,
+      height / 2
+    );
+
+
+  ctx.beginPath();
+
+
+  ctx.moveTo(
+    x + radius,
+    y
+  );
+
+
+  ctx.lineTo(
+    x +
+    width -
+    radius,
+    y
+  );
+
+
+  ctx.quadraticCurveTo(
+
+    x +
+    width,
+
+    y,
+
+    x +
+    width,
+
+    y +
+    radius
+
+  );
+
+
+  ctx.lineTo(
+
+    x +
+    width,
+
+    y +
+    height -
+    radius
+
+  );
+
+
+  ctx.quadraticCurveTo(
+
+    x +
+    width,
+
+    y +
+    height,
+
+    x +
+    width -
+    radius,
+
+    y +
+    height
+
+  );
+
+
+  ctx.lineTo(
+
+    x +
+    radius,
+
+    y +
+    height
+
+  );
+
+
+  ctx.quadraticCurveTo(
+
+    x,
+
+    y +
+    height,
+
+    x,
+
+    y +
+    height -
+    radius
+
+  );
+
+
+  ctx.lineTo(
+
+    x,
+
+    y +
+    radius
+
+  );
+
+
+  ctx.quadraticCurveTo(
+
+    x,
+
+    y,
+
+    x +
+    radius,
+
+    y
+
+  );
+
+
+  ctx.closePath();
+
+}
+
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+function drawBackground() {
+
+  const sky =
+    ctx.createLinearGradient(
+      0,
+      0,
+      0,
+      H
+    );
+
+
+  sky.addColorStop(
+    0,
+    "#0d1726"
+  );
+
+
+  sky.addColorStop(
+    .55,
+    "#181108"
+  );
+
+
+  sky.addColorStop(
+    1,
+    "#050505"
+  );
+
+
+  ctx.fillStyle =
+    sky;
+
+
+  ctx.fillRect(
+    0,
+    0,
+    W,
+    H
+  );
+
+
+  /* MOON */
+
+  const moon =
+    ctx.createRadialGradient(
+
+      1050,
+      105,
+      8,
+
+      1050,
+      105,
+      118
+
+    );
+
+
+  moon.addColorStop(
+
+    0,
+
+    "rgba(255,229,151,.31)"
+
+  );
+
+
+  moon.addColorStop(
+
+    1,
+
+    "rgba(255,229,151,0)"
+
+  );
+
+
+  ctx.fillStyle =
+    moon;
+
+
+  ctx.beginPath();
+
+
+  ctx.arc(
+
+    1050,
+
+    105,
+
+    118,
+
+    0,
+
+    Math.PI *
+    2
+
+  );
+
+
+  ctx.fill();
+
+
+  ctx.fillStyle =
+    "rgba(255,232,170,.42)";
+
+
+  ctx.beginPath();
+
+
+  ctx.arc(
+
+    1050,
+
+    105,
+
+    36,
+
+    0,
+
+    Math.PI *
+    2
+
+  );
+
+
+  ctx.fill();
+
+
+  /* STARS */
+
+  for (
+    const star
+    of stars
+  ) {
+
+    ctx.globalAlpha =
+      star.a;
+
+
+    ctx.fillStyle =
+      "#ffe7a2";
+
+
+    ctx.fillRect(
+
+      star.x,
+
+      star.y,
+
+      star.s,
+
+      star.s
+
+    );
+
+  }
+
+
+  ctx.globalAlpha =
+    1;
+
+
+  /* CITY */
+
+  for (
+    const building
+    of skyline
+  ) {
+
+    let x =
+
+      (
+        building.x -
+
+        game.shift *
+        .16
+      )
+
+      %
+
+      (
+        W +
+        130
+      );
+
+
+    if (
+      x <
+      -120
+    ) {
+
+      x +=
+        W +
+        130;
+
+    }
+
+
+    const y =
+      GROUND -
+      building.h;
+
+
+    ctx.fillStyle =
+      "rgba(245,189,50,.045)";
+
+
+    ctx.fillRect(
+
+      x,
+
+      y,
+
+      building.w,
+
+      building.h
+
+    );
+
+
+    ctx.fillStyle =
+      "rgba(245,189,50,.15)";
+
+
+    for (
+      let row = 0;
+      row < 5;
+      row++
+    ) {
+
+      for (
+        let col = 0;
+        col < 2;
+        col++
+      ) {
+
+        const windowX =
+
+          x +
+          12 +
+          col * 24;
+
+
+        const windowY =
+
+          y +
+          16 +
+          row * 25;
+
 
         if (
-          event.code ===
-          "Space"
-
-          &&
-
-          player.velocityY < -8
-
-          &&
-
-          running
+          windowY <
+          GROUND -
+          12
         ) {
 
-          player.velocityY =
-            -8;
+          ctx.fillRect(
+
+            windowX,
+
+            windowY,
+
+            4,
+
+            7
+
+          );
 
         }
 
       }
+
+    }
+
+  }
+
+
+  /* GROUND */
+
+  ctx.fillStyle =
+    "#111";
+
+
+  ctx.fillRect(
+
+    0,
+
+    GROUND,
+
+    W,
+
+    H -
+    GROUND
+
+  );
+
+
+  ctx.strokeStyle =
+    "#f5bd32";
+
+
+  ctx.lineWidth =
+    3;
+
+
+  ctx.beginPath();
+
+
+  ctx.moveTo(
+    0,
+    GROUND
+  );
+
+
+  ctx.lineTo(
+    W,
+    GROUND
+  );
+
+
+  ctx.stroke();
+
+
+  /* MOVING ROAD */
+
+  const spacing =
+    112;
+
+
+  const shift =
+    game.shift %
+    spacing;
+
+
+  ctx.strokeStyle =
+    "rgba(245,189,50,.12)";
+
+
+  ctx.lineWidth =
+    2;
+
+
+  for (
+    let x =
+      -shift;
+
+    x <
+      W +
+      spacing;
+
+    x +=
+      spacing
+  ) {
+
+    ctx.beginPath();
+
+
+    ctx.moveTo(
+
+      x,
+
+      GROUND +
+      3
+
     );
 
-  </script>
+
+    ctx.lineTo(
+
+      x -
+      36,
+
+      H
+
+    );
+
+
+    ctx.stroke();
+
+  }
+
+}
+
+
+/* ==========================================================
+   DRAW DOGGIT
+========================================================== */
+
+function drawDog() {
+
+  const air =
+
+    clamp(
+
+      (
+        GROUND -
+
+        (
+          player.y +
+          player.h
+        )
+      )
+
+      /
+
+      190,
+
+      0,
+
+      1
+
+    );
+
+
+  const bounce =
+
+    player.grounded
+
+    ?
+
+    Math.sin(
+      player.phase
+    )
+
+    *
+    3.1
+
+    :
+
+    0;
+
+
+  const rotation =
+
+    player.grounded
+
+    ?
+
+    Math.sin(
+      player.phase *
+      .55
+    )
+
+    *
+    .025
+
+    :
+
+    clamp(
+
+      player.vy *
+      .00011,
+
+      -.10,
+
+      .10
+
+    );
+
+
+  /* SHADOW */
+
+  ctx.fillStyle =
+
+    `rgba(
+      0,
+      0,
+      0,
+      ${
+        .46 -
+        air *
+        .24
+      }
+    )`;
+
+
+  ctx.beginPath();
+
+
+  ctx.ellipse(
+
+    player.x +
+    player.w /
+    2,
+
+    GROUND +
+    6,
+
+    40 -
+    air *
+    12,
+
+    9 -
+    air *
+    3,
+
+    0,
+
+    0,
+
+    Math.PI *
+    2
+
+  );
+
+
+  ctx.fill();
+
+
+  ctx.save();
+
+
+  /* FLASH AFTER HIT */
+
+  if (
+
+    game.inv >
+      0
+
+    &&
+
+    Math.floor(
+      game.inv *
+      14
+    )
+
+    %
+    2 ===
+    0
+
+  ) {
+
+    ctx.globalAlpha =
+      .45;
+
+  }
+
+
+  ctx.translate(
+
+    player.x +
+    player.w /
+    2,
+
+    player.y +
+    player.h /
+    2 +
+    bounce
+
+  );
+
+
+  ctx.rotate(
+    rotation
+  );
+
+
+  const stretch =
+
+    player.grounded
+
+    ?
+
+    1 +
+
+    Math.sin(
+      player.phase *
+      2
+    )
+
+    *
+    .025
+
+    :
+
+    1;
+
+
+  ctx.scale(
+
+    1 /
+    stretch,
+
+    stretch
+
+  );
+
+
+  /*
+   * USE THE NEW SMALL 3D DOGGIT IMAGE
+   */
+
+  if (
+    dogReady
+  ) {
+
+    ctx.shadowColor =
+      "rgba(245,189,50,.20)";
+
+
+    ctx.shadowBlur =
+      10;
+
+
+    ctx.drawImage(
+
+      dog,
+
+      -56,
+
+      -63,
+
+      112,
+
+      120
+
+    );
+
+  }
+
+  else {
+
+    /*
+     * FALLBACK DOG
+     *
+     * The game still runs even if
+     * doggit-runner.png has not loaded yet.
+     */
+
+    ctx.fillStyle =
+      "#cf7f37";
+
+
+    ctx.beginPath();
+
+
+    ctx.arc(
+
+      4,
+
+      -23,
+
+      31,
+
+      0,
+
+      Math.PI *
+      2
+
+    );
+
+
+    ctx.fill();
+
+
+    ctx.fillStyle =
+      "#f2ece3";
+
+
+    ctx.beginPath();
+
+
+    ctx.ellipse(
+
+      12,
+
+      -14,
+
+      21,
+
+      16,
+
+      0,
+
+      0,
+
+      Math.PI *
+      2
+
+    );
+
+
+    ctx.fill();
+
+
+    /* GLASSES */
+
+    ctx.fillStyle =
+      "#0c0c0c";
+
+
+    ctx.fillRect(
+
+      -20,
+
+      -37,
+
+      22,
+
+      13
+
+    );
+
+
+    ctx.fillRect(
+
+      8,
+
+      -37,
+
+      22,
+
+      13
+
+    );
+
+
+    /* HOODIE */
+
+    ctx.fillStyle =
+      "#111";
+
+
+    ctx.beginPath();
+
+
+    ctx.ellipse(
+
+      0,
+
+      17,
+
+      37,
+
+      31,
+
+      0,
+
+      0,
+
+      Math.PI *
+      2
+
+    );
+
+
+    ctx.fill();
+
+  }
+
+
+  ctx.restore();
+
+}
+
+
+/* ==========================================================
+   DRAW OBSTACLES
+========================================================== */
+
+function drawObstacle(
+  obstacle
+) {
+
+  const x =
+    obstacle.x;
+
+
+  const y =
+    obstacle.y;
+
+
+  const width =
+    obstacle.w;
+
+
+  const height =
+    obstacle.h;
+
+
+  const type =
+    obstacle.type;
+
+
+  ctx.save();
+
+
+  /* ROCK */
+
+  if (
+    type ===
+    "rock"
+  ) {
+
+    const gradient =
+      ctx.createLinearGradient(
+
+        x,
+        y,
+
+        x,
+        y +
+        height
+
+      );
+
+
+    gradient.addColorStop(
+      0,
+      "#6a6870"
+    );
+
+
+    gradient.addColorStop(
+      1,
+      "#34343a"
+    );
+
+
+    ctx.fillStyle =
+      gradient;
+
+
+    ctx.beginPath();
+
+
+    ctx.moveTo(
+
+      x + 6,
+
+      y +
+      height
+
+    );
+
+
+    ctx.lineTo(
+
+      x,
+
+      y +
+      height *
+      .46
+
+    );
+
+
+    ctx.lineTo(
+
+      x +
+      width *
+      .24,
+
+      y + 4
+
+    );
+
+
+    ctx.lineTo(
+
+      x +
+      width *
+      .72,
+
+      y
+
+    );
+
+
+    ctx.lineTo(
+
+      x +
+      width,
+
+      y +
+      height *
+      .52
+
+    );
+
+
+    ctx.lineTo(
+
+      x +
+      width -
+      7,
+
+      y +
+      height
+
+    );
+
+
+    ctx.closePath();
+
+
+    ctx.fill();
+
+
+    ctx.strokeStyle =
+      "#88868f";
+
+
+    ctx.stroke();
+
+  }
+
+
+  /* CRATE */
+
+  if (
+    type ===
+      "crate"
+
+    ||
+
+    type ===
+      "tall"
+  ) {
+
+    const gradient =
+      ctx.createLinearGradient(
+
+        x,
+        y,
+
+        x +
+        width,
+
+        y +
+        height
+
+      );
+
+
+    gradient.addColorStop(
+      0,
+      "#b56f31"
+    );
+
+
+    gradient.addColorStop(
+      1,
+      "#6e3b18"
+    );
+
+
+    ctx.fillStyle =
+      gradient;
+
+
+    ctx.fillRect(
+
+      x,
+
+      y,
+
+      width,
+
+      height
+
+    );
+
+
+    ctx.strokeStyle =
+      "#dd9b55";
+
+
+    ctx.lineWidth =
+      4;
+
+
+    ctx.strokeRect(
+
+      x + 2,
+
+      y + 2,
+
+      width - 4,
+
+      height - 4
+
+    );
+
+
+    ctx.beginPath();
+
+
+    ctx.moveTo(
+
+      x + 7,
+
+      y + 7
+
+    );
+
+
+    ctx.lineTo(
+
+      x +
+      width -
+      7,
+
+      y +
+      height -
+      7
+
+    );
+
+
+    ctx.moveTo(
+
+      x +
+      width -
+      7,
+
+      y + 7
+
+    );
+
+
+    ctx.lineTo(
+
+      x + 7,
+
+      y +
+      height -
+      7
+
+    );
+
+
+    ctx.stroke();
+
+  }
+
+
+  /* SPIKES */
+
+  if (
+    type ===
+    "spikes"
+  ) {
+
+    const spikeWidth =
+      width /
+      3;
+
+
+    const gradient =
+      ctx.createLinearGradient(
+
+        x,
+        y,
+
+        x,
+
+        y +
+        height
+
+      );
+
+
+    gradient.addColorStop(
+      0,
+      "#d6d6da"
+    );
+
+
+    gradient.addColorStop(
+      1,
+      "#5f6268"
+    );
+
+
+    ctx.fillStyle =
+      gradient;
+
+
+    for (
+      let i = 0;
+      i < 3;
+      i++
+    ) {
+
+      ctx.beginPath();
+
+
+      ctx.moveTo(
+
+        x +
+        i *
+        spikeWidth,
+
+        y +
+        height
+
+      );
+
+
+      ctx.lineTo(
+
+        x +
+        i *
+        spikeWidth +
+        spikeWidth /
+        2,
+
+        y
+
+      );
+
+
+      ctx.lineTo(
+
+        x +
+        (
+          i +
+          1
+        )
+
+        *
+        spikeWidth,
+
+        y +
+        height
+
+      );
+
+
+      ctx.closePath();
+
+
+      ctx.fill();
+
+    }
+
+
+    ctx.fillStyle =
+      "#2d2f33";
+
+
+    ctx.fillRect(
+
+      x,
+
+      y +
+      height -
+      8,
+
+      width,
+
+      8
+
+    );
+
+  }
+
+
+  /* DOGGIT BARRIER */
+
+  if (
+    type ===
+    "barrier"
+  ) {
+
+    ctx.fillStyle =
+      "#d8d8d8";
+
+
+    ctx.fillRect(
+
+      x + 8,
+
+      y + 15,
+
+      13,
+
+      height - 15
+
+    );
+
+
+    ctx.fillRect(
+
+      x +
+      width -
+      21,
+
+      y + 15,
+
+      13,
+
+      height - 15
+
+    );
+
+
+    ctx.fillStyle =
+      "#f1f1f1";
+
+
+    roundedRect(
+
+      x,
+
+      y,
+
+      width,
+
+      28,
+
+      5
+
+    );
+
+
+    ctx.fill();
+
+
+    ctx.save();
+
+
+    roundedRect(
+
+      x,
+
+      y,
+
+      width,
+
+      28,
+
+      5
+
+    );
+
+
+    ctx.clip();
+
+
+    ctx.strokeStyle =
+      "#d84039";
+
+
+    ctx.lineWidth =
+      9;
+
+
+    for (
+      let stripe =
+        -20;
+
+      stripe <
+        width +
+        35;
+
+      stripe +=
+        28
+    ) {
+
+      ctx.beginPath();
+
+
+      ctx.moveTo(
+
+        x +
+        stripe,
+
+        y +
+        28
+
+      );
+
+
+      ctx.lineTo(
+
+        x +
+        stripe +
+        24,
+
+        y
+
+      );
+
+
+      ctx.stroke();
+
+    }
+
+
+    ctx.restore();
+
+
+    ctx.fillStyle =
+      "#f5bd32";
+
+
+    ctx.font =
+      "900 10px Arial";
+
+
+    ctx.textAlign =
+      "center";
+
+
+    ctx.fillText(
+
+      "DOGGIT",
+
+      x +
+      width /
+      2,
+
+      y +
+      height -
+      7
+
+    );
+
+  }
+
+
+  ctx.restore();
+
+}
+
+
+/* ==========================================================
+   DRAW COINS
+========================================================== */
+
+function drawCoin(
+  coin
+) {
+
+  const y =
+
+    coin.y +
+
+    Math.sin(
+      coin.phase
+    )
+
+    *
+    4;
+
+
+  const scale =
+
+    .34 +
+
+    Math.abs(
+
+      Math.cos(
+        coin.phase *
+        .75
+      )
+
+    )
+
+    *
+    .66;
+
+
+  ctx.save();
+
+
+  ctx.translate(
+
+    coin.x,
+
+    y
+
+  );
+
+
+  ctx.scale(
+
+    scale,
+
+    1
+
+  );
+
+
+  const glow =
+    ctx.createRadialGradient(
+
+      0,
+      0,
+      3,
+
+      0,
+      0,
+      32
+
+    );
+
+
+  glow.addColorStop(
+
+    0,
+
+    "rgba(255,228,112,.40)"
+
+  );
+
+
+  glow.addColorStop(
+
+    1,
+
+    "rgba(255,228,112,0)"
+
+  );
+
+
+  ctx.fillStyle =
+    glow;
+
+
+  ctx.beginPath();
+
+
+  ctx.arc(
+
+    0,
+
+    0,
+
+    32,
+
+    0,
+
+    Math.PI *
+    2
+
+  );
+
+
+  ctx.fill();
+
+
+  const gold =
+    ctx.createRadialGradient(
+
+      -5,
+      -7,
+      2,
+
+      0,
+      0,
+
+      coin.r
+
+    );
+
+
+  gold.addColorStop(
+    0,
+    "#fff0a4"
+  );
+
+
+  gold.addColorStop(
+    .35,
+    "#f9ca46"
+  );
+
+
+  gold.addColorStop(
+    1,
+    "#b87108"
+  );
+
+
+  ctx.fillStyle =
+    gold;
+
+
+  ctx.beginPath();
+
+
+  ctx.arc(
+
+    0,
+
+    0,
+
+    coin.r,
+
+    0,
+
+    Math.PI *
+    2
+
+  );
+
+
+  ctx.fill();
+
+
+  ctx.strokeStyle =
+    "#ffe79c";
+
+
+  ctx.lineWidth =
+    2;
+
+
+  ctx.stroke();
+
+
+  ctx.fillStyle =
+    "#6c4204";
+
+
+  ctx.font =
+    "900 13px Arial";
+
+
+  ctx.textAlign =
+    "center";
+
+
+  ctx.textBaseline =
+    "middle";
+
+
+  ctx.fillText(
+
+    "🐾",
+
+    0,
+
+    1
+
+  );
+
+
+  ctx.restore();
+
+}
+
+
+/* ==========================================================
+   DRAW GAME
+========================================================== */
+
+function drawGame() {
+
+  ctx.save();
+
+
+  /* SCREEN SHAKE */
+
+  if (
+    game.shake >
+    0
+  ) {
+
+    ctx.translate(
+
+      random(
+        -game.shake,
+        game.shake
+      ),
+
+      random(
+        -game.shake,
+        game.shake
+      )
+
+    );
+
+  }
+
+
+  drawBackground();
+
+
+  for (
+    const obstacle
+    of obstacles
+  ) {
+
+    drawObstacle(
+      obstacle
+    );
+
+  }
+
+
+  for (
+    const coin
+    of coins
+  ) {
+
+    if (
+      !coin.taken
+    ) {
+
+      drawCoin(
+        coin
+      );
+
+    }
+
+  }
+
+
+  drawDog();
+
+
+  /* PARTICLES */
+
+  for (
+    const particle
+    of particles
+  ) {
+
+    ctx.globalAlpha =
+
+      clamp(
+
+        particle.life /
+        particle.max,
+
+        0,
+
+        1
+
+      );
+
+
+    ctx.fillStyle =
+      particle.color;
+
+
+    ctx.beginPath();
+
+
+    ctx.arc(
+
+      particle.x,
+
+      particle.y,
+
+      particle.r,
+
+      0,
+
+      Math.PI *
+      2
+
+    );
+
+
+    ctx.fill();
+
+  }
+
+
+  ctx.globalAlpha =
+    1;
+
+
+  /* STATUS TEXT */
+
+  if (
+    game.msg
+  ) {
+
+    ctx.textAlign =
+      "center";
+
+
+    ctx.font =
+      "900 28px Arial";
+
+
+    ctx.fillStyle =
+
+      game.msg ===
+      "OUCH!"
+
+      ?
+
+      "#ff6c63"
+
+      :
+
+      "#f5bd32";
+
+
+    ctx.fillText(
+
+      game.msg,
+
+      W /
+      2,
+
+      150
+
+    );
+
+  }
+
+
+  ctx.restore();
+
+}
+
+
+/* ==========================================================
+   GAME LOOP
+========================================================== */
+
+function gameLoop(
+  now
+) {
+
+  if (
+    !game.last
+  ) {
+
+    game.last =
+      now;
+
+  }
+
+
+  /*
+   * VERY IMPORTANT STABILITY PROTECTION
+   *
+   * If the browser freezes, changes tab,
+   * or has a slow frame, physics never receives
+   * a giant delta-time value.
+   *
+   * This stops random obstacle / collision jumps.
+   */
+
+  const dt =
+
+    Math.min(
+
+      .033,
+
+      Math.max(
+
+        0,
+
+        (
+          now -
+          game.last
+        )
+
+        /
+
+        1000
+
+      )
+
+    );
+
+
+  game.last =
+    now;
+
+
+  updateGame(
+    dt
+  );
+
+
+  drawGame();
+
+
+  requestAnimationFrame(
+    gameLoop
+  );
+
+}
+
+
+/* ==========================================================
+   KEYBOARD
+========================================================== */
+
+document.addEventListener(
+
+  "keydown",
+
+  event => {
+
+    const tag =
+      document.activeElement
+      ?.tagName
+      ||
+      "";
+
+
+    if (
+      [
+        "INPUT",
+        "TEXTAREA",
+        "SELECT"
+      ]
+      .includes(
+        tag
+      )
+    ) {
+
+      return;
+
+    }
+
+
+    if (
+      !gameVisible()
+    ) {
+
+      return;
+
+    }
+
+
+    if (
+      event.code ===
+        "Space"
+
+      ||
+
+      event.code ===
+        "ArrowUp"
+    ) {
+
+      event.preventDefault();
+
+
+      if (
+        !event.repeat
+      ) {
+
+        requestJump();
+
+      }
+
+    }
+
+
+    if (
+      event.code ===
+        "KeyP"
+
+      &&
+
+      !event.repeat
+    ) {
+
+      event.preventDefault();
+
+
+      togglePause();
+
+    }
+
+  }
+
+);
+
+
+document.addEventListener(
+
+  "keyup",
+
+  event => {
+
+    if (
+      event.code ===
+        "Space"
+
+      ||
+
+      event.code ===
+        "ArrowUp"
+    ) {
+
+      releaseJump();
+
+    }
+
+  }
+
+);
+
+
+/* ==========================================================
+   TOUCH / MOUSE
+========================================================== */
+
+frame.addEventListener(
+
+  "pointerdown",
+
+  event => {
+
+    if (
+
+      event.target.closest(
+        "button"
+      )
+
+      ||
+
+      overlay.style.display !==
+      "none"
+
+    ) {
+
+      return;
+
+    }
+
+
+    event.preventDefault();
+
+
+    requestJump();
+
+  }
+
+);
+
+
+frame.addEventListener(
+  "pointerup",
+  releaseJump
+);
+
+
+frame.addEventListener(
+  "pointercancel",
+  releaseJump
+);
+
+
+/* MOBILE JUMP */
+
+mobileJump.addEventListener(
+
+  "pointerdown",
+
+  event => {
+
+    event.preventDefault();
+
+
+    requestJump();
+
+  }
+
+);
+
+
+mobileJump.addEventListener(
+
+  "pointerup",
+
+  releaseJump
+
+);
+
+
+mobileJump.addEventListener(
+
+  "pointercancel",
+
+  releaseJump
+
+);
+
+
+/* MOBILE PAUSE */
+
+mobilePause.addEventListener(
+
+  "click",
+
+  togglePause
+
+);
+
+
+/* ==========================================================
+   AUTO PAUSE
+========================================================== */
+
+document.addEventListener(
+
+  "visibilitychange",
+
+  () => {
+
+    if (
+
+      document.hidden
+
+      &&
+
+      game.state ===
+      "running"
+
+    ) {
+
+      togglePause();
+
+    }
+
+  }
+
+);
+
+
+window.addEventListener(
+
+  "blur",
+
+  () => {
+
+    if (
+      game.state ===
+      "running"
+    ) {
+
+      togglePause();
+
+    }
+
+  }
+
+);
+
+
+/* ==========================================================
+   START
+========================================================== */
+
+resetGame();
+
+readyScreen();
+
+requestAnimationFrame(
+  gameLoop
+);
+
+</script>
 
 </body>
 </html>
